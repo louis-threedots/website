@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{y8nu:function(e,t,n){"use strict";n.r(t);var a=n("q1tI"),u=n.n(a),r=n("vrFN");t.default=function(){return u.a.createElement(u.a.Fragment,null,u.a.createElement(r.a,{title:"Budget"}),"Budget Page")}}}]);
+//# sourceMappingURL=component---src-pages-budget-js-e8bab0917f3f380f02eb.js.map
