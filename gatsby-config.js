@@ -28,4 +28,5 @@ module.exports = {
     },
     `gatsby-plugin-postcss`,
   ],
+  pathPrefix: "/website",
 }

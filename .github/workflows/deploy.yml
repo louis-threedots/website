@@ -23,3 +23,5 @@ jobs:
         uses: enriikke/gatsby-gh-pages-action@v2
         with:
           access-token: ${{ secrets.GITHUB_TOKEN }}
+          deploy-branch: docs
+          gatsby-args: --prefix-paths
