@@ -1,5 +1,5 @@
 import { Location } from "@reach/router"
-import { Link } from "gatsby"
+import { graphql, Link, useStaticQuery } from "gatsby"
 import PropTypes from "prop-types"
 import React, { useState } from "react"
 import Hero from "./hero"
@@ -7,6 +7,13 @@ import Logo from "./logo"
 import Transition from "./transition"
 
 const Header = ({ menuItems }) => {
+  const data = useStaticQuery(graphql`
+    {
+      site {
+        pathPrefix
+      }
+    }
+  `)
   const [open, setOpen] = useState(false)
 
   const primaryMenuItem = menuItems.find(({ isPrimary }) => isPrimary)
@@ -141,7 +148,13 @@ const Header = ({ menuItems }) => {
 
           <Location>
             {({ location }) => {
-              if (location.pathname === "/") return <Hero />
+              if (
+                location.pathname ===
+                (process.env.NODE_ENV === "development"
+                  ? "/"
+                  : `${data.site.pathPrefix}/`)
+              )
+                return <Hero />
             }}
           </Location>
         </div>
