@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{k3KE:function(e,n,t){"use strict";t.r(n);var a=t("q1tI"),r=t.n(a),o=t("vrFN");n.default=function(){return r.a.createElement(r.a.Fragment,null,r.a.createElement(o.a,{title:"Comments"}),"Comments Page")}}}]);
-//# sourceMappingURL=component---src-pages-comments-js-43a4ec5dc5198c830eff.js.map
