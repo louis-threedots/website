@@ -92,13 +92,13 @@ const Header = ({ menuItems }) => {
 
         <div className="relative pt-6 pb-12 sm:pb-16 md:pb-20 lg:pb-28 xl:pb-32">
           <div className="max-w-screen-xl mx-auto px-4 sm:px-6">
-            <nav className="relative flex items-center justify-between sm:h-10 md:justify-center">
-              <div className="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0">
-                <div className="flex items-center justify-between w-full md:w-auto">
+            <nav className="relative flex items-center justify-between sm:h-10 lg:justify-center">
+              <div className="flex items-center flex-1 lg:absolute lg:inset-y-0 lg:left-0">
+                <div className="flex items-center justify-between w-full lg:w-auto">
                   <Link to="/" className="text-black h-8 w-auto sm:h-10">
                     <Logo className="h-8 w-auto sm:h-10" />
                   </Link>
-                  <div className="-mr-2 flex items-center md:hidden">
+                  <div className="-mr-2 flex items-center lg:hidden">
                     <button
                       onClick={() => setOpen(true)}
                       type="button"
@@ -121,7 +121,7 @@ const Header = ({ menuItems }) => {
                   </div>
                 </div>
               </div>
-              <div className="hidden md:block">
+              <div className="hidden lg:block">
                 {menuItems
                   .filter(({ isPrimary = false }) => !isPrimary)
                   .map(({ label, href }) => (
@@ -133,7 +133,7 @@ const Header = ({ menuItems }) => {
                     </Link>
                   ))}
               </div>
-              <div className="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0">
+              <div className="hidden lg:absolute lg:flex lg:items-center lg:justify-end lg:inset-y-0 lg:right-0">
                 <span className="inline-flex rounded-md shadow">
                   <Link
                     to={primaryMenuItem.href}
@@ -160,7 +160,7 @@ const Header = ({ menuItems }) => {
         </div>
       </div>
 
-      <div className="absolute top-0 inset-x-0 p-2 md:hidden z-10">
+      <div className="absolute top-0 inset-x-0 p-2 lg:hidden z-10">
         <Transition
           show={open}
           enter="duration-150 ease-out"
