@@ -16,19 +16,9 @@ const Layout = ({ children }) => {
     }
   `)
 
-  const menuItems = [
-    { label: "System", href: "/system" },
-    { label: "How it Works", href: "/how-it-works" },
-    { label: "Evaluation", href: "/evaluation" },
-    { label: "Budget", href: "/budget" },
-    { label: "Team", href: "/team" },
-    { label: "Comments", href: "/comments" },
-    { label: "Interactive Demo", href: "/demo", isPrimary: true },
-  ]
-
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} menuItems={menuItems} />
+      <Header />
       <div>
         <main>{children}</main>
         <Footer />

@@ -1,12 +1,21 @@
 import { Location } from "@reach/router"
 import { graphql, Link, useStaticQuery } from "gatsby"
-import PropTypes from "prop-types"
 import React, { useState } from "react"
 import Hero from "./hero"
 import Logo from "./logo"
 import Transition from "./transition"
 
-const Header = ({ menuItems }) => {
+const Header = () => {
+  const menuItems = [
+    { label: "System", href: "/system" },
+    { label: "How it Works", href: "/how-it-works" },
+    { label: "Evaluation", href: "/evaluation" },
+    { label: "Budget", href: "/budget" },
+    { label: "Team", href: "/team" },
+    { label: "Comments", href: "/comments" },
+    { label: "Interactive Demo", href: "/demo", isPrimary: true },
+  ]
+
   const data = useStaticQuery(graphql`
     {
       site {
@@ -111,9 +120,9 @@ const Header = ({ menuItems }) => {
                         viewBox="0 0 24 24"
                       >
                         <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
                           d="M4 6h16M4 12h16M4 18h16"
                         />
                       </svg>
@@ -128,6 +137,7 @@ const Header = ({ menuItems }) => {
                     <Link
                       to={href}
                       className="ml-10 first:ml-0 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition duration-150 ease-in-out"
+                      key={label}
                     >
                       {label}
                     </Link>
@@ -191,9 +201,9 @@ const Header = ({ menuItems }) => {
                       viewBox="0 0 24 24"
                     >
                       <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
                         d="M6 18L18 6M6 6l12 12"
                       />
                     </svg>
@@ -208,6 +218,7 @@ const Header = ({ menuItems }) => {
                       to={href}
                       onClick={() => setOpen(false)}
                       className="mt-1 first:mt-0 block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 focus:outline-none focus:text-gray-900 focus:bg-gray-50 transition duration-150 ease-in-out"
+                      key={label}
                     >
                       {label}
                     </Link>
@@ -228,16 +239,6 @@ const Header = ({ menuItems }) => {
       </div>
     </header>
   )
-}
-
-Header.propTypes = {
-  menuItems: PropTypes.arrayOf(
-    PropTypes.shape({
-      label: PropTypes.string.isRequired,
-      href: PropTypes.string.isRequired,
-      isPrimary: PropTypes.bool,
-    })
-  ).isRequired,
 }
 
 export default Header
