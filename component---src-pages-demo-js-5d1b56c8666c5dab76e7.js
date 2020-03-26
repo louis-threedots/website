@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{vX0t:function(e,t,n){"use strict";n.r(t);var a=n("q1tI"),r=n.n(a),c=n("vrFN");t.default=function(){return r.a.createElement(r.a.Fragment,null,r.a.createElement(c.a,{title:"Interactive Demo"}),"Demo Page")}}}]);
-//# sourceMappingURL=component---src-pages-demo-js-5d1b56c8666c5dab76e7.js.map
