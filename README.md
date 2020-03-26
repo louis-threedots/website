@@ -2,6 +2,10 @@
 
 Commits made to this branch will be automatically built, and deployed to the website: https://louis-threedots.github.io/website.
 
+**Pre-requisites**
+
+- [Node.JS](https://nodejs.org/en/)
+
 **Below is info about developing with Gatsby**
 
 ---
