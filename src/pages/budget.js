@@ -66,7 +66,7 @@ const GettingStartedKit = () => {
             </div>
             <p className="mt-4 text-sm leading-5">
               <Link to="/demo" className="font-medium text-gray-500 underline">
-                Try our interactive demonstration
+                Try our free interactive demo
               </Link>
             </p>
             <div className="mt-6">
