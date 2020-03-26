@@ -1,3 +1,4 @@
+import { Link } from "gatsby"
 import React from "react"
 import SEO from "../components/seo"
 
@@ -64,9 +65,9 @@ const GettingStartedKit = () => {
               </span>
             </div>
             <p className="mt-4 text-sm leading-5">
-              <a href="#" className="font-medium text-gray-500 underline">
-                Learn about our membership policy
-              </a>
+              <Link to="/demo" className="font-medium text-gray-500 underline">
+                Try our interactive demonstration
+              </Link>
             </p>
             <div className="mt-6">
               <div className="rounded-md shadow">
@@ -79,10 +80,10 @@ const GettingStartedKit = () => {
               </div>
             </div>
             <div className="mt-4 text-sm leading-5">
-              <a href="#" className="font-medium text-gray-900">
+              <Link to="/documentation" className="font-medium text-gray-900">
                 Check out the User Guide{" "}
                 <span className="font-normal text-gray-500">(20MB)</span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -150,7 +151,7 @@ const Budget = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl py-6 font-bold leading-tight text-gray-900">
-          Behind-the-Scenes
+          Behind the Scenes
         </h2>
         Manufacturing information
         <h3 className="text-2xl py-4 leading-tight text-gray-700">
@@ -163,129 +164,72 @@ const Budget = () => {
                 <thead>
                   <tr>
                     <th className="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
-                      Name
+                      Item
                     </th>
                     <th className="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
-                      Title
+                      Description
                     </th>
-                    <th className="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
-                      Email
+                    <th className="px-6 py-3 border-b border-gray-200 bg-gray-50 text-right text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+                      Unit Cost
                     </th>
-                    <th className="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
-                      Role
+                    <th className="px-6 py-3 border-b border-gray-200 bg-gray-50 text-right text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+                      Quantity
                     </th>
-                    <th className="px-6 py-3 border-b border-gray-200 bg-gray-50"></th>
+                    <th className="px-6 py-3 border-b border-gray-200 bg-gray-50 text-right text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+                      Total
+                    </th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr className="bg-white">
+                  <tr className="bg-white even:bg-gray-50">
                     <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
-                      Bernard Lane
+                      Arduino
                     </td>
                     <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
-                      Director, Human Resources
+                      Microcontroller
                     </td>
-                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
-                      bernardlane@example.com
+                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 text-gray-500 numeric-tabular-nums">
+                      19.99
                     </td>
-                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
-                      Owner
+                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 text-gray-500 numeric-tabular-nums">
+                      1
                     </td>
-                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 font-medium">
-                      <a
-                        href="#"
-                        className="text-indigo-600 hover:text-indigo-900 focus:outline-none focus:underline"
-                      >
-                        Edit
-                      </a>
+                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 font-medium numeric-tabular-nums">
+                      19.99
                     </td>
                   </tr>
-                  <tr className="bg-gray-50">
+                  <tr className="bg-white even:bg-gray-50">
                     <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
-                      Bernard Lane
+                      Arduino
                     </td>
                     <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
-                      Director, Human Resources
+                      Microcontroller
                     </td>
-                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
-                      bernardlane@example.com
+                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 text-gray-500 numeric-tabular-nums">
+                      19.99
                     </td>
-                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
-                      Owner
+                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 text-gray-500 numeric-tabular-nums">
+                      1
                     </td>
-                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 font-medium">
-                      <a
-                        href="#"
-                        className="text-indigo-600 hover:text-indigo-900 focus:outline-none focus:underline"
-                      >
-                        Edit
-                      </a>
+                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 font-medium numeric-tabular-nums">
+                      19.99
                     </td>
                   </tr>
-                  <tr className="bg-white">
+                  <tr className="bg-white even:bg-gray-50">
                     <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
-                      Bernard Lane
+                      Arduino
                     </td>
                     <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
-                      Director, Human Resources
+                      Microcontroller
                     </td>
-                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
-                      bernardlane@example.com
+                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 text-gray-500 numeric-tabular-nums">
+                      19.99
                     </td>
-                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
-                      Owner
+                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 text-gray-500 numeric-tabular-nums">
+                      1
                     </td>
-                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 font-medium">
-                      <a
-                        href="#"
-                        className="text-indigo-600 hover:text-indigo-900 focus:outline-none focus:underline"
-                      >
-                        Edit
-                      </a>
-                    </td>
-                  </tr>
-                  <tr className="bg-gray-50">
-                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
-                      Bernard Lane
-                    </td>
-                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
-                      Director, Human Resources
-                    </td>
-                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
-                      bernardlane@example.com
-                    </td>
-                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
-                      Owner
-                    </td>
-                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 font-medium">
-                      <a
-                        href="#"
-                        className="text-indigo-600 hover:text-indigo-900 focus:outline-none focus:underline"
-                      >
-                        Edit
-                      </a>
-                    </td>
-                  </tr>
-                  <tr className="bg-white">
-                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
-                      Bernard Lane
-                    </td>
-                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
-                      Director, Human Resources
-                    </td>
-                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
-                      bernardlane@example.com
-                    </td>
-                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
-                      Owner
-                    </td>
-                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 font-medium">
-                      <a
-                        href="#"
-                        className="text-indigo-600 hover:text-indigo-900 focus:outline-none focus:underline"
-                      >
-                        Edit
-                      </a>
+                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 font-medium numeric-tabular-nums">
+                      19.99
                     </td>
                   </tr>
                 </tbody>

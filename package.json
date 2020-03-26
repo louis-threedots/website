@@ -26,7 +26,8 @@
     "autoprefixer": "^9.7.5",
     "gh-pages": "^2.2.0",
     "prettier": "^1.19.1",
-    "tailwindcss": "^1.2.0"
+    "tailwindcss": "^1.2.0",
+    "tailwindcss-font-variant-numeric": "^0.1.3"
   },
   "keywords": [
     "gatsby"
