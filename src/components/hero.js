@@ -2,7 +2,7 @@ import { Link } from "gatsby"
 import React from "react"
 
 const Hero = () => (
-  <div className="mt-10 mx-auto max-w-screen-xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 xl:mt-28">
+  <div className="mt-10 mx-auto max-w-screen-xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 xl:mt-28 pb-6 sm:pb-8 md:pb-10 lg:pb-14 xl:pb-16">
     <div className="text-center">
       <h2 className="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl font-louis">
         louis | ⠇⠳⠊⠎

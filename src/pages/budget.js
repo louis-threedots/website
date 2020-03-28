@@ -152,7 +152,7 @@ const Budget = () => {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-indigo-200 border-t-2">
         <h2 className="text-3xl py-6 font-bold leading-tight text-gray-900">
           Behind the Scenes
         </h2>

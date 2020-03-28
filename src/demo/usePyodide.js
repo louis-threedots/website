@@ -1,32 +1,48 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 
-const LOADING_TIMEOUT = 2000
+const pyodide = new Worker("./pyodideWorker.js")
 
-const usePyodide = () => {
+const usePyodide = callback => {
   const [loading, setLoading] = useState(true)
-  const [pyodide, setPyodide] = useState()
 
-  const load = () => {
-    if (window.languagePluginLoader !== undefined) {
-      console.info("Caught loading promise.")
-      console.info("Waiting for initialization...")
-      window.languagePluginLoader.then(() => {
-        console.info("Initialized!")
-        setPyodide(window.pyodide)
-        setLoading(false)
-      })
-    } else {
-      console.info("Still waiting for loading promise...")
-      setTimeout(load, LOADING_TIMEOUT)
-    }
+  pyodide.onmessage = event => {
+    const results = event.data
+    if (loading) setLoading(false)
+    callback(results)
   }
 
-  useEffect(() => {
-    console.info("Waiting for loading promise...")
-    setTimeout(load, LOADING_TIMEOUT)
-  }, [])
+  const runPython = code =>
+    pyodide.postMessage({
+      method: "runPython",
+      data: code,
+    })
 
-  return { loading, pyodide }
+  const loadPackages = packages =>
+    pyodide.postMessage({
+      method: "loadPackages",
+      data: packages,
+    })
+
+  const getPythonGlobal = name =>
+    pyodide.postMessage({
+      method: "pyimport",
+      data: name,
+    })
+
+  const attachGlobal = data =>
+    pyodide.postMessage({
+      method: "attachGlobal",
+      data,
+    })
+
+  return {
+    loading,
+    pyodide,
+    runPython,
+    loadPackages,
+    getPythonGlobal,
+    attachGlobal,
+  }
 }
 
 export default usePyodide

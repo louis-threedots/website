@@ -99,7 +99,7 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="relative pt-6 pb-12 sm:pb-16 md:pb-20 lg:pb-28 xl:pb-32">
+        <div className="relative pt-6 pb-6 sm:pb-8 md:pb-10 lg:pb-14 xl:pb-16">
           <div className="max-w-screen-xl mx-auto px-4 sm:px-6">
             <nav className="relative flex items-center justify-between sm:h-10 lg:justify-center">
               <div className="flex items-center flex-1 lg:absolute lg:inset-y-0 lg:left-0">

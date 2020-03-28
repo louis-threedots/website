@@ -1,30 +1,24 @@
 import React, { useEffect, useState } from "react"
-import Helmet from "react-helmet"
 import LoadingModal from "../components/loadingModal"
 import usePyodide from "./usePyodide"
 
 const Demo = () => {
-  const { loading, pyodide } = usePyodide()
+  const callback = results => {
+    setContent(results)
+  }
+
+  const { loading, runPython, attachGlobal } = usePyodide(callback)
   const [content, setContent] = useState("Loading...")
 
   useEffect(() => {
-    if (pyodide) {
-      setContent(pyodide.runPython(`import sys\nsys.version`))
-    }
-  }, [pyodide])
+    attachGlobal({})
+    runPython(`from js import demo`)
+    runPython(`exec(demo)`)
+    runPython('"Hello, world!"')
+  }, [])
 
   return (
     <>
-      <Helmet>
-        <script>{`
-          window.languagePluginUrl = 'https://pyodide.cdn.iodide.io/';
-        `}</script>
-        <script
-          src="https://pyodide.cdn.iodide.io/pyodide.js"
-          type="text/javascript"
-        ></script>
-      </Helmet>
-
       <div className="bg-gray-900 pb-32">
         <div className="py-10">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
