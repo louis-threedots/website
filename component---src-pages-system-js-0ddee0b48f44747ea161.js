@@ -1,0 +1,2 @@
+(this.webpackJsonp=this.webpackJsonp||[]).push([[10],{Zyyj:function(e,t,a){"use strict";a.r(t);var n=a("q1tI"),r=a.n(n),s=a("vrFN");t.default=function(){return r.a.createElement(r.a.Fragment,null,r.a.createElement(s.a,{title:"System"}),"System Page")}}}]);
+//# sourceMappingURL=component---src-pages-system-js-0ddee0b48f44747ea161.js.map

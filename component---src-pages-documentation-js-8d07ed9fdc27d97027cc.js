@@ -1,0 +1,2 @@
+(this.webpackJsonp=this.webpackJsonp||[]).push([[6],{mnx0:function(t,e,n){"use strict";n.r(e);var a=n("q1tI"),c=n.n(a),r=n("vrFN");e.default=function(){return c.a.createElement(c.a.Fragment,null,c.a.createElement(r.a,{title:"Documentation"}),"Documentation Page")}}}]);
+//# sourceMappingURL=component---src-pages-documentation-js-8d07ed9fdc27d97027cc.js.map
