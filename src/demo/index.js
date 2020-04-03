@@ -7,15 +7,17 @@ const Demo = () => {
     setContent(results)
   }
 
-  const { loading, runPython, attachGlobal } = usePyodide(callback)
+  const { loading, attachGlobal, runPython } = usePyodide(callback)
   const [content, setContent] = useState("Loading...")
 
   useEffect(() => {
-    attachGlobal({})
-    runPython(`from js import demo`)
-    runPython(`exec(demo)`)
-    runPython('"Hello, world!"')
-  }, [])
+    if (!loading) {
+      attachGlobal({})
+      runPython(`from js import demo`)
+      runPython(`exec(demo)`)
+      runPython('"Hello, world!"')
+    }
+  }, [loading])
 
   return (
     <>
