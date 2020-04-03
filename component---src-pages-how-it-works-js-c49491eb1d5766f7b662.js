@@ -1,2 +1,0 @@
-(this.webpackJsonp=this.webpackJsonp||[]).push([[8],{YzvB:function(t,e,a){"use strict";a.r(e);var n=a("q1tI"),r=a.n(n),s=a("vrFN");e.default=function(){return r.a.createElement(r.a.Fragment,null,r.a.createElement(s.a,{title:"How it Works"}),"How it Works Page")}}}]);
-//# sourceMappingURL=component---src-pages-how-it-works-js-c49491eb1d5766f7b662.js.map
