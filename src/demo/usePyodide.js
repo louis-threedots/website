@@ -6,7 +6,9 @@ const usePyodide = callback => {
 
   useEffect(() => {
     const script = document.createElement("script")
-    script.innerHTML = `self.pyodideWorker = new Worker('/pyodideWorker.js')`
+    script.innerHTML = `self.pyodideWorker = new Worker('/${
+      process.env.NODE_ENV === "development" ? "" : "website/"
+    }pyodideWorker.js')`
     document.body.appendChild(script)
 
     window.pyodideWorker.onmessage = event => {
