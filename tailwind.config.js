@@ -1,3 +1,4 @@
+const plugin = require("tailwindcss/plugin")
 const defaultTheme = require("tailwindcss/defaultTheme")
 
 module.exports = {
@@ -17,5 +18,20 @@ module.exports = {
   plugins: [
     require("@tailwindcss/ui"),
     require("tailwindcss-font-variant-numeric"),
+    require("./lib/tailwindTypographyPlugin"),
+    plugin(function({ addUtilities, config, e }) {
+      const spaceUtilities = Object.entries(config("theme.spacing")).map(
+        ([key, value]) => ({
+          [`.space-x-${e(key)} > * + *`]: {
+            marginLeft: value,
+          },
+          [`.space-y-${e(key)} > * + *`]: {
+            marginTop: value,
+          },
+        })
+      )
+
+      addUtilities(spaceUtilities)
+    }),
   ],
 }

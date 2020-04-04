@@ -105,7 +105,7 @@ const Header = () => {
               <div className="flex items-center flex-1 lg:absolute lg:inset-y-0 lg:left-0">
                 <div className="flex items-center justify-between w-full lg:w-auto">
                   <Link to="/" className="text-black h-8 w-auto sm:h-10">
-                    <Logo className="h-8 w-auto sm:h-10" />
+                    <Logo className="h-8 w-auto sm:h-10" format="full" />
                   </Link>
                   <div className="-mr-2 flex items-center lg:hidden">
                     <button
@@ -185,7 +185,7 @@ const Header = () => {
               <div className="px-5 pt-4 flex items-center justify-between">
                 <div>
                   <Link to="/">
-                    <Logo className="h-8 w-auto" />
+                    <Logo className="h-8 w-auto" format="full" />
                   </Link>
                 </div>
                 <div className="-mr-2">

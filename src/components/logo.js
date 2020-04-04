@@ -11,10 +11,10 @@ const Logo = ({ format = "icon", white = false, className = "" }) => {
       whiteLogo: file(relativePath: { eq: "logo-white.png" }) {
         publicURL
       }
-      louisDots: file(relativePath: { eq: "logo-dots-black.png" }) {
+      louisDots: file(relativePath: { eq: "louisdots-black.png" }) {
         publicURL
       }
-      whiteLouisDots: file(relativePath: { eq: "logo-dots-white.png" }) {
+      whiteLouisDots: file(relativePath: { eq: "louisdots-white.png" }) {
         publicURL
       }
       louis: file(relativePath: { eq: "louis-black.png" }) {
@@ -39,6 +39,8 @@ const Logo = ({ format = "icon", white = false, className = "" }) => {
     default:
       image = white ? data.whiteLogo : data.logo
   }
+
+  console.log(image)
 
   return <img src={image.publicURL} alt="louis Logo" className={className} />
 }
