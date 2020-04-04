@@ -17,11 +17,11 @@ const DeveloperDocumentation = () => (
       variable <code>main_cell</code> to <code>comp</code> instead of{" "}
       <code>arduino</code> in the file{" "}
       <code>src/app_states/main_state.txt</code>. You can run{" "}
-      <code>python3 src/main.py</code> once you have installed all the packages
-      louis depends on, which can be found in the <code>requirements.txt</code>{" "}
-      file. The terminal will prompt you for the number of cells you want to
-      work with, and when relevant, prompt you for the button cell index you
-      want to press.
+      <code>python3 src/main.py</code> once you have installed all the packages{" "}
+      <span className="italic underline">louis</span> depends on, which can be
+      found in the <code>requirements.txt</code> file. The terminal will prompt
+      you for the number of cells you want to work with, and when relevant,
+      prompt you for the button cell index you want to press.
     </p>
     <p>
       Additional tools for development are the <code>output_audio</code> and{" "}
