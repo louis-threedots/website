@@ -40,8 +40,6 @@ const Logo = ({ format = "icon", white = false, className = "" }) => {
       image = white ? data.whiteLogo : data.logo
   }
 
-  console.log(image)
-
   return <img src={image.publicURL} alt="louis Logo" className={className} />
 }
 

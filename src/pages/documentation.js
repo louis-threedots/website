@@ -1,6 +1,9 @@
 import React from "react"
+import DeveloperDocumentation from "../components/documentation/developerDocumentation"
 import Installation from "../components/documentation/installation"
+import Operation from "../components/documentation/operation"
 import Overview from "../components/documentation/overview"
+import TroubleshootingGuide from "../components/documentation/troubleshootingGuide"
 import SEO from "../components/seo"
 import "./documentation.css"
 
@@ -123,13 +126,138 @@ const Budget = () => {
                 >
                   Installation
                 </a>
+                <ul className="pl-3 space-y-3">
+                  <li>
+                    <a
+                      className="block text-gray-900 hover:text-gray-700 transition ease-in-out duration-150"
+                      href="#setup-the-hardware"
+                    >
+                      Setup the Hardware
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="block text-gray-900 hover:text-gray-700 transition ease-in-out duration-150"
+                      href="#setup-the-software"
+                    >
+                      Setup the Software
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li className="space-y-3">
+                <a
+                  className="block text-gray-900 hover:text-gray-700 transition ease-in-out duration-150"
+                  href="#operation"
+                >
+                  Operation
+                </a>
+                <ul className="pl-3 space-y-3">
+                  <li>
+                    <a
+                      className="block text-gray-900 hover:text-gray-700 transition ease-in-out duration-150"
+                      href="#general"
+                    >
+                      General
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="block text-gray-900 hover:text-gray-700 transition ease-in-out duration-150"
+                      href="#open-an-application"
+                    >
+                      Open an Application
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="block text-gray-900 hover:text-gray-700 transition ease-in-out duration-150"
+                      href="#close-an-application"
+                    >
+                      Close an Application
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="block text-gray-900 hover:text-gray-700 transition ease-in-out duration-150"
+                      href="#help"
+                    >
+                      Help
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="block text-gray-900 hover:text-gray-700 transition ease-in-out duration-150"
+                      href="#pagination"
+                    >
+                      Pagination
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="block text-gray-900 hover:text-gray-700 transition ease-in-out duration-150"
+                      href="#contractions"
+                    >
+                      Contractions
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li className="space-y-3">
+                <a
+                  className="block text-gray-900 hover:text-gray-700 transition ease-in-out duration-150"
+                  href="#troubleshooting-guide"
+                >
+                  Troubleshooting Guide
+                </a>
+              </li>
+              <li className="space-y-3">
+                <a
+                  className="block text-gray-900 hover:text-gray-700 transition ease-in-out duration-150"
+                  href="#developer-documentation"
+                >
+                  Developer Documentation
+                </a>
+                <ul className="pl-3 space-y-3">
+                  <li>
+                    <a
+                      className="block text-gray-900 hover:text-gray-700 transition ease-in-out duration-150"
+                      href="#cell"
+                    >
+                      Cell
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="block text-gray-900 hover:text-gray-700 transition ease-in-out duration-150"
+                      href="#audio"
+                    >
+                      Audio
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="block text-gray-900 hover:text-gray-700 transition ease-in-out duration-150"
+                      href="#direct"
+                    >
+                      Direct
+                    </a>
+                  </li>
+                </ul>
               </li>
             </ul>
           </div>
           <div className="lg:col-span-8">
             <div className="prose">
               <Overview />
+              <hr />
               <Installation />
+              <hr />
+              <Operation />
+              <hr />
+              <TroubleshootingGuide />
+              <hr />
+              <DeveloperDocumentation />
             </div>
           </div>
         </div>

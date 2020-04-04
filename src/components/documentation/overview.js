@@ -18,8 +18,9 @@ const Overview = () => (
     <p>
       We understand the irony of providing a printed user guide for a product
       intended to teach braille. For that reason, once{" "}
-      <span className="font-louis">louis</span> is set up, use the voice command
-      “user guide” to access an interactive, audio version of this user guide.
+      <span className="font-louis">louis</span> is set up, use the voice command{" "}
+      <span className="italic underline">user guide</span> to access an
+      interactive, audio version of this user guide.
     </p>
     <h4 id="whats-included">What's Included?</h4>
     <p>Inside the box you will find the following main components:</p>
@@ -66,20 +67,22 @@ const Overview = () => (
     </h3>
     <h4 id="audio-speech-output">Audio Speech Output</h4>
     <p>
-      When louis wants to tell you something, whether that be a navigation
-      option, your current progress, or the instructions for a specific app, it
-      will do so by speaking to you through the audio speech output. This uses
-      the speaker built-in to the controller.
+      When <span className="font-louis">louis</span> wants to tell you
+      something, whether that be a navigation option, your current progress, or
+      the instructions for a specific app, it will do so by speaking to you
+      through the audio speech output. This uses the speaker built-in to the
+      controller.
     </p>
     <h4 id="audio-speech-input">Audio Speech Input</h4>
     <p>
-      When you want to tell louis something, whether that be an answer in
-      response to a question posed by an app or a request for a new app to be
-      launched, you will do so by speaking the phrase. There is a microphone
-      inside the main controller that will understand what you have said. Note
-      that you do not need to bend over and speak into the main controller, the
-      microphone has been calibrated to work with you positioned normally in
-      front of louis.
+      When you want to tell <span className="font-louis">louis</span> something,
+      whether that be an answer in response to a question posed by an app or a
+      request for a new app to be launched, you will do so by speaking the
+      phrase. There is a microphone inside the main controller that will
+      understand what you have said. Note that you do not need to bend over and
+      speak into the main controller, the microphone has been calibrated to work
+      with you positioned normally in front of{" "}
+      <span className="font-louis">louis</span>.
     </p>
     <h4 id="braille-output-through-the-cells">
       Braille Output Through the Cells
