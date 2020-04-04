@@ -60,7 +60,7 @@ const DeveloperDocumentation = () => (
         </thead>
         <tbody className="align-baseline">
           <tr>
-            <td className="p-2 border-t border-gray-300 font-mono text-xs text-purple-700 whitespace-no-wrap">
+            <td className="p-2 border-t border-gray-300 font-mono text-xs text-purple-700">
               print_character(char letter)
             </td>
             <td className="p-2 border-t border-gray-300 text-xs">
@@ -68,7 +68,7 @@ const DeveloperDocumentation = () => (
             </td>
           </tr>
           <tr>
-            <td className="p-2 border-t border-gray-300 font-mono text-xs text-purple-700 whitespace-no-wrap">
+            <td className="p-2 border-t border-gray-300 font-mono text-xs text-purple-700">
               wait_for_button_press()
             </td>
             <td className="p-2 border-t border-gray-300 text-xs">
@@ -77,7 +77,7 @@ const DeveloperDocumentation = () => (
             </td>
           </tr>
           <tr>
-            <td className="p-2 border-t border-gray-300 font-mono text-xs text-purple-700 whitespace-no-wrap">
+            <td className="p-2 border-t border-gray-300 font-mono text-xs text-purple-700">
               reset()
             </td>
             <td className="p-2 border-t border-gray-300 text-xs">
@@ -111,7 +111,7 @@ const DeveloperDocumentation = () => (
         </thead>
         <tbody className="align-baseline">
           <tr>
-            <td className="p-2 border-t border-gray-300 font-mono text-xs text-purple-700 whitespace-no-wrap">
+            <td className="p-2 border-t border-gray-300 font-mono text-xs text-purple-700">
               speak(string text)
             </td>
             <td className="p-2 border-t border-gray-300 text-xs">
@@ -120,7 +120,7 @@ const DeveloperDocumentation = () => (
             </td>
           </tr>
           <tr>
-            <td className="p-2 border-t border-gray-300 font-mono text-xs text-purple-700 whitespace-no-wrap">
+            <td className="p-2 border-t border-gray-300 font-mono text-xs text-purple-700">
               playsound(string filename)
             </td>
             <td className="p-2 border-t border-gray-300 text-xs">
@@ -129,7 +129,7 @@ const DeveloperDocumentation = () => (
             </td>
           </tr>
           <tr>
-            <td className="p-2 border-t border-gray-300 font-mono text-xs text-purple-700 whitespace-no-wrap">
+            <td className="p-2 border-t border-gray-300 font-mono text-xs text-purple-700">
               recognize_speech([string] keywords)
             </td>
             <td className="p-2 border-t border-gray-300 text-xs">
@@ -153,7 +153,7 @@ const DeveloperDocumentation = () => (
       utility functions.
     </p>
     <div className="my-6 border-t border-b border-gray-300 overflow-hidden relative">
-      <table className="w-full text-left table-fixed">
+      <table className="w-full text-left">
         <thead>
           <tr>
             <th className="text-sm font-semibold text-gray-700 p-2 bg-gray-100 w-2/5">
@@ -166,7 +166,7 @@ const DeveloperDocumentation = () => (
         </thead>
         <tbody className="align-baseline">
           <tr>
-            <td className="p-2 border-t border-gray-300 font-mono text-xs text-purple-700 whitespace-no-wrap">
+            <td className="p-2 border-t border-gray-300 font-mono text-xs text-purple-700">
               print_text(string text)
             </td>
             <td className="p-2 border-t border-gray-300 text-xs">
@@ -175,7 +175,7 @@ const DeveloperDocumentation = () => (
             </td>
           </tr>
           <tr>
-            <td className="p-2 border-t border-gray-300 font-mono text-xs text-purple-700 whitespace-no-wrap">
+            <td className="p-2 border-t border-gray-300 font-mono text-xs text-purple-700">
               print_character_all_cells(char c)
             </td>
             <td className="p-2 border-t border-gray-300 text-xs">
@@ -183,7 +183,7 @@ const DeveloperDocumentation = () => (
             </td>
           </tr>
           <tr>
-            <td className="p-2 border-t border-gray-300 font-mono text-xs text-purple-700 whitespace-no-wrap">
+            <td className="p-2 border-t border-gray-300 font-mono text-xs text-purple-700">
               print_cells_to_terminal()
             </td>
             <td className="p-2 border-t border-gray-300 text-xs">
@@ -193,7 +193,7 @@ const DeveloperDocumentation = () => (
             </td>
           </tr>
           <tr>
-            <td className="p-2 border-t border-gray-300 font-mono text-xs text-purple-700 whitespace-no-wrap">
+            <td className="p-2 border-t border-gray-300 font-mono text-xs text-purple-700">
               print_character_all_cells(char c)
             </td>
             <td className="p-2 border-t border-gray-300 text-xs">
@@ -201,7 +201,7 @@ const DeveloperDocumentation = () => (
             </td>
           </tr>
           <tr>
-            <td className="p-2 border-t border-gray-300 font-mono text-xs text-purple-700 whitespace-no-wrap">
+            <td className="p-2 border-t border-gray-300 font-mono text-xs text-purple-700">
               on_start()
             </td>
             <td className="p-2 border-t border-gray-300 text-xs">
@@ -210,7 +210,7 @@ const DeveloperDocumentation = () => (
             </td>
           </tr>
           <tr>
-            <td className="p-2 border-t border-gray-300 font-mono text-xs text-purple-700 whitespace-no-wrap">
+            <td className="p-2 border-t border-gray-300 font-mono text-xs text-purple-700">
               on_quit()
             </td>
             <td className="p-2 border-t border-gray-300 text-xs">
@@ -219,7 +219,7 @@ const DeveloperDocumentation = () => (
             </td>
           </tr>
           <tr>
-            <td className="p-2 border-t border-gray-300 font-mono text-xs text-purple-700 whitespace-no-wrap">
+            <td className="p-2 border-t border-gray-300 font-mono text-xs text-purple-700">
               reset_cells()
             </td>
             <td className="p-2 border-t border-gray-300 text-xs">
@@ -227,7 +227,7 @@ const DeveloperDocumentation = () => (
             </td>
           </tr>
           <tr>
-            <td className="p-2 border-t border-gray-300 font-mono text-xs text-purple-700 whitespace-no-wrap">
+            <td className="p-2 border-t border-gray-300 font-mono text-xs text-purple-700">
               await_response(string[] desired_responses)
             </td>
             <td className="p-2 border-t border-gray-300 text-xs">
@@ -236,7 +236,7 @@ const DeveloperDocumentation = () => (
             </td>
           </tr>
           <tr>
-            <td className="p-2 border-t border-gray-300 font-mono text-xs text-purple-700 whitespace-no-wrap">
+            <td className="p-2 border-t border-gray-300 font-mono text-xs text-purple-700">
               save_settings()
             </td>
             <td className="p-2 border-t border-gray-300 text-xs">
@@ -244,7 +244,7 @@ const DeveloperDocumentation = () => (
             </td>
           </tr>
           <tr>
-            <td className="p-2 border-t border-gray-300 font-mono text-xs text-purple-700 whitespace-no-wrap">
+            <td className="p-2 border-t border-gray-300 font-mono text-xs text-purple-700">
               edit_settings()
             </td>
             <td className="p-2 border-t border-gray-300 text-xs">
