@@ -299,7 +299,7 @@ const Documentation = () => {
               <div className="order-3 mt-2 flex-shrink-0 w-full sm:order-2 sm:mt-0 sm:w-auto">
                 <div className="rounded-md shadow-sm">
                   <a
-                    href="https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=https%3A%2F%2Flouis-threedots.github.io%2Fwebsite%2Fdocumentation"
+                    href="https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=https%3A%2F%2Flouis-threedots.github.io%2Fwebsite%2Fdocumentation#accessibility"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-indigo-600 bg-white hover:text-indigo-500 focus:outline-none focus:shadow-outline transition ease-in-out duration-150"
