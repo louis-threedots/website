@@ -3,6 +3,48 @@ import React from "react"
 const Operation = () => (
   <div>
     <h2 id="operation">Operation</h2>
+    <p>TODO</p>
+    <div className="my-6 border-t border-b border-gray-300 overflow-hidden relative">
+      <table className="w-full text-left">
+        <thead>
+          <tr>
+            <th className="text-sm font-semibold text-gray-700 p-2 bg-gray-100 w-2/5">
+              Voice Command
+            </th>
+            <th className="text-sm font-semibold text-gray-700 p-2 bg-gray-100">
+              Description
+            </th>
+          </tr>
+        </thead>
+        <tbody className="align-baseline">
+          <tr>
+            <td className="p-2 border-t border-gray-300 text-xs italic underline">
+              exit
+            </td>
+            <td className="p-2 border-t border-gray-300 text-xs">
+              Lectus a sapien metus erat inceptos ultrices
+            </td>
+          </tr>
+          <tr>
+            <td className="p-2 border-t border-gray-300 text-xs italic underline">
+              settings
+            </td>
+            <td className="p-2 border-t border-gray-300 text-xs">
+              Lectus a sapien metus erat inceptos ultrices
+            </td>
+          </tr>
+          <tr>
+            <td className="p-2 border-t border-gray-300 text-xs italic underline">
+              help
+            </td>
+            <td className="p-2 border-t border-gray-300 text-xs">
+              Lectus a sapien metus erat inceptos ultrices
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>TODO</p>
     <h3 id="general">General</h3>
     <p>
       You can find the charging port below the on/off switch on the main

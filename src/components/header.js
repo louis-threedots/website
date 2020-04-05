@@ -13,6 +13,7 @@ const Header = () => {
     { label: "Budget", href: "/budget" },
     { label: "Team", href: "/team" },
     { label: "Comments", href: "/comments" },
+    { label: "User Guide", href: "/documentation" },
     { label: "Interactive Demo", href: "/demo", isPrimary: true },
   ]
 
@@ -112,6 +113,7 @@ const Header = () => {
                       onClick={() => setOpen(true)}
                       type="button"
                       className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
+                      aria-label="Open navigation menu"
                     >
                       <svg
                         className="h-6 w-6"
@@ -130,7 +132,7 @@ const Header = () => {
                   </div>
                 </div>
               </div>
-              <div className="hidden xl:block">
+              <div className="hidden xl:block pl-12">
                 {menuItems
                   .filter(({ isPrimary = false }) => !isPrimary)
                   .map(({ label, href }) => (
@@ -193,6 +195,7 @@ const Header = () => {
                     onClick={() => setOpen(false)}
                     type="button"
                     className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
+                    aria-label="Close navigation menu"
                   >
                     <svg
                       className="h-6 w-6"
