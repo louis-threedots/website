@@ -26,7 +26,7 @@ const Footer = () => {
               href={href}
               target="_blank"
               rel="noopener noreferrer"
-              className="ml-6 first:ml-0 text-gray-400 hover:text-gray-500"
+              className="ml-6 first:ml-0 text-gray-500 hover:text-gray-700"
               key={href}
             >
               <span className="sr-only">{label}</span>
@@ -35,7 +35,7 @@ const Footer = () => {
           ))}
         </div>
         <div className="mt-8 md:mt-0 md:order-1">
-          <p className="text-center text-base leading-6 text-gray-400">
+          <p className="text-center text-base leading-6 text-gray-500">
             © {new Date().getFullYear()} ThreeDots (Group 10)
           </p>
         </div>
