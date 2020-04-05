@@ -289,8 +289,8 @@ const Documentation = () => {
                   </svg>
                 </span>
                 <p className="ml-3 font-medium text-white truncate">
-                  <span className="md:hidden">This page is accessible!</span>
-                  <span className="hidden md:inline">
+                  <span className="lg:hidden">This page is accessible!</span>
+                  <span className="hidden lg:inline">
                     This page can be used with assistive technologies (e.g.
                     screen readers).
                   </span>
