@@ -6,19 +6,19 @@ const DeveloperDocumentation = () => (
     <p>
       To build your own app, create a new python class that inherits from{" "}
       <code>App</code>. When your class is instantiated by the app loader on the
-      braille device, you will have access to useful instance variables and
+      Braille device, you will have access to useful instance variables and
       methods that allow you to design your very own app flow.
     </p>
     <p>
       For ease of development, the code is portable between the Raspberry Pi
-      with Arduino PCBs (which the braille device works with) and computer-only
+      with Arduino PCBs (which the Braille device works with) and computer-only
       testing. Thus you are not required to have a device in order to build your
       own apps. You can switch to Python terminal interaction by setting the
       variable <code>main_cell</code> to <code>comp</code> instead of{" "}
       <code>arduino</code> in the file{" "}
       <code>src/app_states/main_state.txt</code>. You can run{" "}
       <code>python3 src/main.py</code> once you have installed all the packages{" "}
-      <span className="font-louis">louis</span> depends on, which can be
+      <span className="italic underline">louis</span> depends on, which can be
       found in the <code>requirements.txt</code> file. The terminal will prompt
       you for the number of cells you want to work with, and when relevant,
       prompt you for the button cell index you want to press.
@@ -42,8 +42,8 @@ const DeveloperDocumentation = () => (
       The constructor of <code>App</code> is passed an array of{" "}
       <code>Cell</code> objects, whose dynamic length is automatically
       determined by the number of physical cells that are attached to the
-      braille device (modularity). <code>Cell</code> contains methods that allow
-      you to interact with a specific braille cell without having to deal with
+      Braille device (modularity). <code>Cell</code> contains methods that allow
+      you to interact with a specific Braille cell without having to deal with
       the low-level hardware code.
     </p>
     <div className="my-6 border-t border-b border-gray-300 overflow-hidden relative">
@@ -64,7 +64,7 @@ const DeveloperDocumentation = () => (
               print_character(char letter)
             </td>
             <td className="p-2 border-t border-gray-300 text-xs">
-              Prints a given character onto a braille cell.
+              Prints a given character onto a Braille cell.
             </td>
           </tr>
           <tr>
@@ -94,7 +94,7 @@ const DeveloperDocumentation = () => (
       Your app receives an instance of <code>Audio</code> which provides methods
       to interact with the microphone and speakers, as well as utilities for
       speech recognition and synthesis. These functions are essential for the
-      user experience as blind users starting to learn braille heavily rely on
+      user experience as blind users starting to learn Braille heavily rely on
       audio.
     </p>
     <div className="my-6 border-t border-b border-gray-300 overflow-hidden relative">
