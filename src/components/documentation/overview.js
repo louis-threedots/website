@@ -56,7 +56,7 @@ const Overview = () => (
     </table>
     <h3 id="the-main-controller">The Main Controller</h3>
     {
-      "<labelled diagram of the main controller showing features described below TODO>"
+      <img src="https://raw.githubusercontent.com/louis-threedots/website/master/src/images/main_controller_diagram.png" />
     }
     <p>
       The controller is the brains of <span className="font-louis">louis</span>:
@@ -72,7 +72,7 @@ const Overview = () => (
       cell port to which refreshable cells can be attached.
     </p>
     <h3 id="refreshable-cells">Refreshable Cells</h3>
-    {"<labelled diagram of a cell showing features described below TODO>"}
+    <img src="https://raw.githubusercontent.com/louis-threedots/website/master/src/images/cell_diagram.png" />
     <p>
       Cells are the way that you learn braille with{" "}
       <span className="font-louis">louis</span>. Each cell contains a
