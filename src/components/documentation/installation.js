@@ -20,8 +20,8 @@ const Installation = () => (
     <h3 id="setup-the-hardware">Set up the Hardware</h3>
     <p>
       Place the main controller in a way such that the button is on the left
-      side. You can distinguish the top of the controller, by feeling a path on
-      your finger. To connect a cell on the controller, push it on the right
+      side. You can distinguish the top of the controller, by feeling the microphone and speaker on
+      your finger, while the bottom has just a smooth surface. To connect a cell on the controller, push it on the right
       side of the controller, until you hear them “click”. For a cell to be
       correctly aligned, you need to feel the button above the braille pins. To
       connect subsequent cells, follow the same process.
