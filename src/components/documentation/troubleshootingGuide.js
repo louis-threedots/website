@@ -35,7 +35,7 @@ const TroubleshootingGuide = () => (
         </thead>
         <tbody className="align-baseline">
           <tr>
-            <td colspan="2" className="text-sm font-semibold text-gray-500 p-2 bg-gray-200"><center>Main Controller</center></td>
+            <td colspan="2" className="text-sm font-semibold text-gray-1000 p-2 bg-gray-200"><center>Main Controller</center></td>
           </tr>
           <tr>
             <td className="p-2 border-t border-gray-300 text-xs">
@@ -96,7 +96,7 @@ const TroubleshootingGuide = () => (
             </td>
           </tr>
           <tr>
-            <td colspan="2" className="text-sm font-semibold text-gray-500 p-2 bg-gray-200"><center>Cells</center></td>
+            <td colspan="2" className="text-sm font-semibold text-gray-1000 p-2 bg-gray-200"><center>Cells</center></td>
           </tr>
           <tr>
             <td className="p-2 border-t border-gray-300 text-xs">
@@ -117,7 +117,7 @@ const TroubleshootingGuide = () => (
             </td>
           </tr>
           <tr>
-            <td colspan="2" className="text-sm font-semibold text-gray-500 p-2 bg-gray-200"><center>Apps</center></td>
+            <td colspan="2" className="text-sm font-semibold text-gray-1000 p-2 bg-gray-200"><center>Apps</center></td>
           </tr>
           <tr>
             <td className="p-2 border-t border-gray-300 text-xs">
@@ -137,7 +137,7 @@ const TroubleshootingGuide = () => (
             </td>
           </tr>
           <tr>
-            <td colspan="2" className="text-sm font-semibold text-gray-500 p-2 bg-gray-200"><center>Frequently Asked Questions</center></td>
+            <td colspan="2" className="text-sm font-semibold text-gray-1000 p-2 bg-gray-200"><center>Frequently Asked Questions</center></td>
           </tr>
           <tr>
             <td className="p-2 border-t border-gray-300 text-xs">
