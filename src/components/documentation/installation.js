@@ -19,7 +19,7 @@ const Installation = () => (
     </h2>
     <h3 id="setup-the-hardware">Set up the Hardware</h3>
     <p>
-      Place the main controller in a way such that the button is on the left
+      Place the main controller in a way such that the on/off button and charging port is on the left
       side. You can distinguish the top of the controller, by feeling the microphone and speaker on
       your finger, while the bottom has just a smooth surface. To connect a cell on the controller, push it on the right
       side of the controller, until you hear them “click”. For a cell to be
