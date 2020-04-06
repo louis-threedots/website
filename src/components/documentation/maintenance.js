@@ -39,10 +39,9 @@ const Maintenance = () => (
     </p>
     <p>
       <ol>
-        <li>Disconnect all non-faulty cells, so that only the faulty cell is connected to the main controller.</li>
         <li>Open the Calibration app.</li>
-        <li>Place your hand on the cell output.</li>
-        <li>Press the cell button until the reading window outputs a space character (i.e.: a flat surface with no raised dots).</li>
+        <li>Place your hand on the faulty cell's output.</li>
+        <li>Press the cell's button until the reading window outputs a space character (i.e.: a flat surface with no raised dots).</li>
         <li>Say <span className="italic underline">exit</span> or <span className="italic underline">quit</span> to finish the calibration.</li>
       </ol>
     </p>
