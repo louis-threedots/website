@@ -19,24 +19,43 @@ const Installation = () => (
     </h2>
     <h3 id="setup-the-hardware">Set up the Hardware</h3>
     <p>
-      Place the main controller in a way such that the on/off button and charging port is on the left
-      side. You can distinguish the top of the controller, by feeling the microphone and speaker on
-      your finger, while the bottom has just a smooth surface. To connect a cell on the controller, push it on the right
-      side of the controller, until you hear them “click”. For a cell to be
-      correctly aligned, you need to feel the button above the braille pins. To
-      connect subsequent cells, follow the same process.
+      Place the main controller in a way such that the on/off button and
+      charging port is on the left side. You can distinguish the top of the
+      controller, by feeling the microphone and speaker on your finger, while
+      the bottom has just a smooth surface. To connect a cell on the controller,
+      push it on the right side of the controller, until you hear them “click”.
+      For a cell to be correctly aligned, you need to feel the button above the
+      braille pins. To connect subsequent cells, follow the same process.
     </p>
     <h3 id="setup-the-software">Set up the Software</h3>
-    TODO
     <p>
-      - Talk about the wifi and anything else needed.
-      <br />- Need to connect it to the internet somehow? Or we pretend that the
-      speech recognition is done offline (which we can reasonably claim since
-      there are offline versions available), but I would mention that no
-      internet connection is necessary just because otherwise they might
-      complain about it. TODO EDIT: actually we need internet connection for the
-      Headlines app.
+      If it is your first time to start{" "}
+      <span className="font-louis">louis</span> or if{" "}
+      <span className="font-louis">louis</span> is not connected to the
+      internet, <span className="font-louis">louis</span> will automatically
+      create a WiFi network called
+      <code>louis</code>.
     </p>
+    <ul>
+      <li>
+        Using another device, such as your phone, tablet, or laptop, connect to
+        <code>louis</code> WiFi network as you normally connect to other WiFi
+        networks.
+      </li>
+      <li>
+        Once you have successfully connected to the <code>louis</code> WiFi
+        network, start up a web-browser on your device. Your web-browser will be
+        redirected to the WiFi networks page with networks to which louis can
+        connect.
+      </li>
+      <li>Select a WiFi network you want to connect to.</li>
+      <li>Enter password and click connect button.</li>
+      <li>
+        Once you have successfully logged in,{" "}
+        <span className="font-louis">louis</span> will have access to the
+        internet and will stop sharing <code>louis</code> WiFi network.
+      </li>
+    </ul>
   </div>
 )
 
