@@ -4,7 +4,7 @@ const Operation = () => (
   <div>
     <h2 id="operation">Operation</h2>
     <h3 id="general">General Commands</h3>
-    <p>There are several voice commands that can be used both in the main menu and in all apps, and can be used at any point:</p>
+    <p>There are several voice commands that can be used both in the main menu and in all apps, and can be used at any point:</p> 
     <div className="my-6 border-t border-b border-gray-300 overflow-hidden relative">
       <table className="w-full text-left">
         <thead>
