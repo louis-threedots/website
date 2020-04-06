@@ -86,7 +86,7 @@ const DeveloperDocumentation = () => (
               wait_for_button_press()
             </td>
             <td className="p-2 border-t border-gray-300 text-xs">
-              Waits and returns True when the user presses the button on the
+              Waits and returns <code>True</code> when the user presses the button on the
               cell.
             </td>
           </tr>
@@ -144,7 +144,7 @@ const DeveloperDocumentation = () => (
           </tr>
           <tr>
             <td className="p-2 border-t border-gray-300 font-mono text-xs text-purple-700">
-              recognize_speech([string] keywords)
+              recognize_speech(string[] keywords)
             </td>
             <td className="p-2 border-t border-gray-300 text-xs">
               Listens for audio input and returns a string of the transcribed
@@ -156,8 +156,8 @@ const DeveloperDocumentation = () => (
       </table>
     </div>
     <p>
-      If you would like the Audio output to be your own mp3 recording, upload
-      the file in the cache folder with the md5 hash of the output as filename.
+      If you would like the <code>Audio</code> output to be your own mp3 recording, upload
+      the file in the <code>src/cache</code> folder with the md5 hash of the output as filename.
     </p>
     <h3 id="direct">
       <code>Direct</code>
@@ -275,8 +275,8 @@ const DeveloperDocumentation = () => (
       <code>self.settings</code> contains a dictionary of previously stored app
       settings from the file system. You can add the settings you need for your
       app to the file <code>[appname]_state.txt</code> in the{" "}
-      <code>app_states</code> folder. If the setting is user-editable, create a
-      key “editable” which is a dictionary containing the editable settings.
+      <code>src/app_states</code> folder. If the setting is user-editable, create a
+      key <code>editable</code> which is a dictionary containing the editable settings.
       Provide a name, description, current value and a dictionary of possible
       values with their description.
     </p>

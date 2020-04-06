@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import ContactSupport from "../components/documentation/contactSupport"
 import DeveloperDocumentation from "../components/documentation/developerDocumentation"
 import Installation from "../components/documentation/installation"
+import Maintenance from "../components/documentation/maintenance"
 import Operation from "../components/documentation/operation"
 import Overview from "../components/documentation/overview"
 import TroubleshootingGuide from "../components/documentation/troubleshootingGuide"
@@ -102,7 +103,7 @@ const Documentation = () => {
                           className="block text-gray-900 hover:text-gray-700 transition ease-in-out duration-150"
                           href="#braille-output-through-the-cells"
                         >
-                          Braille Ouptut Through the Cells
+                          Braille Output Through the Cells
                         </a>
                       </li>
                       <li>
@@ -154,9 +155,9 @@ const Documentation = () => {
                   <li>
                     <a
                       className="block text-gray-900 hover:text-gray-700 transition ease-in-out duration-150"
-                      href="#general"
+                      href="#general-commands"
                     >
-                      General
+                      General Commands
                     </a>
                   </li>
                   <li>
@@ -170,9 +171,17 @@ const Documentation = () => {
                   <li>
                     <a
                       className="block text-gray-900 hover:text-gray-700 transition ease-in-out duration-150"
-                      href="#close-an-application"
+                      href="#exit-an-application"
                     >
-                      Close an Application
+                      Exit an Application
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="block text-gray-900 hover:text-gray-700 transition ease-in-out duration-150"
+                      href="#install-an-application"
+                    >
+                      Install an Application
                     </a>
                   </li>
                   <li>
@@ -208,6 +217,48 @@ const Documentation = () => {
                 >
                   Troubleshooting Guide
                 </a>
+              </li>
+              <li className="space-y-3">
+                <a
+                  className="block text-gray-900 hover:text-gray-700 transition ease-in-out duration-150"
+                  href="#maintenance"
+                >
+                  Maintenance
+                </a>
+                <ul className="pl-3 space-y-3">
+                  <li>
+                    <a
+                      className="block text-gray-900 hover:text-gray-700 transition ease-in-out duration-150"
+                      href="#cleaning-louis"
+                    >
+                      Cleaning <span className="font-louis">louis</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="block text-gray-900 hover:text-gray-700 transition ease-in-out duration-150"
+                      href="#cleaning-connectors"
+                    >
+                      Cleaning the Connectors
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="block text-gray-900 hover:text-gray-700 transition ease-in-out duration-150"
+                      href="#replacing-battery"
+                    >
+                      Replacing the Battery
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="block text-gray-900 hover:text-gray-700 transition ease-in-out duration-150"
+                      href="#calibrating-cell"
+                    >
+                      Calibrating a Cell’s Output
+                    </a>
+                  </li>
+                </ul>
               </li>
               <li className="space-y-3">
                 <a
@@ -255,6 +306,8 @@ const Documentation = () => {
               <Operation />
               <hr />
               <TroubleshootingGuide />
+              <hr />
+              <Maintenance />
               <hr />
               <DeveloperDocumentation />
             </div>
