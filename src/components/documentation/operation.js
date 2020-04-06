@@ -150,7 +150,7 @@ const Operation = () => (
       either say <span className="italic underline">enable contractions</span>{" "}
       or <span className="italic underline">disable contractions</span>.
     </p>
-  <h3 id="install-an-application">Install an application</h3>
+    <h3 id="install-an-application">Install an application</h3>
     <p>
       All applications will be downloaded to your device automatically while you have an internet connection.
     </p>
