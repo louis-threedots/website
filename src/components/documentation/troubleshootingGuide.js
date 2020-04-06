@@ -4,7 +4,7 @@ const TroubleshootingGuide = () => (
   <div>
     <h2 id="troubleshooting-guide">Troubleshooting Guide</h2>
     <p>
-      The troubleshooting guide is classified into four sections:
+      The troubleshooting guide is classified into four sections:{" "}
       <strong>Main Controller</strong>, <strong>Cells</strong>, <strong>Apps</strong>, and <strong>FAQ</strong>.
     </p>
     <div className="my-6 border-t border-b border-gray-300 overflow-hidden relative">
@@ -20,6 +20,9 @@ const TroubleshootingGuide = () => (
           </tr>
         </thead>
         <tbody className="align-baseline">
+          <tr>
+            <td colspan="2" className="text-sm font-semibold text-gray-500 p-2 bg-gray-200"><center>Main Controller</center></td>
+          </tr>
           <tr>
             <td className="p-2 border-t border-gray-300 text-xs">
               Lectus a sapien metus erat inceptos ultrices
