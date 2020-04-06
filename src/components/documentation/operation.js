@@ -134,7 +134,7 @@ const Operation = () => (
     <h3 id="switch-on">Switch on</h3>
     <p>
       To turn <span className="font-louis">louis</span> on, press the on/off
-      switch on the left side of the main controller. Once{" "}
+      button on the left side of the main controller. Once{" "}
       <span className="font-louis">louis</span> is switched on, you will hear
       the welcoming message: "Welcome to{" "}
       <span className="font-louis">louis</span> the brailliant assistant."
@@ -148,7 +148,7 @@ const Operation = () => (
     </p>
     <h3 id="switch-off">Switch off</h3>
     <p>
-      To turn off, simply press the on/off switch while{" "}
+      To turn off, simply press the on/off button while{" "}
       <span className="font-louis">louis</span> is on. You can also switch off{" "}
       <span className="font-louis">louis</span> by saying{" "}
       <span className="italic underline">quit</span> or{" "}
