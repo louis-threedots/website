@@ -3,7 +3,7 @@ import React from "react"
 const Operation = () => (
   <div>
     <h2 id="operation">Operation</h2>
-    <h3 id="general">General Commands</h3>
+    <h3 id="general-commands">General Commands</h3>
     <p>There are several voice commands that can be used both in the main menu and in all apps, and can be used at any point:</p>
     <div className="my-6 border-t border-b border-gray-300 overflow-hidden relative">
       <table className="w-full text-left">
@@ -40,10 +40,12 @@ const Operation = () => (
               Switch off <span className="font-louis">louis</span> after confirmation. All settings will be saved.
             </td>
             <td className="p-2 border-t border-gray-300 text-xs">
-              Return from the app back to the main menu after confirmation. The app state will be saved.<br />TODO fancy 'example' style?
-              <i>Example</i>: if you are in the Learn app and wish to close it, you would say <span className="italic underline">exit</span>
-              {" "}or <span className="italic underline">quit</span>
-              {" "}to go back to the main menu.
+              Return from the app back to the main menu after confirmation. The app state will be saved.
+              <div className="text-purple-700">
+                <i>Example</i>: if you are in the Learn app and wish to close it, you would say <span className="italic underline">exit</span>
+                {" "}or <span className="italic underline">quit</span>
+                {" "}to go back to the main menu.
+              </div>
             </td>
           </tr>
           <tr>
@@ -54,9 +56,11 @@ const Operation = () => (
               Hear a list of voice command options. In the main menu, this gives you the list of apps installed.
             </td>
             <td className="p-2 border-t border-gray-300 text-xs">
-              Hear a list of voice command options. In apps, this will give you the specific commands you can give in the app at that moment.<br />
-              <i>Example</i>: if a yes-no question has just been asked, it will return the options <span className="italic underline">yes</span>
-              {" "}and <span className="italic underline">no</span>.
+              Hear a list of voice command options. In apps, this will give you the specific commands you can give in the app at that moment.
+              <div className="text-purple-700">
+                <i>Example</i>: if a yes-no question has just been asked, it will return the options <span className="italic underline">yes</span>
+                {" "}and <span className="italic underline">no</span>.
+              </div>
             </td>
           </tr>
           <tr>
@@ -68,6 +72,23 @@ const Operation = () => (
             </td>
             <td className="p-2 border-t border-gray-300 text-xs">
               Open the settings menu to change the app-specific editable settings.
+            </td>
+          </tr>
+          <tr>
+            <td className="p-2 border-t border-gray-300 text-xs italic underline">
+              open
+            </td>
+            <td className="p-2 border-t border-gray-300 text-xs">
+              Open any application of <span className="font-louis">louis</span> you want, using the keyword{" "}
+              <span className="italic underline">open</span> and the name of the application you
+              wish to open.
+              <div className="text-purple-700">
+                <i>Example</i>: let’s say you wish to open the Learn app. You would
+                use the phrase <span className="italic underline">open Learn</span> in order to do that.
+              </div>
+            </td>
+            <td className="p-2 border-t border-gray-300 text-xs">
+              -
             </td>
           </tr>
         </tbody>
@@ -89,7 +110,6 @@ const Operation = () => (
       "Welcome to <span className="font-louis">louis</span> the brailliant assistant."
     </p>
     <p>
-      TODO fancy quote style?
       If this is your first time opening <span className="font-louis">louis</span>, then you will also hear:<br />
       "You can get more information and instructions by saying <span className="italic underline">help</span>.<br />
       You can quit <span className="font-louis">louis</span> and apps at any time by saying <span className="italic underline">quit</span> or <span className="italic underline">exit</span>.<br />
@@ -111,7 +131,7 @@ const Operation = () => (
       wish to open. For example, let’s say you wish to open the Learn app. You would
       use the phrase <span className="italic underline">open Learn</span> in order to do that.
     </p>
-    <h3 id="close-an-application">Close an Application</h3>
+    <h3 id="exit-an-application">Exit an Application</h3>
     <p>
       To exit an app back to the main menu, you need to use either one of the
       keywords <span className="italic underline">exit</span> or{" "}
@@ -120,6 +140,11 @@ const Operation = () => (
       <span className="italic underline">exit</span> or{" "}
       <span className="italic underline">quit</span> to go back to the main
       menu.
+    </p>
+    <h3 id="install-an-application">Install an Application</h3>
+    <p>
+      All applications will be downloaded to your device automatically
+      while you have an internet connection.
     </p>
     <h3 id="help">Help</h3>
     <p>
