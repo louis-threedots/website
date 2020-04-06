@@ -38,7 +38,16 @@ const Overview = () => (
     </p>
     <h4 id="whats-included">What's Included?</h4>
     <p>Inside the box you will find the following main components:</p>
-    TODO
+    <table style="table-layout: fixed " width="600px">
+      <tr>
+        <td><img style="width: 100%" src="https://raw.githubusercontent.com/louis-threedots/website/master/src/images/main_controller.png" /></td>
+        <td><img style="width: 100%" src="https://raw.githubusercontent.com/louis-threedots/website/master/src/images/cell.png" /></td>
+      </tr>
+      <tr>
+        <td><p style="padding: 10px" >This Main Controller unit</p></td>
+        <td><p style="padding: 10px" >One or more Refreshable Cells, depending upon the specific package of louis that you purchased.</p></td>
+      </tr>
+    </table>
     <p>You should also find the following accessories:</p>
     <table style="table-layout: fixed " width="600px">
       <tr>
@@ -61,13 +70,14 @@ const Overview = () => (
     <p>
       The controller is the brains of <span className="font-louis">louis</span>:
       all the other parts connect to and interface with it. It should be
-      positioned such that TODO.
+      positioned such that the charging port and button are on the left side,
+      with the speaker and microphone grilles facing upwards.
     </p>
     <p>
       On the top of the controller there is a grille for the speaker and
       microphone. The speaker and microphone will be the main way you interact
       with <span className="font-louis">louis</span> whilst you learn braille.
-      On the left you will find a power switch. On the back there is a charging
+      On the left you will find a power switch and a charging
       port which the charging cable can be attached to. On the right there is a
       cell port to which refreshable cells can be attached.
     </p>
@@ -122,8 +132,7 @@ const Overview = () => (
     </p>
     <h4 id="selection-of-a-particular-cell">Selection of a Particular Cell</h4>
     <p>
-      If you need to select a specific cell, for instance if{" "}
-      {"<example of why you would need to select a specific cell TODO>"}, then
+      If you need to select a specific cell then
       you can do so by pressing the button above the reading window on the
       desired cell.
     </p>
