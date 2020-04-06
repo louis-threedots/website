@@ -88,7 +88,7 @@ const TroubleshootingGuide = () => (
           </tr>
           <tr>
             <td className="p-2 border-t border-gray-300 text-xs">
-              The battery is not charging or is taking longer to charge than expected.
+              The battery is not charging or is taking longer to charge than expected
             </td>
             <td className="p-2 border-t border-gray-300 text-xs">
               Make sure you are using the charger supplied with the device.

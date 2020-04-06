@@ -114,13 +114,13 @@ const Operation = () => (
               </div>
             </td>
             <td className="p-2 border-t border-gray-300 text-xs">
-              -
+              <i>- Not Applicable -</i>
             </td>
           </tr>
         </tbody>
       </table>
     </div>
-    <h3 id="general">
+    <h3 id="charge-louis">
       Charge <span className="font-louis">louis</span>
     </h3>
     <p>
@@ -131,7 +131,7 @@ const Operation = () => (
       <span className="font-louis">louis</span>. <strong>Important</strong>: you
       do not need to charge the cells, only the main controller.
     </p>
-    <h3 id="general">Switch on</h3>
+    <h3 id="switch-on">Switch on</h3>
     <p>
       To turn <span className="font-louis">louis</span> on, press the on/off
       switch on the left side of the main controller. Once{" "}
@@ -146,7 +146,7 @@ const Operation = () => (
       You can hear your voice command options by saying <span className="italic underline">options</span>.<br />
       You can change settings by saying <span className="italic underline">settings</span>."
     </p>
-    <h3 id="general">Switch off</h3>
+    <h3 id="switch-off">Switch off</h3>
     <p>
       To turn off, simply press the on/off switch while{" "}
       <span className="font-louis">louis</span> is on. You can also switch off{" "}
@@ -214,11 +214,6 @@ const Operation = () => (
       <span className="italic underline">contractions</span>. Then you can
       either say <span className="italic underline">enable contractions</span>{" "}
       or <span className="italic underline">disable contractions</span>.
-    </p>
-    <h3 id="install-an-application">Install an application</h3>
-    <p>
-      All applications will be downloaded to your device automatically while you
-      have an internet connection.
     </p>
   </div>
 )

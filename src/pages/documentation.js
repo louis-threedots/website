@@ -131,7 +131,7 @@ const Documentation = () => {
                       className="block text-gray-900 hover:text-gray-700 transition ease-in-out duration-150"
                       href="#setup-the-hardware"
                     >
-                      Setup the Hardware
+                      Set up the Hardware
                     </a>
                   </li>
                   <li>
@@ -139,7 +139,7 @@ const Documentation = () => {
                       className="block text-gray-900 hover:text-gray-700 transition ease-in-out duration-150"
                       href="#setup-the-software"
                     >
-                      Setup the Software
+                      Set up the Software
                     </a>
                   </li>
                 </ul>
@@ -158,6 +158,30 @@ const Documentation = () => {
                       href="#general-commands"
                     >
                       General Commands
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="block text-gray-900 hover:text-gray-700 transition ease-in-out duration-150"
+                      href="#charge-louis"
+                    >
+                      Charge <span className="font-louis">louis</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="block text-gray-900 hover:text-gray-700 transition ease-in-out duration-150"
+                      href="#switch-on"
+                    >
+                      Switch on
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      className="block text-gray-900 hover:text-gray-700 transition ease-in-out duration-150"
+                      href="#switch-off"
+                    >
+                      Switch off
                     </a>
                   </li>
                   <li>
