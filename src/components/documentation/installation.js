@@ -17,7 +17,7 @@ const Installation = () => (
       </div>
       Installation
     </h2>
-    <h3 id="setup-the-hardware">Setup the Hardware</h3>
+    <h3 id="setup-the-hardware">Set up the Hardware</h3>
     <p>
       Place the main controller in a way such that the button is on the left
       side. You can distinguish the top of the controller, by feeling a path on
@@ -26,7 +26,7 @@ const Installation = () => (
       correctly aligned, you need to feel the button above the braille pins. To
       connect subsequent cells, follow the same process.
     </p>
-    <h3 id="setup-the-software">Setup the Software</h3>
+    <h3 id="setup-the-software">Set up the Software</h3>
     TODO
     <p>
       - Talk about the wifi and anything else needed.
