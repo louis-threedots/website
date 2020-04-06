@@ -126,7 +126,7 @@ const Operation = () => (
     <p>
       Once you hear the phrase: "low battery", then that means that{" "}
       <span className="font-louis">louis</span> needs recharging. You can find
-      the charging port below the on/off switch on the main controller. Insert
+      the charging port beside the on/off switch on the main controller. Insert
       the charging cable to recharge the battery of{" "}
       <span className="font-louis">louis</span>. <strong>Important</strong>: you
       do not need to charge the cells, only the main controller.
