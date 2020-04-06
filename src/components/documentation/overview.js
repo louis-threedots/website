@@ -63,7 +63,7 @@ const Overview = () => {
       </p>
       <h4 id="whats-included">What's Included?</h4>
       <p>Inside the box you will find the following main components:</p>
-      <table width="600px">
+      <table className="w-full">
         <tr>
           <td>
             <img src="https://raw.githubusercontent.com/louis-threedots/website/master/src/images/main_controller.png" />
@@ -85,18 +85,18 @@ const Overview = () => {
         </tr>
       </table>
       <p>You should also find the following accessories:</p>
-      <table width="600px">
+      <table className="w-full">
         <tr>
-          <td>
+          <td className="p-2">
             <img src="https://raw.githubusercontent.com/louis-threedots/website/master/src/images/guide.png" />
           </td>
-          <td>
+          <td className="p-2">
             <img src="https://raw.githubusercontent.com/louis-threedots/website/master/src/images/cable.png" />
           </td>
-          <td>
+          <td className="p-2">
             <img src="https://raw.githubusercontent.com/louis-threedots/website/master/src/images/license.png" />
           </td>
-          <td>
+          <td className="p-2">
             <img src="https://raw.githubusercontent.com/louis-threedots/website/master/src/images/legal.png" />
           </td>
         </tr>
