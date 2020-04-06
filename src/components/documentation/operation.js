@@ -22,8 +22,8 @@ const Operation = () => (
         </thead>
         <tbody className="align-baseline">
           <tr>
-            <td className="p-2 border-t border-gray-300 text-xs italic underline">
-              help or instructions
+            <td className="p-2 border-t border-gray-300 text-xs">
+              <span className="italic underline">help</span> or <span className="italic underline">instructions</span>
             </td>
             <td className="p-2 border-t border-gray-300 text-xs">
               Hear instructions of how to navigate <span className="font-louis">louis</span>, including this list of general voice commands.
@@ -33,8 +33,8 @@ const Operation = () => (
             </td>
           </tr>
           <tr>
-            <td className="p-2 border-t border-gray-300 text-xs italic underline">
-              quit or exit
+            <td className="p-2 border-t border-gray-300 text-xs">
+              <span className="italic underline">quit</span> or <span className="italic underline">exit</span>
             </td>
             <td className="p-2 border-t border-gray-300 text-xs">
               Switch off <span className="font-louis">louis</span> after confirmation. All settings will be saved.
