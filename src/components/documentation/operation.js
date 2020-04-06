@@ -152,7 +152,7 @@ const Operation = () => (
     </p>
   <h3 id="install-an-application">Install an application</h3>
     <p>
-      All applications will be downloaded to your device automatically while yu have an internet connection.
+      All applications will be downloaded to your device automatically while you have an internet connection.
     </p>
   </div>
 )
