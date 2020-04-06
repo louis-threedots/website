@@ -40,7 +40,20 @@ const Overview = () => (
     <p>Inside the box you will find the following main components:</p>
     TODO
     <p>You should also find the following accessories:</p>
-    TODO
+    <table style="table-layout: fixed " width="600px">
+      <tr>
+        <td><img style="width: 100%" src="https://raw.githubusercontent.com/louis-threedots/website/master/src/images/guide.png" /></td>
+        <td><img style="width: 100%" src="https://raw.githubusercontent.com/louis-threedots/website/master/src/images/cable.png" /></td>
+        <td><img style="width: 100%" src="https://raw.githubusercontent.com/louis-threedots/website/master/src/images/license.png" /></td>
+        <td><img style="width: 100%" src="https://raw.githubusercontent.com/louis-threedots/website/master/src/images/legal.png" /></td>
+      </tr>
+      <tr>
+        <td><p style="padding: 10px" >This user guide</p></td>
+        <td><p style="padding: 10px" >A UK-mains charging cable</p></td>
+        <td><p style="padding: 10px" >Software licences</p></td>
+        <td><p style="padding: 10px" >Warrenty and disposal information</p></td>
+      </tr>
+    </table>
     <h3 id="the-main-controller">The Main Controller</h3>
     {
       "<labelled diagram of the main controller showing features described below TODO>"
