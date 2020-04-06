@@ -53,7 +53,7 @@ const TroubleshootingGuide = () => (
             </td>
             <td className="p-2 border-t border-gray-300 text-xs">
               Ensure that the speaker for speech output has not been covered.
-              The speaker is located on the top of the main controller (see diagram in section TODO).
+              The speaker is located on the top of the main controller (see <a href="#the-main-controller">diagram</a> in the Overview section).
             </td>
           </tr>
           <tr>
@@ -72,9 +72,9 @@ const TroubleshootingGuide = () => (
             </td>
             <td className="p-2 border-t border-gray-300 text-xs">
               Ensure that <span className="font-louis">louis</span> has been powered on,
-              using the switch on the left of the main controller (see diagram in section TODO).
+              using the switch on the left of the main controller (see <a href="#the-main-controller">diagram</a> in the Overview section).
               If <span className="font-louis">louis</span> still fails to respond, it may be out
-              of power and need charging. Connect the power cable to louis as described in section TODO.
+              of power and need charging. Connect the power cable to louis as described in hte <a href="#operation">operation section</a>.
             </td>
           </tr>
           <tr>
@@ -105,7 +105,7 @@ const TroubleshootingGuide = () => (
             <td className="p-2 border-t border-gray-300 text-xs">
               Check the connection between the cell and the rest of <span className="font-louis">louis</span> by disconnecting
               and reconnecting the cell. In rare occasions, you may also need to clean the contacts on the cell - the process
-              for doing this is described in the Maintenance section (TODO).
+              for doing this is described in the <a href="#maintenance" >Maintenance section</a>.
             </td>
           </tr>
           <tr>
@@ -113,7 +113,7 @@ const TroubleshootingGuide = () => (
               A cell is producing the wrong braille output
             </td>
             <td className="p-2 border-t border-gray-300 text-xs">
-              To calibrate a cell, please follow the instructions in the “Calibrating a Cell’s Output” subsection in the “Maintenance” section (TODO).
+              To calibrate a cell, please follow the instructions in the “Calibrating a Cell’s Output” subsection in the <a href="#maintenance" >Maintenance section</a>.
             </td>
           </tr>
           <tr>
