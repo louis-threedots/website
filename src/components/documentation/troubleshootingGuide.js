@@ -1,3 +1,4 @@
+import { Link } from "gatsby"
 import React from "react"
 
 const TroubleshootingGuide = () => (
@@ -19,31 +20,39 @@ const TroubleshootingGuide = () => (
     </h2>
     <p>
       The troubleshooting guide is classified into four sections:{" "}
-      <strong>Main Controller</strong>, <strong>Cells</strong>, <strong>Apps</strong>, and <strong>Frequently Asked Questions</strong>.
+      <strong>Main Controller</strong>, <strong>Cells</strong>,{" "}
+      <strong>Apps</strong>, and <strong>Frequently Asked Questions</strong>.
     </p>
     <div className="my-6 border-t border-b border-gray-300 overflow-hidden relative">
       <table className="w-full text-left">
         <thead>
           <tr>
+            <th className="text-sm font-semibold text-gray-700 p-2 bg-gray-100 w-1/5">
+              Section
+            </th>
             <th className="text-sm font-semibold text-gray-700 p-2 bg-gray-100 w-2/5">
               Issues
             </th>
-            <th className="text-sm font-semibold text-gray-700 p-2 bg-gray-100" style={{textAlign: 'right'}}>
+            <th className="text-sm font-semibold text-gray-700 p-2 bg-gray-100">
               Solutions
             </th>
           </tr>
         </thead>
         <tbody className="align-baseline">
           <tr>
-            <td colspan="2" className="text-sm font-semibold text-gray-1000 p-2 bg-gray-200"><center>Main Controller</center></td>
-          </tr>
-          <tr>
-            <td className="p-2 border-t border-gray-300 text-xs">
-              <span className="font-louis">louis</span> is not responding to my voice commands
+            <td
+              rowspan="6"
+              className="p-2 text-sm font-medium p-2 border border-r border-gray-300"
+            >
+              Main Controller
             </td>
             <td className="p-2 border-t border-gray-300 text-xs">
-              Voice commands work best in a quiet area with little external noise
-              (such as other people, televisions, air-conditioning units),
+              <span className="font-louis">louis</span> is not responding to my
+              voice commands
+            </td>
+            <td className="p-2 border-t border-gray-300 text-xs">
+              Voice commands work best in a quiet area with little external
+              noise (such as other people, televisions, air-conditioning units),
               and when you speak slowly and clearly.
             </td>
           </tr>
@@ -53,7 +62,9 @@ const TroubleshootingGuide = () => (
             </td>
             <td className="p-2 border-t border-gray-300 text-xs">
               Ensure that the speaker for speech output has not been covered.
-              The speaker is located on the top of the main controller (see <a href="#the-main-controller">diagram</a> in the Overview section).
+              The speaker is located on the top of the main controller (see{" "}
+              <a href="#the-main-controller">diagram</a> in the Overview
+              section).
             </td>
           </tr>
           <tr>
@@ -61,9 +72,10 @@ const TroubleshootingGuide = () => (
               The volume is too low or too loud
             </td>
             <td className="p-2 border-t border-gray-300 text-xs">
-              Use the voice commands, <span className="italic underline">increase volume</span>{" "}
-              and <span className="italic underline">decrease volume</span>,
-              to adjust the loudness of the speech output that suits you.
+              Use the voice commands,{" "}
+              <span className="italic underline">increase volume</span> and{" "}
+              <span className="italic underline">decrease volume</span>, to
+              adjust the loudness of the speech output that suits you.
             </td>
           </tr>
           <tr>
@@ -71,41 +83,53 @@ const TroubleshootingGuide = () => (
               <span className="font-louis">louis</span> is not responding at all
             </td>
             <td className="p-2 border-t border-gray-300 text-xs">
-              Ensure that <span className="font-louis">louis</span> has been powered on,
-              using the switch on the left of the main controller (see <a href="#the-main-controller">diagram</a> in the Overview section).
-              If <span className="font-louis">louis</span> still fails to respond, it may be out
-              of power and need charging. Connect the power cable to louis as described in hte <a href="#operation">operation section</a>.
+              Ensure that <span className="font-louis">louis</span> has been
+              powered on, using the switch on the left of the main controller
+              (see <a href="#the-main-controller">diagram</a> in the Overview
+              section). If <span className="font-louis">louis</span> still fails
+              to respond, it may be out of power and need charging. Connect the
+              power cable to louis as described in hte{" "}
+              <a href="#operation">operation section</a>.
             </td>
           </tr>
           <tr>
             <td className="p-2 border-t border-gray-300 text-xs">
-              <span className="font-louis">louis</span> isn’t connecting to my WiFi network
+              <span className="font-louis">louis</span> isn’t connecting to my
+              WiFi network
             </td>
             <td className="p-2 border-t border-gray-300 text-xs">
-              Try restarting <span className="font-louis">louis</span> then perform the WiFi connection instructions again.
-              If the problem persists, try restarting your WiFi router or contacting your internet provider.
+              Try restarting <span className="font-louis">louis</span> then
+              perform the WiFi connection instructions again. If the problem
+              persists, try restarting your WiFi router or contacting your
+              internet provider.
             </td>
           </tr>
           <tr>
             <td className="p-2 border-t border-gray-300 text-xs">
-              The battery is not charging or is taking longer to charge than expected
+              The battery is not charging or is taking longer to charge than
+              expected
             </td>
             <td className="p-2 border-t border-gray-300 text-xs">
-              Make sure you are using the charger supplied with the device.
-              If the battery is charging, the LED indicator glows red.
+              Make sure you are using the charger supplied with the device. If
+              the battery is charging, the LED indicator glows red.
             </td>
           </tr>
           <tr>
-            <td colspan="2" className="text-sm font-semibold text-gray-1000 p-2 bg-gray-200"><center>Cells</center></td>
-          </tr>
-          <tr>
+            <td
+              rowspan="2"
+              className="p-2 text-sm font-medium p-2 border border-r border-gray-300"
+            >
+              Cells
+            </td>
             <td className="p-2 border-t border-gray-300 text-xs">
               A cell is not working or only working intermittently
             </td>
             <td className="p-2 border-t border-gray-300 text-xs">
-              Check the connection between the cell and the rest of <span className="font-louis">louis</span> by disconnecting
-              and reconnecting the cell. In rare occasions, you may also need to clean the contacts on the cell - the process
-              for doing this is described in the <a href="#maintenance" >Maintenance section</a>.
+              Check the connection between the cell and the rest of{" "}
+              <span className="font-louis">louis</span> by disconnecting and
+              reconnecting the cell. In rare occasions, you may also need to
+              clean the contacts on the cell - the process for doing this is
+              described in the <a href="#maintenance">Maintenance section</a>.
             </td>
           </tr>
           <tr>
@@ -113,18 +137,26 @@ const TroubleshootingGuide = () => (
               A cell is producing the wrong braille output
             </td>
             <td className="p-2 border-t border-gray-300 text-xs">
-              To calibrate a cell, please follow the instructions in the “Calibrating a Cell’s Output” subsection in the <a href="#maintenance" >Maintenance section</a>.
+              To calibrate a cell, please follow the instructions in the
+              “Calibrating a Cell’s Output” subsection in the{" "}
+              <a href="#maintenance">Maintenance section</a>.
             </td>
           </tr>
           <tr>
-            <td colspan="2" className="text-sm font-semibold text-gray-1000 p-2 bg-gray-200"><center>Apps</center></td>
-          </tr>
-          <tr>
+            <td
+              rowspan="2"
+              className="p-2 text-sm font-medium p-2 border border-r border-gray-300"
+            >
+              Apps
+            </td>
             <td className="p-2 border-t border-gray-300 text-xs">
               I don't know how to use an app
             </td>
             <td className="p-2 border-t border-gray-300 text-xs">
-              Whilst inside an app, use the voice command <span className="italic underline">instructions</span> or <span className="italic underline">help</span> to hear a guide on how to use the app.
+              Whilst inside an app, use the voice command{" "}
+              <span className="italic underline">instructions</span> or{" "}
+              <span className="italic underline">help</span> to hear a guide on
+              how to use the app.
             </td>
           </tr>
           <tr>
@@ -132,21 +164,31 @@ const TroubleshootingGuide = () => (
               An app won’t open or shut down unexpectedly
             </td>
             <td className="p-2 border-t border-gray-300 text-xs">
-              Try restarting <span className="font-louis">louis</span>, if the problem persists uninstall it in the settings menu,
-              then it will be reinstalled automatically.
+              Try restarting <span className="font-louis">louis</span>, if the
+              problem persists uninstall it in the settings menu, then it will
+              be reinstalled automatically.
             </td>
           </tr>
           <tr>
-            <td colspan="2" className="text-sm font-semibold text-gray-1000 p-2 bg-gray-200"><center>Frequently Asked Questions</center></td>
-          </tr>
-          <tr>
-            <td className="p-2 border-t border-gray-300 text-xs">
-              Can <span className="font-louis">louis</span> work without access to the internet?
+            <td
+              rowspan="4"
+              className="p-2 text-sm font-medium p-2 border border-r border-gray-300"
+            >
+              Frequently Asked Questions
             </td>
             <td className="p-2 border-t border-gray-300 text-xs">
-              Yes, if you don’t have internet access, the core features of <span className="font-louis">louis</span> will continue to work as normal.<br /><br />
-              However, some apps require access to the internet in order to operate fully or at all, and these apps will therefore
-              not work without an internet connection.
+              Can <span className="font-louis">louis</span> work without access
+              to the internet?
+            </td>
+            <td className="p-2 border-t border-gray-300 text-xs">
+              Yes, if you don’t have internet access, the core features of{" "}
+              <span className="font-louis">louis</span> will continue to work as
+              normal.
+              <br />
+              <br />
+              However, some apps require access to the internet in order to
+              operate fully or at all, and these apps will therefore not work
+              without an internet connection.
             </td>
           </tr>
           <tr>
@@ -154,15 +196,20 @@ const TroubleshootingGuide = () => (
               How do I install additional apps?
             </td>
             <td className="p-2 border-t border-gray-300 text-xs">
-              You don’t have to at this time, the new apps are installed automatically when <span className="font-louis">louis</span> is connected on the internet.
+              You don’t have to at this time, the new apps are installed
+              automatically when <span className="font-louis">louis</span> is
+              connected on the internet.
             </td>
           </tr>
           <tr>
             <td className="p-2 border-t border-gray-300 text-xs">
-              Can <span className="font-louis">louis</span> support languages other than English?
+              Can <span className="font-louis">louis</span> support languages
+              other than English?
             </td>
             <td className="p-2 border-t border-gray-300 text-xs">
-              At this time, English is the only supported language. We welcome feedback as to which other languages our users would like to see supported!
+              At this time, English is the only supported language. We welcome
+              feedback as to which other languages our users would like to see
+              supported!
             </td>
           </tr>
           <tr>
@@ -170,16 +217,22 @@ const TroubleshootingGuide = () => (
               What’s the limit of the number of cells you can add?
             </td>
             <td className="p-2 border-t border-gray-300 text-xs">
-            Currently louis supports a maximum of 255 cells. We’re always interested to hear the ways in which our customers are using{" "}
-            <span className="font-louis">louis</span> - if this is a barrier, please reach out to us!
+              Currently louis supports a maximum of 255 cells. We’re always
+              interested to hear the ways in which our customers are using{" "}
+              <span className="font-louis">louis</span> - if this is a barrier,
+              please reach out to us!
             </td>
           </tr>
         </tbody>
       </table>
     </div>
     <p>
-      If you find any unexpected issues with <span className="font-louis">louis</span> or you are unable to diagnose it using the above troubleshooting guide,
-      please don’t hesitate to contact our Technical Support for technical assistance at <a href={"mailto:louisHelp@threedots.com"}>louisHelp@threedots.com</a></p>
+      If you find any unexpected issues with{" "}
+      <span className="font-louis">louis</span> or you are unable to diagnose it
+      using the above troubleshooting guide, please don’t hesitate to contact
+      our Technical Support for technical assistance at{" "}
+      <Link to="/comments">support@threedots.com</Link>.
+    </p>
   </div>
 )
 

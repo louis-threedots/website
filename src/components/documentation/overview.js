@@ -1,28 +1,37 @@
+import { graphql, useStaticQuery } from "gatsby"
 import React from "react"
 
 const Overview = () => {
-  // const data = useStaticQuery(graphql`
-  //   query {
-  //     mainController: file(relativePath: { eq: "main_controller.png" }) {
-  //       publicURL
-  //     }
-  //     cell: file(relativePath: { eq: "cell.png" }) {
-  //       publicURL
-  //     }
-  //     louisDots: file(relativePath: { eq: "louisdots-black.png" }) {
-  //       publicURL
-  //     }
-  //     whiteLouisDots: file(relativePath: { eq: "louisdots-white.png" }) {
-  //       publicURL
-  //     }
-  //     louis: file(relativePath: { eq: "louis-black.png" }) {
-  //       publicURL
-  //     }
-  //     whiteLouis: file(relativePath: { eq: "louis-white.png" }) {
-  //       publicURL
-  //     }
-  //   }
-  // `)
+  const data = useStaticQuery(graphql`
+    query {
+      mainController: file(relativePath: { eq: "main_controller.png" }) {
+        publicURL
+      }
+      cell: file(relativePath: { eq: "cell.png" }) {
+        publicURL
+      }
+      guide: file(relativePath: { eq: "guide.png" }) {
+        publicURL
+      }
+      cable: file(relativePath: { eq: "cable.png" }) {
+        publicURL
+      }
+      license: file(relativePath: { eq: "license.png" }) {
+        publicURL
+      }
+      legal: file(relativePath: { eq: "legal.png" }) {
+        publicURL
+      }
+      mainControllerDiagram: file(
+        relativePath: { eq: "main_controller_diagram.png" }
+      ) {
+        publicURL
+      }
+      cellDiagram: file(relativePath: { eq: "cell_diagram.png" }) {
+        publicURL
+      }
+    }
+  `)
 
   return (
     <div>
@@ -63,62 +72,95 @@ const Overview = () => {
       </p>
       <h4 id="whats-included">What's Included?</h4>
       <p>Inside the box you will find the following main components:</p>
-      <table className="w-full">
-        <tr>
-          <td>
-            <img src="https://raw.githubusercontent.com/louis-threedots/website/master/src/images/main_controller.png" />
-          </td>
-          <td>
-            <img src="https://raw.githubusercontent.com/louis-threedots/website/master/src/images/cell.png" />
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <p>This Main Controller unit</p>
-          </td>
-          <td>
-            <p>
-              One or more Refreshable Cells, depending upon the specific package
-              of louis that you purchased.
-            </p>
-          </td>
-        </tr>
-      </table>
+      <div className="grid gap-4 my-4 grid-cols-1 md:grid-cols-2">
+        <div class="bg-white overflow-hidden shadow rounded-lg flex flex-col">
+          <div className="flex-1">
+            <img
+              src={data.mainController.publicURL}
+              className="object-scale-down object-center w-full h-full"
+            />
+          </div>
+          <div class="border-t border-gray-200 px-4 py-4 sm:px-6 flex-shrink bg-white">
+            This Main Controller unit
+          </div>
+        </div>
+        <div class="bg-white overflow-hidden shadow rounded-lg flex flex-col">
+          <div className="flex-1">
+            <img
+              src={data.cell.publicURL}
+              className="object-scale-down object-center w-full h-full"
+            />
+          </div>
+          <div class="border-t border-gray-200 px-4 py-4 sm:px-6 flex-shrink bg-white">
+            A Refreshable Cell
+          </div>
+        </div>
+      </div>
       <p>You should also find the following accessories:</p>
-      <table className="w-full">
-        <tr>
-          <td className="p-2">
-            <img src="https://raw.githubusercontent.com/louis-threedots/website/master/src/images/guide.png" />
-          </td>
-          <td className="p-2">
-            <img src="https://raw.githubusercontent.com/louis-threedots/website/master/src/images/cable.png" />
-          </td>
-          <td className="p-2">
-            <img src="https://raw.githubusercontent.com/louis-threedots/website/master/src/images/license.png" />
-          </td>
-          <td className="p-2">
-            <img src="https://raw.githubusercontent.com/louis-threedots/website/master/src/images/legal.png" />
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <p>This user guide</p>
-          </td>
-          <td>
-            <p>A UK-mains charging cable</p>
-          </td>
-          <td>
-            <p>Software licences</p>
-          </td>
-          <td>
-            <p>Warrenty and disposal information</p>
-          </td>
-        </tr>
-      </table>
+      <div className="grid gap-4 my-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
+        <div class="bg-white overflow-hidden shadow rounded-lg flex flex-col">
+          <div className="flex-1">
+            <img
+              src={data.guide.publicURL}
+              className="object-cover object-center w-full h-full"
+              style={{
+                marginTop: 0,
+                marginBottom: 0,
+              }}
+            />
+          </div>
+          <div class="border-t border-gray-200 px-4 py-4 sm:px-6 flex-shrink bg-white">
+            This user guide
+          </div>
+        </div>
+        <div class="bg-white overflow-hidden shadow rounded-lg flex flex-col">
+          <div className="flex-1">
+            <img
+              src={data.cable.publicURL}
+              className="object-cover object-center w-full h-full"
+              style={{
+                marginTop: 0,
+                marginBottom: 0,
+              }}
+            />
+          </div>
+          <div class="border-t border-gray-200 px-4 py-4 sm:px-6 flex-shrink bg-white">
+            A UK-mains charging cable
+          </div>
+        </div>
+        <div class="bg-white overflow-hidden shadow rounded-lg flex flex-col">
+          <div className="flex-1">
+            <img
+              src={data.license.publicURL}
+              className="object-cover object-center w-full h-full"
+              style={{
+                marginTop: 0,
+                marginBottom: 0,
+              }}
+            />
+          </div>
+          <div class="border-t border-gray-200 px-4 py-4 sm:px-6 flex-shrink bg-white">
+            Software licences
+          </div>
+        </div>
+        <div class="bg-white overflow-hidden shadow rounded-lg flex flex-col">
+          <div className="flex-1">
+            <img
+              src={data.legal.publicURL}
+              className="object-cover object-center w-full h-full"
+              style={{
+                marginTop: 0,
+                marginBottom: 0,
+              }}
+            />
+          </div>
+          <div class="border-t border-gray-200 px-4 py-4 sm:px-6 flex-shrink bg-white">
+            Warrenty and disposal information
+          </div>
+        </div>
+      </div>
       <h3 id="the-main-controller">The Main Controller</h3>
-      {
-        <img src="https://raw.githubusercontent.com/louis-threedots/website/master/src/images/main_controller_diagram.png" />
-      }
+      <img src={data.mainControllerDiagram.publicURL} />
       <p>
         The controller is the brains of{" "}
         <span className="font-louis">louis</span>: all the other parts connect
@@ -135,7 +177,7 @@ const Overview = () => {
         which refreshable cells can be attached.
       </p>
       <h3 id="refreshable-cells">Refreshable Cells</h3>
-      <img src="https://raw.githubusercontent.com/louis-threedots/website/master/src/images/cell_diagram.png" />
+      <img src={data.cellDiagram.publicURL} />
       <p>
         Cells are the way that you learn braille with{" "}
         <span className="font-louis">louis</span>. Each cell contains a

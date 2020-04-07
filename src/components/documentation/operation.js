@@ -63,11 +63,13 @@ const Operation = () => (
               confirmation. All settings will be saved.
             </td>
             <td className="p-2 border-t border-gray-300 text-xs">
-              Return from the app back to the main menu after confirmation. The app state will be saved.
+              Return from the app back to the main menu after confirmation. The
+              app state will be saved.
               <div className="text-purple-700">
-                <i>Example</i>: if you are in the Learn app and wish to close it, you would say <span className="italic underline">exit</span>
-                {" "}or <span className="italic underline">quit</span>
-                {" "}to go back to the main menu.
+                <i>Example</i>: if you are in the Learn app and wish to close
+                it, you would say <span className="italic underline">exit</span>{" "}
+                or <span className="italic underline">quit</span> to go back to
+                the main menu.
               </div>
             </td>
           </tr>
@@ -80,10 +82,13 @@ const Operation = () => (
               you the list of apps installed.
             </td>
             <td className="p-2 border-t border-gray-300 text-xs">
-              Hear a list of voice command options. In apps, this will give you the specific commands you can give in the app at that moment.
+              Hear a list of voice command options. In apps, this will give you
+              the specific commands you can give in the app at that moment.
               <div className="text-purple-700">
-                <i>Example</i>: if a yes-no question has just been asked, it will return the options <span className="italic underline">yes</span>
-                {" "}and <span className="italic underline">no</span>.
+                <i>Example</i>: if a yes-no question has just been asked, it
+                will return the options{" "}
+                <span className="italic underline">yes</span> and{" "}
+                <span className="italic underline">no</span>.
               </div>
             </td>
           </tr>
@@ -105,12 +110,15 @@ const Operation = () => (
               open
             </td>
             <td className="p-2 border-t border-gray-300 text-xs">
-              Open any application of <span className="font-louis">louis</span> you want, using the keyword{" "}
-              <span className="italic underline">open</span> and the name of the application you
-              wish to open.
+              Open any application of <span className="font-louis">louis</span>{" "}
+              you want, using the keyword{" "}
+              <span className="italic underline">open</span> and the name of the
+              application you wish to open.
               <div className="text-purple-700">
-                <i>Example</i>: let’s say you wish to open the Learn app. You would
-                use the phrase <span className="italic underline">open Learn</span> in order to do that.
+                <i>Example</i>: let’s say you wish to open the Learn app. You
+                would use the phrase{" "}
+                <span className="italic underline">open Learn</span> in order to
+                do that.
               </div>
             </td>
             <td className="p-2 border-t border-gray-300 text-xs">
@@ -140,12 +148,20 @@ const Operation = () => (
       <span className="font-louis">louis</span> the brailliant assistant."
     </p>
     <p>
-      If this is your first time opening <span className="font-louis">louis</span>, then you will also hear:<br />
-      "You can get more information and instructions by saying <span className="italic underline">help</span>.<br />
-      You can quit <span className="font-louis">louis</span> and apps at any time by saying <span className="italic underline">quit</span> or <span className="italic underline">exit</span>.<br />
-      You can hear your voice command options by saying <span className="italic underline">options</span>.<br />
-      You can change settings by saying <span className="italic underline">settings</span>."
+      If this is your first time opening{" "}
+      <span className="font-louis">louis</span>, then you will also hear:
     </p>
+    <blockquote>
+      You can get more information and instructions by saying{" "}
+      <span className="underline">help</span>.<br />
+      You can quit <span className="font-louis">louis</span> and apps at any
+      time by saying <span className="underline">quit</span> or{" "}
+      <span className="underline">exit</span>.<br />
+      You can hear your voice command options by saying{" "}
+      <span className="underline">options</span>.<br />
+      You can change settings by saying{" "}
+      <span className="underline">settings</span>.
+    </blockquote>
     <h3 id="switch-off">Switch off</h3>
     <p>
       To turn off, simply press the on/off button while{" "}
@@ -176,8 +192,8 @@ const Operation = () => (
     </p>
     <h3 id="install-an-application">Install an Application</h3>
     <p>
-      All applications will be downloaded to your device automatically
-      while you have an internet connection.
+      All applications will be downloaded to your device automatically while you
+      have an internet connection.
     </p>
     <h3 id="help">Help</h3>
     <p>
