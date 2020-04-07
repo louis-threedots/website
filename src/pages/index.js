@@ -1,10 +1,6 @@
 import { Link } from "gatsby"
-import STL from "raw-loader!../../static/louis.stl"
 import React from "react"
-import { STLViewer } from "react-stl-obj-viewer"
 import SEO from "../components/seo"
-
-console.log(typeof STL)
 
 const IndexPage = () => (
   <>
@@ -56,16 +52,15 @@ const IndexPage = () => (
       </div>
     </div>
 
-    <STLViewer
+    {/* <STLViewer
       width={400}
       height={400}
-      lights={[1, 1, 1]}
       modelColor="#4c51bf"
       backgroundColor="#EAEAEA"
       rotate={true}
       orbitControls={true}
       url={"/louis.stl"}
-    />
+    /> */}
   </>
 )
 

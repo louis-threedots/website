@@ -23,7 +23,7 @@ const Documentation = () => {
         </h1>
         <div className="mt-6 border-t border-gray-200 grid grid-cols-1 lg:grid-cols-12 gap-12 pt-8 lg:gap-6">
           <div className="lg:col-span-4">
-            <ul className="sticky top-8 space-y-5 text-sm leading-5 text-gray-900 font-medium">
+            <ul className="sticky top-8 space-y-5 text-sm leading-5 text-gray-900 font-medium lg:mr-10 lg:overflow-y-auto toc">
               <li className="space-y-3">
                 <a
                   className="block text-gray-900 hover:text-gray-700 transition ease-in-out duration-150"
