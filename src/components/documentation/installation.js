@@ -36,7 +36,7 @@ const Installation = () => (
       create a WiFi network called
       <code>louis</code>.
     </p>
-    <ul>
+    <ol>
       <li>
         Using another device, such as your phone, tablet, or laptop, connect to
         <code>louis</code> WiFi network as you normally connect to other WiFi
@@ -55,7 +55,7 @@ const Installation = () => (
         <span className="font-louis">louis</span> will have access to the
         internet and will stop sharing <code>louis</code> WiFi network.
       </li>
-    </ul>
+    </ol>
   </div>
 )
 

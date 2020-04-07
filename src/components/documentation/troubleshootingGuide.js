@@ -172,7 +172,7 @@ const TroubleshootingGuide = () => (
           <tr>
             <td
               rowspan="4"
-              className="p-2 text-sm font-medium p-2 border border-r border-gray-300"
+              className="p-2 text-sm font-medium p-2 border border-r border-gray-300 align-middle"
             >
               Frequently Asked Questions
             </td>
