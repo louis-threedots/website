@@ -75,47 +75,47 @@ const Team = () => {
   const team = [
     {
       name: "Matas Baksaitis",
-      description: "Dictum sollicitudin malesuada semper dis nunc lectus",
+      description: "Marketing & Design and Hardware Engineer",
       image: data.NinaBecx.childImageSharp,
     },
     {
       name: "Nina Becx",
-      description: "Dictum sollicitudin malesuada semper dis nunc lectus",
+      description: "Software Engineer",
       image: data.NinaBecx.childImageSharp,
     },
     {
       name: "Greg Brimble",
-      description: "Dictum sollicitudin malesuada semper dis nunc lectus",
+      description: "Project Manager and Hardware System Design Lead",
       image: data.GregBrimble.childImageSharp,
     },
     {
       name: "Billy Byiringiro",
-      description: "Dictum sollicitudin malesuada semper dis nunc lectus",
+      description: "Hardware Engineer and Firmware Engineer",
       image: data.GregBrimble.childImageSharp,
     },
     {
       name: "Chanwoo Choi",
-      description: "Dictum sollicitudin malesuada semper dis nunc lectus",
+      description: "Marketing & Design and Firmware Engineer",
       image: data.GregBrimble.childImageSharp,
     },
     {
       name: "Ragnor Comerford",
-      description: "Dictum sollicitudin malesuada semper dis nunc lectus",
+      description: "Marketing & Design and Software System Design Lead",
       image: data.GregBrimble.childImageSharp,
     },
     {
       name: "Andrew Ferguson",
-      description: "Dictum sollicitudin malesuada semper dis nunc lectus",
+      description: "Firmware Engineer",
       image: data.GregBrimble.childImageSharp,
     },
     {
       name: "Evan Moss",
-      description: "Dictum sollicitudin malesuada semper dis nunc lectus",
+      description: "Marketing & Design and Software Engineer",
       image: data.GregBrimble.childImageSharp,
     },
     {
       name: "Andreas Nearchou",
-      description: "Dictum sollicitudin malesuada semper dis nunc lectus",
+      description: "Hardware Engineer and Firmware Engineer",
       image: data.GregBrimble.childImageSharp,
     },
   ]
@@ -137,17 +137,51 @@ const Team = () => {
               magnam voluptatum cupiditate veritatis in accusamus quisquam.
             </p>
           </div>
+          <div className="mt-10 pb-12 bg-white sm:pb-16">
+            <div className="relative">
+              <div className="relative max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="max-w-4xl mx-auto">
+                  <div className="rounded-lg bg-white shadow-lg sm:grid sm:grid-cols-3">
+                    <div className="border-b border-gray-100 p-6 text-center sm:border-0 sm:border-r">
+                      <p className="text-5xl leading-none font-extrabold text-indigo-600">
+                        TODO
+                      </p>
+                      <p className="mt-2 text-lg leading-6 font-medium text-gray-500">
+                        Hours
+                      </p>
+                    </div>
+                    <div className="border-t border-b border-gray-100 p-6 text-center sm:border-0 sm:border-l sm:border-r">
+                      <p className="text-5xl leading-none font-extrabold text-indigo-600">
+                        TODO
+                      </p>
+                      <p className="mt-2 text-lg leading-6 font-medium text-gray-500">
+                        TODO
+                      </p>
+                    </div>
+                    <div className="border-t border-gray-100 p-6 text-center sm:border-0 sm:border-l">
+                      <p className="text-5xl leading-none font-extrabold text-indigo-600">
+                        3.3K+
+                      </p>
+                      <p className="mt-2 text-lg leading-6 font-medium text-gray-500">
+                        Slack Messages
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
           <div className="mt-10">
-            <div class="lg:grid lg:grid-cols-3 lg:gap-8">
+            <div className="lg:grid lg:grid-cols-3 lg:gap-8">
               {team.map(({ name, description, image }) => (
                 <div className="mt-10 lg:mt-0 first:mt-0">
                   <Image fluid={image.fluid} className="h-24 w-24 rounded-md" />
-                  <div class="mt-5">
-                    <h5 class="text-lg leading-6 font-medium text-gray-900">
+                  <div className="mt-5">
+                    <h5 className="text-lg leading-6 font-medium text-gray-900">
                       {name}
                     </h5>
-                    <p class="mt-2 text-base leading-6 text-gray-500">
+                    <p className="mt-2 text-base leading-6 text-gray-500">
                       {description}
                     </p>
                   </div>
