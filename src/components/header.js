@@ -14,7 +14,7 @@ const Header = () => {
     { label: "Team", href: "/team" },
     { label: "Comments", href: "/comments" },
     { label: "User Guide", href: "/documentation" },
-    { label: "Lab Book", href: "/lab-book" },
+
     { label: "Interactive Demo", href: "/demo", isPrimary: true },
   ]
 
@@ -102,14 +102,14 @@ const Header = () => {
         </div>
 
         <div className="relative pt-6 pb-6 sm:pb-8 md:pb-10 lg:pb-14 xl:pb-16">
-          <div className="max-w-screen-xxl mx-auto px-4 sm:px-6">
-            <nav className="relative flex items-center justify-between sm:h-10 xxl:justify-center">
-              <div className="flex items-center flex-1 xxl:absolute xxl:inset-y-0 xxl:left-0">
-                <div className="flex items-center justify-between w-full xxl:w-auto">
+          <div className="max-w-screen-xl mx-auto px-4 sm:px-6">
+            <nav className="relative flex items-center justify-between sm:h-10 xl:justify-center">
+              <div className="flex items-center flex-1 xl:absolute xl:inset-y-0 xl:left-0">
+                <div className="flex items-center justify-between w-full xl:w-auto">
                   <Link to="/" className="text-black h-8 w-auto sm:h-10">
                     <Logo className="h-8 w-auto sm:h-10" format="svg" />
                   </Link>
-                  <div className="-mr-2 flex items-center xxl:hidden">
+                  <div className="-mr-2 flex items-center xl:hidden">
                     <button
                       onClick={() => setOpen(true)}
                       type="button"
@@ -133,7 +133,7 @@ const Header = () => {
                   </div>
                 </div>
               </div>
-              <div className="hidden xxl:block pl-12">
+              <div className="hidden xl:block pl-12">
                 {menuItems
                   .filter(({ isPrimary = false }) => !isPrimary)
                   .map(({ label, href }) => (
@@ -146,7 +146,7 @@ const Header = () => {
                     </Link>
                   ))}
               </div>
-              <div className="hidden xxl:absolute xxl:flex xxl:items-center xxl:justify-end xxl:inset-y-0 xxl:right-0">
+              <div className="hidden xl:absolute xl:flex xl:items-center xl:justify-end xl:inset-y-0 xl:right-0">
                 <span className="inline-flex rounded-md shadow">
                   <Link
                     to={primaryMenuItem.href}
@@ -173,7 +173,7 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="absolute top-0 inset-x-0 p-2 xxl:hidden z-10">
+      <div className="absolute top-0 inset-x-0 p-2 xl:hidden z-10">
         <Transition
           show={open}
           enter="duration-150 ease-out"
