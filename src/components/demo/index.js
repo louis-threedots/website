@@ -21,8 +21,10 @@ const Demo = () => {
     },
   })
   const sendTextInput = () => {
+    if (textInput != "") {
+      addMessage({ content: textInput, from: "user" })
+    }
     setTextInput("")
-    addMessage({ content: textInput, from: "user" })
   }
 
   const [messages, addMessage] = useReducer(
@@ -200,6 +202,9 @@ const Demo = () => {
                           placeholder="help"
                           onChange={event => setTextInput(event.target.value)}
                           value={textInput}
+                          onKeyDown={event =>
+                            event.key === "Enter" && sendTextInput()
+                          }
                         />
                       </div>
                       {listening || (supported && textInput === "") ? (
