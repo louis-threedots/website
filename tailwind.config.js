@@ -9,6 +9,9 @@ module.exports = {
         serif: ["Lora", ...defaultTheme.fontFamily.serif],
         louis: ["Comfortaa", "cursive"],
       },
+      screens: {
+        xxl: "1536px",
+      },
     },
   },
   variants: {
