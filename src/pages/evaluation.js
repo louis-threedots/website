@@ -754,6 +754,30 @@ const UserExperience = () => {
   )
 }
 
+const HarwareImprovements = () => {
+  return (
+    <div className="mt-4 relative max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 lg:mt-5">
+      <div className="max-w-lg mx-auto lg:max-w-none">
+        <div className="rounded-lg bg-green-100 px-6 py-8 sm:p-10 lg:flex lg:items-center">
+          <div className="flex-1">
+            <div>
+              <p className="text-base leading-6 text-indigo-600 font-semibold tracking-wide uppercase">
+                Hardware Evaluation
+              </p>
+              <h3 className="text-xl leading-8 font-extrabold text-gray-900 sm:text-2xl sm:leading-9">
+                Main Areas of Improvement
+              </h3>
+            </div>
+            <div className="mt-4 text-base text-gray-900">
+              We are very satisfied with our hardware design and have optimised in all main areas. A possible expansion is to also provide regular sized braille cells. This is to aid the more advanced users, since those can also enjoy all the non-educational apps that our open SDK supports. A smaller cell can easily be supported since the connector mechanism will be the same and miniaturization of the other parts is trivial.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
 const Evaluation = () => {
   return (
     <>
@@ -773,6 +797,7 @@ const Evaluation = () => {
           <RenderingSpeed />
           <Reliability />
           <UserExperience />
+          <HarwareImprovements />
         </div>
       </div>
     </>
