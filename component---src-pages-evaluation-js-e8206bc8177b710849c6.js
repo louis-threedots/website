@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{BU88:function(a,e,n){"use strict";n.r(e);var t=n("q1tI"),r=n.n(t),u=n("vrFN");e.default=function(){return r.a.createElement(r.a.Fragment,null,r.a.createElement(u.a,{title:"Evaluation"}),"Evaluation Page")}}}]);
-//# sourceMappingURL=component---src-pages-evaluation-js-e8206bc8177b710849c6.js.map
