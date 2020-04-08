@@ -27,7 +27,7 @@ const Team = () => {
           }
         }
       }
-      Billy: file(relativePath: { eq: "Placeholder.png" }) {
+      Billy: file(relativePath: { eq: "Billy.png" }) {
         childImageSharp {
           fluid(maxWidth: 96) {
             ...GatsbyImageSharpFluid
