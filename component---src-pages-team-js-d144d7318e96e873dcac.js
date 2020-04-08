@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[12],{xkl6:function(e,a,n){"use strict";n.r(a);var t=n("q1tI"),r=n.n(t),c=n("vrFN");a.default=function(){return r.a.createElement(r.a.Fragment,null,r.a.createElement(c.a,{title:"Team"}),"Team Page")}}}]);
-//# sourceMappingURL=component---src-pages-team-js-d144d7318e96e873dcac.js.map
