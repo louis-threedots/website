@@ -158,7 +158,7 @@ const Budget = () => {
         </h2>
 
         <h3 className="text-2xl py-4 leading-tight text-gray-700">
-          Budget Consumption
+          Total Budget Consumption
         </h3>
         <div className="flex flex-col">
           <div className="-my-2 py-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
@@ -221,6 +221,193 @@ const Budget = () => {
                     </td>
                     <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 text-gray-500 numeric-tabular-nums">
                       93%
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <h3 className="text-2xl py-4 leading-tight text-gray-700 mt-10">
+          Breakdown of material costs
+        </h3>
+        <div className="flex flex-col">
+          <div className="-my-2 py-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
+            <div className="align-middle inline-block min-w-full shadow overflow-hidden sm:rounded-lg border-b border-gray-200">
+              <table className="min-w-full">
+                <thead>
+                  <tr>
+                    <th className="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+                      Item
+                    </th>
+                    <th className="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+                      Time (hours)
+                    </th>
+                    <th className="px-6 py-3 border-b border-gray-200 bg-gray-50 text-right text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+                      R&D Cost
+                    </th>
+                    <th className="px-6 py-3 border-b border-gray-200 bg-gray-50 text-right text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+                      Usage cost (£)
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="bg-white even:bg-gray-50 font-bold">
+                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 ">
+                      Iteration I
+                    </td>
+                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5"></td>
+                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5  numeric-tabular-nums">
+                      9.00
+                    </td>
+                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5  numeric-tabular-nums">
+                      0.00
+                    </td>
+                  </tr>
+                  <tr className="bg-white even:bg-gray-50 font-bold">
+                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5  ">
+                      Iteration II
+                    </td>
+                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 "></td>
+                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5  numeric-tabular-nums">
+                      76.29
+                    </td>
+                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5  numeric-tabular-nums">
+                      69.59
+                    </td>
+                  </tr>
+                  <tr className="bg-white even:bg-gray-50 border-t-2">
+                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                      Large disk (17g) 006
+                    </td>
+                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
+                      2.38
+                    </td>
+                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 text-gray-500 numeric-tabular-nums">
+                      0.85
+                    </td>
+                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 text-gray-500 numeric-tabular-nums"></td>
+                  </tr>
+                  <tr className="bg-white even:bg-gray-50">
+                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                      Small disk (9g) 004
+                    </td>
+                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
+                      1.12
+                    </td>
+                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 text-gray-500 numeric-tabular-nums">
+                      0.45
+                    </td>
+                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 text-gray-500 numeric-tabular-nums">
+                      0.45
+                    </td>
+                  </tr>
+                  <tr className="bg-white even:bg-gray-50">
+                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                      Large disk (22g) 007
+                    </td>
+                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
+                      2.38
+                    </td>
+                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 text-gray-500 numeric-tabular-nums">
+                      1.10
+                    </td>
+                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 text-gray-500 numeric-tabular-nums"></td>
+                  </tr>
+                  <tr className="bg-white even:bg-gray-50">
+                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                      Catch (1g) 001
+                    </td>
+                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
+                      0.12
+                    </td>
+                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 text-gray-500 numeric-tabular-nums">
+                      0.05
+                    </td>
+                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 text-gray-500 numeric-tabular-nums"></td>
+                  </tr>
+                  <tr className="bg-white even:bg-gray-50">
+                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                      Large disk (17g) 008
+                    </td>
+                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
+                      4.45
+                    </td>
+                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 text-gray-500 numeric-tabular-nums">
+                      0.85
+                    </td>
+                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 text-gray-500 numeric-tabular-nums">
+                      0.85
+                    </td>
+                  </tr>
+                  <tr className="bg-white even:bg-gray-50">
+                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                      Catch (1g) 002
+                    </td>
+                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
+                      0.22
+                    </td>
+                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 text-gray-500 numeric-tabular-nums">
+                      0.05
+                    </td>
+                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 text-gray-500 numeric-tabular-nums"></td>
+                  </tr>
+                  <tr className="bg-white even:bg-gray-50">
+                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                      Catch (1g) 003
+                    </td>
+                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
+                      0.12
+                    </td>
+                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 text-gray-500 numeric-tabular-nums">
+                      0.05
+                    </td>
+                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 text-gray-500 numeric-tabular-nums">
+                      0.05
+                    </td>
+                  </tr>
+
+                  <tr className="bg-white even:bg-gray-50">
+                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                      CNC casing
+                    </td>
+                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
+                      1
+                    </td>
+                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 text-gray-500 numeric-tabular-nums">
+                      20
+                    </td>
+                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 text-gray-500 numeric-tabular-nums">
+                      20
+                    </td>
+                  </tr>
+                  <tr className="bg-white even:bg-gray-50 font-bold border-t-2">
+                    <td className="px-6 py-4 whitespace-no-wrap text-sm  leading-5 ">
+                      Iteration III
+                    </td>
+                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 ">
+                      11.79
+                    </td>
+                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5  numeric-tabular-nums">
+                      23.40
+                    </td>
+                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5  numeric-tabular-nums">
+                      21.25
+                    </td>
+                  </tr>
+                  <tr className="bg-white even:bg-gray-50 font-bold border-t-2 border-black">
+                    <td className="px-6 py-4 whitespace-no-wrap text-sm  leading-5 ">
+                      Total
+                    </td>
+                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 ">
+                      11.79
+                    </td>
+                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5  numeric-tabular-nums">
+                      108.69
+                    </td>
+                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5  numeric-tabular-nums">
+                      90.94
                     </td>
                   </tr>
                 </tbody>
