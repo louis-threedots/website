@@ -21,7 +21,7 @@ const GettingStartedKit = () => {
             </h3>
             <p className="mt-6 text-base leading-6 text-gray-500">
               All you need to start learning braille, and access to our full set
-              of applications and other fun things yayayayayay
+              of applications and other fun things.
             </p>
             <div className="mt-8">
               <div className="flex items-center">
