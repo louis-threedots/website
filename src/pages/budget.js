@@ -245,9 +245,6 @@ const Budget = () => {
                       Time (hours)
                     </th>
                     <th className="px-6 py-3 border-b border-gray-200 bg-gray-50 text-right text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
-                      R&D Cost
-                    </th>
-                    <th className="px-6 py-3 border-b border-gray-200 bg-gray-50 text-right text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
                       Usage cost (£)
                     </th>
                   </tr>
@@ -258,21 +255,135 @@ const Budget = () => {
                       Iteration I
                     </td>
                     <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5"></td>
-                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5  numeric-tabular-nums">
-                      9.00
-                    </td>
+
                     <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5  numeric-tabular-nums">
                       0.00
                     </td>
                   </tr>
-                  <tr className="bg-white even:bg-gray-50 font-bold">
+                  <tr className="bg-white even:bg-gray-50 border-t-2">
+                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                      LEGO EV3 Mindstorms Kit
+                    </td>
+                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500"></td>
+
+                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 text-gray-500 numeric-tabular-nums"></td>
+                  </tr>
+                  <tr className="bg-white even:bg-gray-50 ">
+                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                      Large disk (86g) 001
+                    </td>
+                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
+                      6.75
+                    </td>
+
+                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 text-gray-500 numeric-tabular-nums">
+                      3.40
+                    </td>
+                  </tr>
+                  <tr className="bg-white even:bg-gray-50 ">
+                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                      Large disk (74g) 002
+                    </td>
+                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
+                      5.67
+                    </td>
+
+                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 text-gray-500 numeric-tabular-nums">
+                      3.70
+                    </td>
+                  </tr>
+                  <tr className="bg-white even:bg-gray-50 ">
+                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                      Small disk (20g) 001
+                    </td>
+                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
+                      2.50
+                    </td>
+
+                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 text-gray-500 numeric-tabular-nums">
+                      1.00
+                    </td>
+                  </tr>
+                  <tr className="bg-white even:bg-gray-50 ">
+                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                      Large disk v2 (36g) 005
+                    </td>
+                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
+                      4.50
+                    </td>
+
+                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 text-gray-500 numeric-tabular-nums">
+                      1.80
+                    </td>
+                  </tr>
+                  <tr className="bg-white even:bg-gray-50 ">
+                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                      Small disk v2 (12g) 003
+                    </td>
+                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
+                      1.50
+                    </td>
+
+                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 text-gray-500 numeric-tabular-nums">
+                      0.60
+                    </td>
+                  </tr>
+                  <tr className="bg-white even:bg-gray-50 ">
+                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                      Arduino Uno (x2)
+                    </td>
+                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500"></td>
+
+                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 text-gray-500 numeric-tabular-nums">
+                      33.5
+                    </td>
+                  </tr>
+                  <tr className="bg-white even:bg-gray-50 ">
+                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                      Breadboard (x2)
+                    </td>
+                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500"></td>
+
+                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 text-gray-500 numeric-tabular-nums">
+                      11.80
+                    </td>
+                  </tr>
+                  <tr className="bg-white even:bg-gray-50 ">
+                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                      Logitech C270 Webcam
+                    </td>
+                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500"></td>
+
+                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 text-gray-500 numeric-tabular-nums">
+                      17.49
+                    </td>
+                  </tr>
+                  <tr className="bg-white even:bg-gray-50 ">
+                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                      SN754410NE Motor driver (x2)
+                    </td>
+                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500"></td>
+
+                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 text-gray-500 numeric-tabular-nums">
+                      3.80
+                    </td>
+                  </tr>
+                  <tr className="bg-white even:bg-gray-50 ">
+                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                      Misc. components
+                    </td>
+                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500"></td>
+
+                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 text-gray-500 numeric-tabular-nums">
+                      3.00
+                    </td>
+                  </tr>
+                  <tr className="bg-white even:bg-gray-50 font-bold border-t-2">
                     <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5  ">
                       Iteration II
                     </td>
                     <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 "></td>
-                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5  numeric-tabular-nums">
-                      76.29
-                    </td>
+
                     <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5  numeric-tabular-nums">
                       69.59
                     </td>
@@ -284,9 +395,7 @@ const Budget = () => {
                     <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
                       2.38
                     </td>
-                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 text-gray-500 numeric-tabular-nums">
-                      0.85
-                    </td>
+
                     <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 text-gray-500 numeric-tabular-nums"></td>
                   </tr>
                   <tr className="bg-white even:bg-gray-50">
@@ -296,9 +405,7 @@ const Budget = () => {
                     <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
                       1.12
                     </td>
-                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 text-gray-500 numeric-tabular-nums">
-                      0.45
-                    </td>
+
                     <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 text-gray-500 numeric-tabular-nums">
                       0.45
                     </td>
@@ -310,9 +417,7 @@ const Budget = () => {
                     <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
                       2.38
                     </td>
-                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 text-gray-500 numeric-tabular-nums">
-                      1.10
-                    </td>
+
                     <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 text-gray-500 numeric-tabular-nums"></td>
                   </tr>
                   <tr className="bg-white even:bg-gray-50">
@@ -322,9 +427,7 @@ const Budget = () => {
                     <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
                       0.12
                     </td>
-                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 text-gray-500 numeric-tabular-nums">
-                      0.05
-                    </td>
+
                     <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 text-gray-500 numeric-tabular-nums"></td>
                   </tr>
                   <tr className="bg-white even:bg-gray-50">
@@ -334,9 +437,7 @@ const Budget = () => {
                     <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
                       4.45
                     </td>
-                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 text-gray-500 numeric-tabular-nums">
-                      0.85
-                    </td>
+
                     <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 text-gray-500 numeric-tabular-nums">
                       0.85
                     </td>
@@ -348,9 +449,7 @@ const Budget = () => {
                     <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
                       0.22
                     </td>
-                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 text-gray-500 numeric-tabular-nums">
-                      0.05
-                    </td>
+
                     <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 text-gray-500 numeric-tabular-nums"></td>
                   </tr>
                   <tr className="bg-white even:bg-gray-50">
@@ -360,9 +459,7 @@ const Budget = () => {
                     <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
                       0.12
                     </td>
-                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 text-gray-500 numeric-tabular-nums">
-                      0.05
-                    </td>
+
                     <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 text-gray-500 numeric-tabular-nums">
                       0.05
                     </td>
@@ -375,9 +472,7 @@ const Budget = () => {
                     <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
                       1
                     </td>
-                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 text-gray-500 numeric-tabular-nums">
-                      20
-                    </td>
+
                     <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 text-gray-500 numeric-tabular-nums">
                       20
                     </td>
@@ -389,9 +484,7 @@ const Budget = () => {
                     <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 ">
                       11.79
                     </td>
-                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5  numeric-tabular-nums">
-                      23.40
-                    </td>
+
                     <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5  numeric-tabular-nums">
                       21.25
                     </td>
@@ -403,9 +496,7 @@ const Budget = () => {
                     <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 ">
                       11.79
                     </td>
-                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5  numeric-tabular-nums">
-                      108.69
-                    </td>
+
                     <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5  numeric-tabular-nums">
                       90.94
                     </td>
