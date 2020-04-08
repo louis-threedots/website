@@ -4,7 +4,7 @@ import Transition from "./transition"
 
 const MODAL_DISMISS_TIMEOUT = 1600
 
-export const LoadingModal = ({ loading }) => {
+export const LoadingModal = ({ loading, message }) => {
   const [open, setOpen] = useState(true)
 
   useEffect(() => {
@@ -81,6 +81,8 @@ export const LoadingModal = ({ loading }) => {
               <h3 className="text-lg leading-6 font-medium text-gray-900">
                 {loading ? "Loading..." : "Complete!"}
               </h3>
+              <p className="mt-4">{message}</p>
+              <p className="mt-4">Can take up to one minute...</p>
             </div>
           </div>
         </div>
