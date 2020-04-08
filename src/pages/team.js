@@ -147,7 +147,7 @@ const Team = () => {
                         1.6K+
                       </p>
                       <p className="mt-2 text-lg leading-6 font-medium text-gray-500">
-                        Hours
+                        Person Hours
                       </p>
                     </div>
                     <div className="border-t border-b border-gray-100 p-6 text-center sm:border-0 sm:border-l sm:border-r">
@@ -155,7 +155,7 @@ const Team = () => {
                         TODO
                       </p>
                       <p className="mt-2 text-lg leading-6 font-medium text-gray-500">
-                        TODO
+                        Lines of Code
                       </p>
                     </div>
                     <div className="border-t border-gray-100 p-6 text-center sm:border-0 sm:border-l">
