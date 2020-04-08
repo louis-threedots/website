@@ -27,7 +27,8 @@ const Demo = () => (
         </div>
         <div className="ml-3 flex-1 lg:flex lg:justify-between">
           <p className="text-sm leading-6 font-medium text-blue-700">
-            This interactive demo requires a modern browser.
+            This interactive demo requires a modern browser (speech recognition
+            works only in Google Chrome).
           </p>
           <p className="mt-2 text-sm leading-6 lg:mt-0 lg:ml-4">
             <a
