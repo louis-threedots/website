@@ -6,63 +6,63 @@ import SEO from "../components/seo"
 const Team = () => {
   const data = useStaticQuery(graphql`
     query {
-      MatasBaksaitis: file(relativePath: { eq: "MatasBaksaitis.png" }) {
+      Matas: file(relativePath: { eq: "Matas.png" }) {
         childImageSharp {
           fluid(maxWidth: 96) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      NinaBecx: file(relativePath: { eq: "NinaBecx.png" }) {
+      Nina: file(relativePath: { eq: "Nina.png" }) {
         childImageSharp {
           fluid(maxWidth: 96) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      GregBrimble: file(relativePath: { eq: "GregBrimble.png" }) {
+      Greg: file(relativePath: { eq: "Greg.png" }) {
         childImageSharp {
           fluid(maxWidth: 96) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      BillyByiringiro: file(relativePath: { eq: "BillyByiringiro.png" }) {
+      Billy: file(relativePath: { eq: "Placeholder.png" }) {
         childImageSharp {
           fluid(maxWidth: 96) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      ChanwooChoi: file(relativePath: { eq: "ChanwooChoi.png" }) {
+      Chanwoo: file(relativePath: { eq: "Placeholder.png" }) {
         childImageSharp {
           fluid(maxWidth: 96) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      RagnorComerford: file(relativePath: { eq: "RagnorComerford.png" }) {
+      Ragnor: file(relativePath: { eq: "Placeholder.png" }) {
         childImageSharp {
           fluid(maxWidth: 96) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      AndrewFerguson: file(relativePath: { eq: "AndrewFerguson.png" }) {
+      Andrew: file(relativePath: { eq: "Placeholder.png" }) {
         childImageSharp {
           fluid(maxWidth: 96) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      EvanMoss: file(relativePath: { eq: "EvanMoss.png" }) {
+      Evan: file(relativePath: { eq: "Evan.png" }) {
         childImageSharp {
           fluid(maxWidth: 96) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      AndreasNearchou: file(relativePath: { eq: "AndreasNearchou.png" }) {
+      Andreas: file(relativePath: { eq: "Placeholder.png" }) {
         childImageSharp {
           fluid(maxWidth: 96) {
             ...GatsbyImageSharpFluid
@@ -76,47 +76,47 @@ const Team = () => {
     {
       name: "Matas Baksaitis",
       description: "Marketing & Design and Hardware Engineer",
-      image: data.NinaBecx.childImageSharp,
+      image: data.Matas.childImageSharp,
     },
     {
       name: "Nina Becx",
       description: "Software Engineer",
-      image: data.NinaBecx.childImageSharp,
+      image: data.Nina.childImageSharp,
     },
     {
       name: "Greg Brimble",
       description: "Project Manager and Hardware System Design Lead",
-      image: data.GregBrimble.childImageSharp,
+      image: data.Greg.childImageSharp,
     },
     {
       name: "Billy Byiringiro",
       description: "Hardware Engineer and Firmware Engineer",
-      image: data.GregBrimble.childImageSharp,
+      image: data.Billy.childImageSharp,
     },
     {
       name: "Chanwoo Choi",
       description: "Marketing & Design and Firmware Engineer",
-      image: data.GregBrimble.childImageSharp,
+      image: data.Chanwoo.childImageSharp,
     },
     {
       name: "Ragnor Comerford",
       description: "Marketing & Design and Software System Design Lead",
-      image: data.GregBrimble.childImageSharp,
+      image: data.Ragnor.childImageSharp,
     },
     {
       name: "Andrew Ferguson",
       description: "Firmware Engineer",
-      image: data.GregBrimble.childImageSharp,
+      image: data.Andrew.childImageSharp,
     },
     {
       name: "Evan Moss",
       description: "Marketing & Design and Software Engineer",
-      image: data.GregBrimble.childImageSharp,
+      image: data.Evan.childImageSharp,
     },
     {
       name: "Andreas Nearchou",
       description: "Hardware Engineer and Firmware Engineer",
-      image: data.GregBrimble.childImageSharp,
+      image: data.Andreas.childImageSharp,
     },
   ]
 
@@ -176,7 +176,7 @@ const Team = () => {
             <div className="lg:grid lg:grid-cols-3 lg:gap-8">
               {team.map(({ name, description, image }) => (
                 <div className="mt-10 lg:mt-0 first:mt-0">
-                  <Image fluid={image.fluid} className="h-24 w-24 rounded-md" />
+                  <Image fluid={image.fluid} className="h-24 w-24 rounded-lg" />
                   <div className="mt-5">
                     <h5 className="text-lg leading-6 font-medium text-gray-900">
                       {name}
