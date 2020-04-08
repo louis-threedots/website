@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
-const FirmwareSimulator = ({ steps }) => {
+const FirmwareSimulator = ({ steps, title }) => {
   const [step, setStep] = useState(0)
   const hasNextStep = step < steps.length - 1
   const hasPreviousStep = step > 0
@@ -15,6 +15,8 @@ const FirmwareSimulator = ({ steps }) => {
 
   return (
     <div>
+      <h4>{title}</h4>
+      <p>Step {step+1} of {steps.length}</p>
       <div>{image}</div>
       <div>{description}</div>
       <div class="inline-flex">
