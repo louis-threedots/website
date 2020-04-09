@@ -8,20 +8,13 @@ const Hero = () => (
         louis | ⠇⠳⠊⠎
       </h2>
       <p className="mt-3 max-w-md mx-auto text-xl text-gray-500 sm:text-2xl md:mt-5 md:text-4xl md:max-w-5xl font-serif">
-         <span className="text-indigo-600 font-louis">virtual assistant for the visually impaired</span><br />
+        <span className="text-indigo-600 font-louis">
+          virtual assistant for the visually impaired
+        </span>
+        <br />
       </p>
 
-      <iframe className="mx-auto my-5 hidden lg:block" width="800" height="450" src="https://www.youtube.com/embed/yx1Px8E0ZHI?controls=0" frameBorder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-
-      <iframe className="mx-auto my-5 hidden md:block lg:hidden" width="600" height="337.5" src="https://www.youtube.com/embed/yx1Px8E0ZHI?controls=0" frameBorder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-
-      <iframe className="mx-auto my-5 md:hidden" width="400" height="225" src="https://www.youtube.com/embed/yx1Px8E0ZHI?controls=0" frameBorder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-
-
-      <div className="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
+      <div className="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8 mb-8">
         <div className="rounded-md shadow">
           <Link
             to="/demo"
@@ -39,6 +32,36 @@ const Hero = () => (
           </Link>
         </div>
       </div>
+
+      <iframe
+        className="mx-auto my-5 hidden lg:block"
+        width="800"
+        height="450"
+        src="https://www.youtube.com/embed/yx1Px8E0ZHI?controls=0"
+        frameBorder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
+
+      <iframe
+        className="mx-auto my-5 hidden md:block lg:hidden"
+        width="600"
+        height="337.5"
+        src="https://www.youtube.com/embed/yx1Px8E0ZHI?controls=0"
+        frameBorder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
+
+      <iframe
+        className="mx-auto my-5 md:hidden"
+        width="400"
+        height="225"
+        src="https://www.youtube.com/embed/yx1Px8E0ZHI?controls=0"
+        frameBorder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
     </div>
   </div>
 )
