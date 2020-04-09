@@ -7,48 +7,92 @@ const IndexPage = () => (
   <>
     <SEO title="Home" />
 
-    <div className="relative bg-gray-800">
+    <div className="relative bg-light">
+      <div className="h-56 bg-indigo-600 sm:h-72 md:absolute md:right-0 md:h-full md:w-1/2">
+        <img
+            className="w-full h-full object-cover"
+            src="https://i.imgur.com/Gsb3uTV.png"
+            alt="Support team"
+        />
+      </div>
+      <div className="relative max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+        <div className="md:w-1/2 md:pl-10">
+          <div className="text-base leading-6 font-semibold uppercase tracking-wider text-dark">There's a problem with braille education</div>
+          <h2 className="mt-2 text-dark text-3xl leading-9 font-extrabold tracking-tight sm:text-4xl sm:leading-10">
+            99% Of The Visually Impaired Never Learned Braille</h2>
+          <p className="mt-3 pr-5 text-lg leading-7 text-dark">
+             They cannot read <i>it all</i>, and as such, even the most simple sources of crucial information are invisible to them. Choosing a button to press in an elevator or discerning different drug boxes - when unable to read braille, these mundane tasks become sources of frustration and even danger.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div className="relative">
       <div className="h-56 bg-indigo-600 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
         <img
           className="w-full h-full object-cover"
-          src="https://images.unsplash.com/photo-1525130413817-d45c1d127c42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=60&blend=6875F5&sat=-100&blend-mode=multiply"
+          src="https://i.imgur.com/n6gdsFH.png"
           alt="Support team"
         />
       </div>
       <div className="relative max-w-screen-xl mx-auto px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
         <div className="md:ml-auto md:w-1/2 md:pl-10">
-          <div className="text-base leading-6 font-semibold uppercase tracking-wider text-gray-300">
-            Live-chat support
+          <div className="text-base leading-6 font-semibold uppercase tracking-wider text-dark">
+            First Things First
           </div>
-          <h2 className="mt-2 text-white text-3xl leading-9 font-extrabold tracking-tight sm:text-4xl sm:leading-10">
-            We’re here to help
+          <h2 className="mt-2 text-dark text-3xl leading-9 font-extrabold tracking-tight sm:text-4xl sm:leading-10">
+            Focus on Education
           </h2>
-          <p className="mt-3 text-lg leading-7 text-gray-300">
-            We welcome any questions, comments, or feedback that you may have.
-            Please just leave a note on our comments page, and a member of our
-            team will get back to you as soon as possible.
+          <p className="mt-3 text-lg leading-7 text-dark">
+            Braille is <i>the
+            way</i> for the visually impaired to quickly gather information in the physical world, yet the vast majority never received proper education that would allow them to learn and use it. There's an incredibly big untapped market for teaching braille. That's where we come in.</p>
+        </div>
+      </div>
+    </div>
+
+    <div className="relative bg-light">
+      <div className="h-56 bg-indigo-600 sm:h-72 md:absolute md:right-0 md:h-full md:w-1/2">
+        <img
+            className="w-full h-full object-cover"
+            src="https://i.imgur.com/N9KD1yG.png"
+            alt="Support team"
+        />
+      </div>
+      <div className="relative max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+        <div className="md:w-1/2 md:pl-10">
+          <div className="text-base leading-6 font-semibold uppercase tracking-wider text-dark">Stronger Together</div>
+          <h2 className="mt-2 text-dark text-3xl leading-9 font-extrabold tracking-tight sm:text-4xl sm:leading-10">
+            Device for Education at Scale</h2>
+          <p className="mt-3 pr-5 text-lg leading-7 text-dark">
+            We help special educators leverage their expertise by creating interactive learning experiences with apps than can be downloaded by anyone, anywhere. Abundance of quality teaching materials on one portable device. Long gone are the days of expensive braille books.
+
           </p>
-          <div className="mt-8">
-            <div className="inline-flex rounded-md shadow">
-              <Link
-                to="/comments"
-                className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-gray-900 bg-white hover:text-gray-600 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
-              >
-                Ask us a question
-                <svg
-                  className="-mr-1 ml-3 h-5 w-5 text-gray-400"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5zM5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </Link>
-            </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div className="relative">
+      <div className="h-56 bg-indigo-600 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2">
+        <img
+          className="w-full h-full object-cover"
+          src="https://i.imgur.com/t7sCnpg.png?1"
+          alt="Support team"
+        />
+      </div>
+      <div className="relative max-w-screen-xl mx-auto px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+        <div className="md:ml-auto md:w-1/2 md:pl-10">
+          <div className="text-base leading-6 font-semibold uppercase tracking-wider text-dark">
+            Braille for Everyone
           </div>
+          <h2 className="mt-2 text-dark text-3xl leading-9 font-extrabold tracking-tight sm:text-4xl sm:leading-10">
+            Innovative Braille Display
+          </h2>
+          <p className="mt-3 text-lg leading-7 text-dark">
+            Our innovative spinning disc braille cell design delivers currently unmatched price-to-quality ratio. Cutting down costs while delivering speed and a pleasant user experience.
+          </p>
         </div>
       </div>
     </div>

@@ -5,7 +5,43 @@ import { STLViewer } from "react-stl-obj-viewer"
 import FirmwareSimulator from "../components/firmwareSimulator"
 import SEO from "../components/seo"
 
-const HowItWorks = () => {
+const Software = () => {
+  return (
+    <div>
+      <h3>Software</h3>
+      <div>
+        <p>Audio App</p>
+        <p>The Audio app allows users to communicate with applications using voice commands. It converts voice input to text using Google’s speech recognition API to listen to what users have to say. It also generates speech from text based on Google’s Text-to-speech API (gTTS) so that users can hear instructions and replies from Louis.</p>
+      </div>
+      <div>
+        <p>Learn App</p>
+        <p>Learn basic braille alphabets on the Learn app. When you tell Louis which category of braille characters (choose one from letter, number, indicator and punctuation), your learning step begins. Louis prints out each character with an audio instruction such as  "This is letter a.", allowing you to read it with your finger while listening to what Louis says.</p>
+      </div>
+      <div>
+        <p>Tutor App</p>
+        <p>Test your braille knowledge on the Tutor app. It shows you a number of randomly selected braille characters (they could be any of the following: letter, number, indicator or punctuation), and you are given three chances to suggest your guess of what each character would be. The characters that you answered wrong will be remembered so that you could re-learn them after the test.</p>
+      </div>
+      <div>
+        <p>Headlines App</p>
+        <p>TODO: For advanced users, test your ability to read braille on Headlines app.</p>
+      </div>
+    </div>
+  )
+}
+
+const Hardware = () => {
+  return (
+    <div>
+      <h3>Hardware</h3>
+      <p>The hardware design was inspired by combination locks and Gray Code. Each cell uses a single motor, which rotates an axel holding two disks. The top disk is smaller than the bottom one and it rests directly on top of it. This enabled us to represent half a Braille character with the larger disk and the other half with the smaller disk. The smaller disk is fixed on the axel, while the big disk is loose and rotates only when a catch, attached to it from below, is pushed by the axel. This enables us to rotate the axle in one direction to position the larger disk then rotate the axle in the other direction to position the smaller disk.</p>
+      <p>Initially, apart from the difference of the size, the two disks were identical and had whole segments raised, which themselves were pushing pins up, forming the braille characters. At the end of the third iteration though, in an effort to decrease the size, we decided to raise small bumps on the surface of the disks which would represent the braille characters and thus avoid the difficulties of working with pins. Furthermore, we altered the big and small disks so they would have triple and double encoding respectively, which enabled for smaller and faster transitions between the different combinations.</p>
+      <p>Our cell walls were made from lego bricks during the testing phase and were intended to be replaced by a combination of 3D printed and transparent CNCd walls before the start of the fourth iteration. </p>
+      <p>The cells are controlled by the main controller which contains a speaker, a microphone, the Raspberry Pi single-board computer and the rechargeable batteries. On a cell there are the pins that display a braille character as well as a button, which can be used as an input in particular apps. The cells are connected end-to-end with the main controller and each of them is operated using our own custom-made PCB board. </p>
+    </div>
+  )
+}
+
+const Firmware = () => {
   const data = useStaticQuery(graphql`
     query {
       main_controller_tx: file(relativePath: { eq: "main_controller_tx.png" }) {
@@ -84,27 +120,7 @@ const HowItWorks = () => {
   `)
 
   return (
-    <>
-      <SEO title="How it Works" />
-
-      <div>
-        <div className="relative pl-5 pt-5">
-          <Link
-            to="/lab-book"
-            className="absolute top-5 right-5 w-48 flex items-center justify-center py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
-          >
-            Lab Book
-          </Link>
-        </div>
-        <div className="py-12 bg-white">
-          <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="lg:text-center">
-              <p className="text-base leading-6 text-indigo-600 font-semibold tracking-wide uppercase">
-                How it Works
-              </p>
-              <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
-                A Behind the Scenes Look
-              </h3>
+<div>
               <h3>Firmware</h3>
               <FirmwareSimulator
                 title="Sending Output to Cells"
@@ -249,6 +265,37 @@ const HowItWorks = () => {
                   },
                 ]}
               />
+</div>
+  )
+}
+
+const HowItWorks = () => {
+
+  return (
+    <>
+      <SEO title="How it Works" />
+
+      <div>
+        <div className="relative pl-5 pt-5">
+          <Link
+            to="/lab-book"
+            className="absolute top-5 right-5 w-48 flex items-center justify-center py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
+          >
+            Lab Book
+          </Link>
+        </div>
+        <div className="py-12 bg-white">
+          <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="lg:text-center">
+              <p className="text-base leading-6 text-indigo-600 font-semibold tracking-wide uppercase">
+                How it Works
+              </p>
+              <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
+                A Behind the Scenes Look
+              </h3>
+              <Software />
+              <Hardware />
+              <Firmware />
             </div>
           </div>
         </div>
