@@ -34,7 +34,7 @@ const Team = () => {
           }
         }
       }
-      Chanwoo: file(relativePath: { eq: "Placeholder.png" }) {
+      Chanwoo: file(relativePath: { eq: "Chanwoo.png" }) {
         childImageSharp {
           fluid(maxWidth: 96) {
             ...GatsbyImageSharpFluid
@@ -95,7 +95,7 @@ const Team = () => {
     },
     {
       name: "Chanwoo Choi",
-      description: "Marketing & Design and Firmware Engineer",
+      description: "Marketing & Design and Software Engineer",
       image: data.Chanwoo.childImageSharp,
     },
     {
