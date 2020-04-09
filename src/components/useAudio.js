@@ -1,20 +1,17 @@
 const useAudio = file => {
   const audio = new Audio(`${file}`)
-  var playing = false
-  const start = () => {
-    if(playing == false){
-    audio.play()
-    playing = true;
-    }else {
-      audio.pause()
-      audio.currentTime = 0;
-      playing = false;
-    }
-    
-    
-  }
+  let playing = false
 
-  console.log(audio)
+  const start = () => {
+    if (!playing) {
+      audio.play()
+      playing = true
+    } else {
+      audio.pause()
+      audio.currentTime = 0
+      playing = false
+    }
+  }
 
   return { start }
 }

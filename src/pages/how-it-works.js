@@ -62,6 +62,23 @@ const Software = () => {
         right after being read in order to allow users with small number of
         cells can benefit from this app.
       </p>
+
+      <p className="text-base leading-6 text-indigo-600 font-semibold tracking-wide uppercase">
+        Riddles App
+      </p>
+      <p className="mt-4 mb-8 text-md leading-7 text-gray-600 lg:mx-auto">
+        Stimulate learning, by solving interesting and comical riddles with answers that they can only find out by reading braille! This motivational approach has been previously adopted by Royal Blind, Scotland’s largest vision impairment organisation. Easily browse through the riddle library by using voice commands. Keeps track of which riddle has been viewed most recently, so you can conveniently pick up where you left off.
+      </p>
+
+      <p className="text-base leading-6 text-indigo-600 font-semibold tracking-wide uppercase">
+        Memory App
+      </p>
+      <p className="mt-4 mb-8 text-md leading-7 text-gray-600 lg:mx-auto">
+        Play the traditional Memory card game, for one or two players, where the cards are individual cells corresponding to a braille alphabet character. Developed to stimulate learning, by practising the memorisation of the braille alphabet characters in a recreational way.
+      </p>
+      <p className="mt-4 mb-8 text-md leading-7 text-gray-600 lg:mx-auto">
+        Players first determine if they are playing on their own or not. In solo mode, the number of turns is recorded, so that the player can attempt to find all pairs in as little turns as possible. When playing together, the app will keep track of the score. A player can ‘flip a card’ by pressing the button on a cell. That cell will go from a blank output to rendering the associated character. A second cell can be selected in the same way. The player gets time to inspect the characters, and can move on to the next turn by saying ‘next’. The output will then return to blank again if it was not a pair. If the two cells were showing corresponding characters, they will stay ‘facing upwards’. The character will be read out to reinforce learning and the player earns a point. In multiplayer mode, the same player gets another turn.
+      </p>
     </div>
   )
 }
@@ -94,6 +111,7 @@ const Hardware = () => {
         triple and double encoding respectively, which enabled for smaller and
         faster transitions between the different combinations.
       </p>
+      <LoadableDisksViewer />
       <p className="mt-4 text-md leading-7 text-gray-600 lg:mx-auto">
         Our cell walls were made from lego bricks during the testing phase and
         were intended to be replaced by a combination of 3D printed and
@@ -208,13 +226,15 @@ const Firmware = () => {
 
   return (
     <div className="text-left">
-      <h3>Communications Protocol</h3>
+      <p className="text-base mt-10  text-left leading-6  text-indigo-600 font-semibold tracking-wide uppercase">
+        Communications Protocol
+      </p>
       <div>
         <Image
           fluid={data.command_bytes.childImageSharp.fluid}
           className="my-4"
         />
-        <p>
+        <p className="mt-4 text-md leading-7 text-gray-600 lg:mx-auto">
           The main controller and cells communicate using a four-byte command
           protocol. The first byte contains the destination of the command. This
           is required because the main controller and cells are chained
@@ -222,12 +242,12 @@ const Firmware = () => {
           connected cell would need to pass through all the connected cells in
           order to reach the last cell.
         </p>
-        <p>
+        <p className="mt-4 text-md leading-7 text-gray-600 lg:mx-auto">
           The second byte in the protocol identifies the specific command to be
           performed. This includes rotations of either the large or small disk,
           button presses, calibration, etc..
         </p>
-        <p>
+        <p className="mt-4 text-md leading-7 text-gray-600 lg:mx-auto">
           The third and fourth bytes in the command protocol hold the data that
           is required to process the specified command. This includes the angle
           for a rotation of the disks, the cell number when a button is pressed,
@@ -242,13 +262,13 @@ const Firmware = () => {
           fluid={data.firmware_state_machine.childImageSharp.fluid}
           className="my-4"
         />
-        <p>
+        <p className="mt-4 text-md leading-7 text-gray-600 lg:mx-auto">
           The firmware running on the microcontroller in each cell implements a
           Finite State Machine (FSM). The purpose of this FSM is to receive
           incoming commands, read the commands, then act on them accordingly.
           Each of the steps in the FSM is outlined below.
         </p>
-        <ol>
+        <div className="prose"><ol>
           <li>
             <b>Wait for command</b>: in the starting state, the firmware idles,
             continuously polling the serial ports until it receives a command.
@@ -269,8 +289,17 @@ const Firmware = () => {
             current cell, the firmware forwards the command in the direction
             that will lead to the current cell.
           </li>
-        </ol>
+        </ol></div>
       </div>
+      <p className="text-base mt-10  text-left leading-6  text-indigo-600 font-semibold tracking-wide uppercase">
+        Interactive Examples
+      </p>
+      <p className="mt-4 text-md leading-7 text-gray-600 lg:mx-auto">
+        The following three interactive widgets demonstrate three core features of the
+        firmware: sending output from the main controller to connected cells, sending
+        input from the connected cells to the main controller, and determining the number
+        of cells that are connected.
+      </p>
       <FirmwareSimulator
         title="Sending Output to Cells"
         steps={[
@@ -416,7 +445,7 @@ const HowItWorks = () => {
         </div>
       </div>
 
-      <LoadableDisksViewer />
+      
     </>
   )
 }
