@@ -37,7 +37,7 @@ const Hero = () => (
         className="mx-auto my-5 hidden lg:block"
         width="800"
         height="450"
-        src="https://www.youtube.com/embed/yx1Px8E0ZHI?controls=0"
+        src="https://www.youtube.com/embed/3sLDozc8URs?controls=0"
         frameBorder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
@@ -47,7 +47,7 @@ const Hero = () => (
         className="mx-auto my-5 hidden md:block lg:hidden"
         width="600"
         height="337.5"
-        src="https://www.youtube.com/embed/yx1Px8E0ZHI?controls=0"
+        src="https://www.youtube.com/embed/3sLDozc8URs?controls=0"
         frameBorder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
@@ -57,7 +57,7 @@ const Hero = () => (
         className="mx-auto my-5 md:hidden"
         width="400"
         height="225"
-        src="https://www.youtube.com/embed/yx1Px8E0ZHI?controls=0"
+        src="https://www.youtube.com/embed/3sLDozc8URs?controls=0"
         frameBorder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen

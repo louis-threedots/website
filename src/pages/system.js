@@ -326,6 +326,17 @@ const System = () => (
             </div>
           </div>
         </div>
+
+        <div className="relative mt-12 lg:mt-24 lg:grid lg:items-center">
+          <div className="relative">
+            <h4 className="text-2xl leading-8 font-extrabold text-gray-900 tracking-tight sm:text-3xl sm:leading-9">
+              Market Research
+            </h4>
+            <p className="mt-3 text-lg leading-7 text-gray-500">
+              Lots of words
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </>
