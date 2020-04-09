@@ -182,12 +182,43 @@ const Firmware = () => {
           }
         }
       }
+      command_bytes: file(relativePath: { eq: "command_bytes.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      firmware_state_machine: file(relativePath: { eq: "firmware_state_machine.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
 
   return (
     <div>
+      <h3>Communications Protocol</h3>
+      <div>
+        <p>command_bytes.png</p>
+        <p>The main controller and cells communicate using a four-byte command protocol. The first byte contains the destination of the command. This is required because the main controller and cells are chained together, meaning that a message from the main controller to the last connected cell would need to pass through all the connected cells in order to reach the last cell.</p>
+        <p>The second byte in the protocol identifies the specific command to be performed. This includes rotations of either the large or small disk, button presses, calibration, etc..</p>
+        <p>The third and fourth bytes in the command protocol hold the data that is required to process the specified command. This includes the angle for a rotation of the disks, the cell number when a button is pressed, and a status message when initialising louis.</p>
+      </div>
       <h3>Firmware</h3>
+      <div>
+        <p>firmware_state_machine.png</p>
+        <p>The firmware running on the microcontroller in each cell implements a Finite State Machine (FSM). The purpose of this FSM is to receive incoming commands, read the commands, then act on them accordingly. Each of the steps in the FSM is outlined below.</p>
+        <ol>
+          <li><b>Wait for command</b>: in the starting state, the firmware idles, continuously polling the serial ports until it receives a command.</li>
+          <li><b>Check command</b>: when a command is received through one of the serial ports, the firmware first checks the header of the received command to check the destination.</li>
+          <li><b>Process command</b>: if the destination of the command is the current cell, the command will be processed by the cell. For example, this could involve displaying a certain braille character by performing a specific rotation.</li>
+          <li><b>Forward command</b>: if the destination of the command is not the current cell, the firmware forwards the command in the direction that will lead to the current cell.</li>
+        </ol>
+      </div>
       <FirmwareSimulator
         title="Sending Output to Cells"
         steps={[
