@@ -6,7 +6,7 @@ const DisksViewer = () => (
     width={400}
     height={400}
     modelColor="#d4d4d4"
-    backgroundColor="#e3fcf1"
+    backgroundColor="#ffffff"
     rotate={true}
     orbitControls={true}
     url={"/website/disks_with_catch.stl"}
