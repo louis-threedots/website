@@ -111,7 +111,6 @@ const Hardware = () => {
         triple and double encoding respectively, which enabled for smaller and
         faster transitions between the different combinations.
       </p>
-      <LoadableDisksViewer />
       <p className="mt-4 text-md leading-7 text-gray-600 lg:mx-auto">
         Our cell walls were made from lego bricks during the testing phase and
         were intended to be replaced by a combination of 3D printed and
@@ -421,7 +420,7 @@ const Firmware = () => {
         ]}
       />
       <p className="text-base mt-10  text-left leading-6  text-indigo-600 font-semibold tracking-wide uppercase">
-        Interactive Examples
+        Custom Printed Circuit Board (PCB)
       </p>
       <Image
         fluid={data.pcb_combined.childImageSharp.fluid}
@@ -469,7 +468,7 @@ const HowItWorks = () => {
         </div>
       </div>
 
-      
+      <LoadableDisksViewer />
     </>
   )
 }
