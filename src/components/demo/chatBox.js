@@ -10,8 +10,6 @@ const ChatBox = ({ messages, send }) => {
     },
   })
 
-  console.log("ChatBox render")
-
   const sendTextInput = () => {
     send(textInput)
     setTextInput("")
@@ -64,19 +62,25 @@ const ChatBox = ({ messages, send }) => {
       <div className="absolute flex flex-col bottom-0 top-0 w-full px-4 overflow-y-auto">
         <div className="flex-1" />
         <div className="mb-6">
-          {messages.map((message, i) => (
-            <div
-              className={classNames(
-                "p-2 rounded-lg text-white my-4",
-                message.from === "user"
-                  ? "bg-indigo-600 text-right"
-                  : "bg-gray-600 text-left"
-              )}
-              key={i}
-            >
-              {message.content}
+          {messages.length === 0 ? (
+            <div className="text-gray-500 text-center text-sm">
+              Don't be shy! Say something ↓
             </div>
-          ))}
+          ) : (
+            messages.map((message, i) => (
+              <div
+                className={classNames(
+                  "p-2 rounded-lg text-white my-4",
+                  message.from === "user"
+                    ? "bg-indigo-600 text-right"
+                    : "bg-gray-600 text-left"
+                )}
+                key={i}
+              >
+                {message.content}
+              </div>
+            ))
+          )}
         </div>
 
         <div className="pb-4">
