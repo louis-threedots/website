@@ -14,8 +14,8 @@ const Comments = () => (
         </h2>
       </div>
       <a href="https://sdp2020.gitlab.io/posts/group10/">Comments</a>
-    </>
-  )
-}
+    </div>
+  </>
+)
 
 export default Comments
