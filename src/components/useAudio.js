@@ -1,5 +1,5 @@
 const useAudio = file => {
-  const audio = new Audio(file)
+  const audio = new Audio(`/website${file}`)
 
   const start = () => {
     audio.play()
