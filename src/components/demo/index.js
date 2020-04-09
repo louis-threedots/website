@@ -7,6 +7,7 @@ import React, {
 } from "react"
 import LoadingModal from "../loadingModal"
 import ChatBox from "./chatBox"
+import "./index.css"
 import TTS from "./tts"
 import usePyodide from "./usePyodide"
 
@@ -26,10 +27,10 @@ const Demo = () => {
 
   const ttsRef = useRef()
 
-  const { loading, attachGlobal, runPython } = usePyodide(callback)
-  const [braille, setBraille] = useState("Loading...")
+  const { loading, attachGlobal, runPython, reload } = usePyodide(callback)
+  const [braille, setBraille] = useState("")
 
-  const [numCells, setNumCells] = useState(3)
+  const [numCells, setNumCells] = useState(5)
 
   const [messages, addMessage] = useReducer((state, message) => {
     if (message && state && !state.includes(message)) {
@@ -50,13 +51,29 @@ const Demo = () => {
     forceUpdate()
   }
 
+  const reloadGlobals = () => {
+    attachGlobal({})
+    runPython(`from js import characters, cell, app, main, demo`)
+    runPython(`exec(characters)`)
+    runPython(`exec(cell)`)
+    runPython(`exec(app)`)
+    runPython(`exec(main)`)
+    runPython(`exec(demo)`)
+  }
+
   useEffect(() => {
-    if (!loading) {
-      attachGlobal({})
-      runPython(`from js import demo`)
-      runPython(`exec(demo)`)
-    }
+    if (!loading) reloadGlobals()
   }, [loading])
+
+  const cells = []
+
+  for (let i = 0; i < numCells; i++) {
+    cells.push(
+      <div className="braille-cell" key={i}>
+        {braille.charAt(i)}
+      </div>
+    )
+  }
 
   return (
     <>
@@ -80,13 +97,16 @@ const Demo = () => {
                   </h3>
                 </div>
 
-                <div className="ml-4 mt-2 flex-shrink-0">
+                <div className="ml-4 mt-2 flex-shrink-0 hidden md:block">
                   <span className="inline-flex rounded-md shadow-sm">
                     <button
                       type="button"
                       disabled={numCells < 2}
                       className="relative inline-flex items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:shadow-outline-indigo focus:border-indigo-700 active:bg-indigo-700 disabled:opacity-50 disabled:cursor-not-allowed hover:disabled:bg-indigo-600"
-                      onClick={() => setNumCells(numCells - 1)}
+                      onClick={() => {
+                        runPython(`num_cells = ${numCells - 1}`)
+                        setNumCells(numCells - 1)
+                      }}
                     >
                       Remove cell
                     </button>
@@ -94,10 +114,26 @@ const Demo = () => {
                   <span className="ml-4 inline-flex rounded-md shadow-sm">
                     <button
                       type="button"
-                      className="relative inline-flex items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:shadow-outline-indigo focus:border-indigo-700 active:bg-indigo-700"
-                      onClick={() => setNumCells(numCells + 1)}
+                      disabled={numCells >= 10}
+                      className="relative inline-flex items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:shadow-outline-indigo focus:border-indigo-700 active:bg-indigo-700 disabled:opacity-50 disabled:cursor-not-allowed hover:disabled:bg-indigo-600"
+                      onClick={() => {
+                        runPython(`num_cells = ${numCells + 1}`)
+                        setNumCells(numCells + 1)
+                      }}
                     >
                       Add cell
+                    </button>
+                  </span>
+                  <span className="ml-4 inline-flex rounded-md shadow-sm">
+                    <button
+                      type="button"
+                      className="relative inline-flex items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:shadow-outline-indigo focus:border-indigo-700 active:bg-indigo-700"
+                      onClick={() => {
+                        reload()
+                        reloadGlobals()
+                      }}
+                    >
+                      Refresh
                     </button>
                   </span>
                 </div>
@@ -128,8 +164,10 @@ const Demo = () => {
               </div>
             </div>
 
-            <div className="flex flex-col md:flex-row h-96 md:h-192 bg-gray-200 pb-6 md:pb-16">
-              <div className="flex-1">{braille}</div>
+            <div className="flex flex-col md:flex-row h-96 md:h-192 bg-gray-900 pb-6 md:pb-16">
+              <div className="flex-1 flex justify-center -mt-56 pb-32 md:mt-0 md:pb-0">
+                {cells}
+              </div>
               <ChatBox messages={messages} send={newUserMessage} />
             </div>
 

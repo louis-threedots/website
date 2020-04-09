@@ -12,62 +12,67 @@ const LoadableDisksViewer = Loadable({
 
 const Software = () => {
   return (
-    <div>
-      <div>
-        <p className="mt-4 max-w-2xl text-2xl leading-7 text-gray-700 lg:mx-auto">Audio Interface</p>
-        <p className="mt-4 max-w-2xl text-xl leading-7 text-gray-600 lg:mx-auto">
-          The audio interface implemented in Louis allows users to communicate 
-          with applications using voice commands. It converts voice input to text 
-          using Google’s speech recognition API to listen to what users have 
-          to say. It also generates speech from text based on Google’s Text-
-          to-speech API (gTTS) so that visually impaired users can listen to
-          audio instructions from Louis.
-        </p>
-      </div>
-      <div>
-        <p className="mt-4 max-w-2xl text-2xl leading-7 text-gray-700 lg:mx-auto">Learn App</p>
-        <p className="mt-4 max-w-2xl text-xl leading-7 text-gray-600 lg:mx-auto">
-          Learn basic braille alphabets on the Learn app. When you tell Louis
-          which category of braille characters (choose one from letter, number,
-          indicator and punctuation), your learning step begins. Louis prints
-          out each character with an audio instruction such as "This is letter
-          a.", allowing you to read it with your finger while listening to what
-          Louis says.   
-        </p>
-      </div>
-      <div>
-        <p className="mt-4 max-w-2xl text-2xl leading-7 text-gray-700 lg:mx-auto">Tutor App</p>
-        <p className="mt-4 max-w-2xl text-xl leading-7 text-gray-600 lg:mx-auto">
-          Test your braille knowledge on the Tutor app. After telling Louis how
-          long do you want your test to be(choose one from short, medium and full).
-          It shows you a number of randomly selected braille characters (they 
-          could be any of the following: letter, number, indicator or punctuation),
-          and you are given three chances to suggest your guess of what each character 
-          would be. The characters that you answered wrong will be remembered so that
-          you could re-learn them after the test.
-        </p>
-      </div>
-      <div>
-        <p className="mt-4 max-w-2xl text-2xl leading-7 text-gray-700 lg:mx-auto">Headlines App</p>
-        <p className="mt-4 max-w-2xl text-xl leading-7 text-gray-600 lg:mx-auto">
-          Test your braille reading skills if you believe you have learned enough
-          to read news articles. You can read through BBC news articles from 
-          different categories of your choice. It retrieves a number of today's 
-          articles of the chosen category from BBC website and let you read them 
-          by printing characters on the cell(s) you have. Each cell recalibrates 
-          right after being read in order to allow users with small number of cells
-          can benefit from this app.
-        </p>
-      </div>
+    <div className="flex flex-col items-start text-left mt-24 ">
+      <p className="text-base leading-6 text-indigo-600 font-semibold tracking-wide uppercase">
+        Audio Interface
+      </p>
+      <p className="mt-4 mb-8 text-md leading-7  text-gray-600 lg:mx-auto">
+        The audio interface implemented in Louis allows users to communicate
+        with applications using voice commands. It converts voice input to text
+        using Google’s speech recognition API to listen to what users have to
+        say. It also generates speech from text based on Google’s Text-
+        to-speech API (gTTS) so that visually impaired users can listen to audio
+        instructions from Louis.
+      </p>
+
+      <p className="text-base leading-6 text-indigo-600 font-semibold tracking-wide uppercase">
+        Learn App
+      </p>
+      <p className="mt-4 mb-8 text-md leading-7  text-gray-600 lg:mx-auto">
+        Learn basic braille alphabets on the Learn app. When you tell Louis
+        which category of braille characters (choose one from letter, number,
+        indicator and punctuation), your learning step begins. Louis prints out
+        each character with an audio instruction such as "This is letter a.",
+        allowing you to read it with your finger while listening to what Louis
+        says.
+      </p>
+
+      <p className="text-base leading-6 text-indigo-600 font-semibold tracking-wide uppercase">
+        Tutor App
+      </p>
+      <p className="mt-4 mb-8 text-md leading-7  text-gray-600 lg:mx-auto">
+        Test your braille knowledge on the Tutor app. After telling Louis how
+        long do you want your test to be(choose one from short, medium and
+        full). It shows you a number of randomly selected braille characters
+        (they could be any of the following: letter, number, indicator or
+        punctuation), and you are given three chances to suggest your guess of
+        what each character would be. The characters that you answered wrong
+        will be remembered so that you could re-learn them after the test.
+      </p>
+
+      <p className="text-base leading-6 text-indigo-600 font-semibold tracking-wide uppercase">
+        Headlines App
+      </p>
+      <p className="mt-4 mb-8 text-md leading-7 text-gray-600 lg:mx-auto">
+        Test your braille reading skills if you believe you have learned enough
+        to read news articles. You can read through BBC news articles from
+        different categories of your choice. It retrieves a number of today's
+        articles of the chosen category from BBC website and let you read them
+        by printing characters on the cell(s) you have. Each cell recalibrates
+        right after being read in order to allow users with small number of
+        cells can benefit from this app.
+      </p>
     </div>
   )
 }
 
 const Hardware = () => {
   return (
-    <div>
-      <h3>Hardware</h3>
-      <p>
+    <div className="text-left">
+      <p className="text-base leading-6  text-indigo-600 font-semibold tracking-wide uppercase">
+        Hardware
+      </p>
+      <p className="mt-4 text-md leading-7 text-gray-600 lg:mx-auto">
         The hardware design was inspired by combination locks and Gray Code.
         Each cell uses a single motor, which rotates an axel holding two disks.
         The top disk is smaller than the bottom one and it rests directly on top
@@ -78,7 +83,7 @@ const Hardware = () => {
         us to rotate the axle in one direction to position the larger disk then
         rotate the axle in the other direction to position the smaller disk.
       </p>
-      <p>
+      <p className="mt-4 text-md leading-7 text-gray-600 lg:mx-auto">
         Initially, apart from the difference of the size, the two disks were
         identical and had whole segments raised, which themselves were pushing
         pins up, forming the braille characters. At the end of the third
@@ -89,19 +94,19 @@ const Hardware = () => {
         triple and double encoding respectively, which enabled for smaller and
         faster transitions between the different combinations.
       </p>
-      <p>
+      <p className="mt-4 text-md leading-7 text-gray-600 lg:mx-auto">
         Our cell walls were made from lego bricks during the testing phase and
         were intended to be replaced by a combination of 3D printed and
         transparent CNCd walls before the start of the fourth iteration.{" "}
       </p>
-      <p>
+      <p className="mt-4 text-md leading-7 text-gray-600 lg:mx-auto">
         The cells are controlled by the main controller which contains a
         speaker, a microphone, the Raspberry Pi single-board computer and the
         rechargeable batteries. On a cell there are the pins that display a
         braille character as well as a button, which can be used as an input in
         particular apps. The cells are connected end-to-end with the main
         controller and each of them is operated using our own custom-made PCB
-        board.{" "}
+        board.
       </p>
     </div>
   )
@@ -182,12 +187,90 @@ const Firmware = () => {
           }
         }
       }
+      command_bytes: file(relativePath: { eq: "command_bytes.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      firmware_state_machine: file(
+        relativePath: { eq: "firmware_state_machine.png" }
+      ) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
 
   return (
-    <div>
-      <h3>Firmware</h3>
+    <div className="text-left">
+      <h3>Communications Protocol</h3>
+      <div>
+        <Image
+          fluid={data.command_bytes.childImageSharp.fluid}
+          className="my-4"
+        />
+        <p>
+          The main controller and cells communicate using a four-byte command
+          protocol. The first byte contains the destination of the command. This
+          is required because the main controller and cells are chained
+          together, meaning that a message from the main controller to the last
+          connected cell would need to pass through all the connected cells in
+          order to reach the last cell.
+        </p>
+        <p>
+          The second byte in the protocol identifies the specific command to be
+          performed. This includes rotations of either the large or small disk,
+          button presses, calibration, etc..
+        </p>
+        <p>
+          The third and fourth bytes in the command protocol hold the data that
+          is required to process the specified command. This includes the angle
+          for a rotation of the disks, the cell number when a button is pressed,
+          and a status message when initialising louis.
+        </p>
+      </div>
+      <p className="text-base mt-10  text-left leading-6  text-indigo-600 font-semibold tracking-wide uppercase">
+        Firmware
+      </p>
+      <div>
+        <Image
+          fluid={data.firmware_state_machine.childImageSharp.fluid}
+          className="my-4"
+        />
+        <p>
+          The firmware running on the microcontroller in each cell implements a
+          Finite State Machine (FSM). The purpose of this FSM is to receive
+          incoming commands, read the commands, then act on them accordingly.
+          Each of the steps in the FSM is outlined below.
+        </p>
+        <ol>
+          <li>
+            <b>Wait for command</b>: in the starting state, the firmware idles,
+            continuously polling the serial ports until it receives a command.
+          </li>
+          <li>
+            <b>Check command</b>: when a command is received through one of the
+            serial ports, the firmware first checks the header of the received
+            command to check the destination.
+          </li>
+          <li>
+            <b>Process command</b>: if the destination of the command is the
+            current cell, the command will be processed by the cell. For
+            example, this could involve displaying a certain braille character
+            by performing a specific rotation.
+          </li>
+          <li>
+            <b>Forward command</b>: if the destination of the command is not the
+            current cell, the firmware forwards the command in the direction
+            that will lead to the current cell.
+          </li>
+        </ol>
+      </div>
       <FirmwareSimulator
         title="Sending Output to Cells"
         steps={[
@@ -309,14 +392,7 @@ const HowItWorks = () => {
       <SEO title="How it Works" />
 
       <div>
-        <div className="relative pl-5 pt-5">
-          <Link
-            to="/lab-book"
-            className="absolute top-5 right-5 w-48 flex items-center justify-center py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
-          >
-            Lab Book
-          </Link>
-        </div>
+        <div className="relative pl-5 pt-5"></div>
         <div className="py-12 bg-white">
           <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="lg:text-center">
@@ -326,6 +402,12 @@ const HowItWorks = () => {
               <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
                 A Behind the Scenes Look
               </h3>
+              <Link
+                to="/lab-book"
+                className=" mx-auto mt-5 w-48 flex items-center justify-center py-2 border border-transparent text-base leading-6 font-md rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-4"
+              >
+                View Lab Book
+              </Link>
               <Software />
               <Hardware />
               <Firmware />

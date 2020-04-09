@@ -14,7 +14,7 @@ export const LoadingModal = ({ loading, message }) => {
   return (
     <div
       className={classNames(
-        "fixed bottom-0 inset-x-0 px-4 pb-6 sm:inset-0 sm:p-0 sm:flex sm:items-center sm:justify-center",
+        "fixed bottom-0 inset-x-0 px-4 pb-6 sm:inset-0 sm:p-0 sm:flex sm:items-center sm:justify-center z-10",
         !open && "pointer-events-none"
       )}
     >

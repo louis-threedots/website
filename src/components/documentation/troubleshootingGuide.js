@@ -3,7 +3,7 @@ import React from "react"
 import useAudio from "../useAudio"
 
 const TroubleshootingGuide = () => {
-  const { start } = useAudio("/test.mp3")
+  const { start } = useAudio("/troubleshooting_guide.mp3")
 
   return (
     <div>

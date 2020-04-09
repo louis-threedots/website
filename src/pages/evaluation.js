@@ -417,7 +417,7 @@ const TableCatchSpacing = () => {
 
 const RNIB = () => {
   const user_research = [
-    <p>Refreshable braille devices are very expensive to purchase and thus not easily accessible. Furthermore, current devices can be easily damaged (e.g. when dropped or stood on) and although people could work around a broken cell, they eventually have to send them away to be repaired, which is annoying and very expensive. Our modular design gets rid of this problem. With <span className='font-louis'>louis</span> you have the ability to use as many cells needed and to remove and add them instantly. This limits repairs to modules instead of the whole device and  along with the low cost of the cells themselves, makes <span className='font-louis'>louis</span> very affordable.</p>,
+    <p>Existing refreshable braille devices are very expensive to purchase and thus not easily accessible. Furthermore, current devices can be easily damaged (e.g. when dropped or stood on) and although people could work around a broken cell, they eventually have to send them away to be repaired, which is annoying and very expensive. Our modular design gets rid of this problem. With <span className='font-louis'>louis</span> you have the ability to use as many cells needed and to remove and add them instantly. This limits repairs to modules instead of the whole device and  along with the low cost of the cells themselves, makes <span className='font-louis'>louis</span> very affordable.</p>,
 
     <p>Voice integration can be very helpful, especially for tutoring apps. It should be as simple as possible and not frustrating to use. We added voice integration to our system and made it intuitive enough to use by anyone. Our voice commands are based on words that people would normally use to perform certain tasks, like: ‘open’ an app, ‘options’ to get a list of the possible voice commands, etc.</p>,
 
@@ -449,7 +449,7 @@ const RNIB = () => {
               </h3>
             </div>
             <div className="mt-4 text-base text-gray-900">
-              In order to make the user experience as good as possible and meet customer expectations, we performed user research. After being granted ethical approval from the School of Informatics we arranged a group interview with six visually impaired people through the <strong>Royal National Institute of Blind People</strong> Lothian. The RNIB is a UK charity offering information, support and advice to almost two million people in the UK with sight loss. All of the participants agreed that knowing braille has been a huge help in their daily lives; with one of them stating, "[I] use [braille] for everything; I couldn't do without my dots". All 5 of them used the basic grade 1 braille daily: finding out the name of medicine they're about to take, labeling objects and clothes, or writing down phone numbers. From the User Research we incorporated the following five points in our design:
+              In order to make the user experience as good as possible and meet customer expectations, we performed user research. After being granted ethical approval from the School of Informatics we arranged a group interview with six visually impaired people through the <strong>Royal National Institute of Blind People</strong> Lothian. The RNIB is a UK charity offering information, support and advice to almost two million people in the UK with sight loss. All of the participants agreed that knowing braille has been a huge help in their daily lives with one of them stating, "[I] use [braille] for everything; I couldn't do without my dots". Out of the six, only five could read braille. All five of them used the basic grade 1 braille daily for a variety of tasks: finding out the name of medicine they're about to take, labeling objects and clothes, or writing down phone numbers. From the User Research we incorporated the following five points in our design:
               <ul className="mt-8 lg:grid lg:grid-cols-2 lg:col-gap-8 lg:row-gap-5">
                 {user_research.map((point, i) => (
                   <li
@@ -513,7 +513,7 @@ const RNIB = () => {
                 ))}
               </ul>
               <br />
-              Unfortunately this meeting  was not possible due to the current situation. Instead, we each individually tested the software using our interactive demo.
+              Unfortunately this meeting  was not possible due to the current situation with COVID-19. Instead, each member of our team individually tested the software using our interactive demo.
             </div>
           </div>
         </div>
@@ -617,10 +617,10 @@ const OutputAccuracy = () => {
               </h3>
             </div>
             <div className="mt-4 text-base text-gray-900">
-              One of the most important aspects of <span className="font-louis">louis</span> is an accurate output of the braille dots. Without it, the main purpose of <span className="font-louis">louis</span> - teaching braille - could not be achieved. Many steps have been taken to ensure that this essential goal was accomplished:
+              One of the most important aspects of <span className="font-louis">louis</span> is an accurate braille output. Without it, the main purpose of <span className="font-louis">louis</span> - teaching braille - could not be achieved. Many steps have been taken to ensure that this essential goal was accomplished:
               <br /><br />
               <div className="pl-4 border-l-4 border-indigo-500">
-                Since we were all unfamiliar with the braille alphabet, we ensured that our braille resources were accurate. We discovered that there are many different flavours of braille, so we settled on the Unified English Braille Code. UEBC is an English language Braille code standard.
+                Since we were all unfamiliar with the braille alphabet, we first ensured that our braille resources were accurate. We discovered that there are many different flavours of braille, so we settled on the Unified English Braille Code. UEBC is an English language Braille code standard.
                 <br /><br />
                 The firmware must pass the motors the right rotation angles to arrive at the right braille output. We have assured the correctness of the firmware logic by adding assertions to the code. Both the small disk’s and big disk’s assertions have all returned true for random sequences of 26000 characters. We also automatically run unit tests, which have not failed either for the current software iteration.
                 <br /><br />

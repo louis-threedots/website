@@ -477,6 +477,56 @@ const Budget = () => {
                       20
                     </td>
                   </tr>
+                  <tr className="bg-white even:bg-gray-50">
+                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                      ATMEGA328P-PU Microcontrolle​r
+                    </td>
+                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500"></td>
+
+                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 text-gray-500 numeric-tabular-nums">
+                      1.88
+                    </td>
+                  </tr>
+                  <tr className="bg-white even:bg-gray-50">
+                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                      Crystal Oscillator 20pF
+                    </td>
+                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500"></td>
+
+                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 text-gray-500 numeric-tabular-nums">
+                      0.99
+                    </td>
+                  </tr>
+                  <tr className="bg-white even:bg-gray-50">
+                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                      Voltage Regulators
+                    </td>
+                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500"></td>
+
+                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 text-gray-500 numeric-tabular-nums">
+                      0.45
+                    </td>
+                  </tr>
+                  <tr className="bg-white even:bg-gray-50">
+                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                      RJ12 socket
+                    </td>
+                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500"></td>
+
+                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 text-gray-500 numeric-tabular-nums">
+                      0.44
+                    </td>
+                  </tr>
+                  <tr className="bg-white even:bg-gray-50">
+                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 font-medium text-gray-900">
+                      Custome Printed Circuit Board
+                    </td>
+                    <td className="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500"></td>
+
+                    <td className="px-6 py-4 whitespace-no-wrap text-right text-sm leading-5 text-gray-500 numeric-tabular-nums">
+                      5.00
+                    </td>
+                  </tr>
                   <tr className="bg-white even:bg-gray-50 font-bold border-t-2">
                     <td className="px-6 py-4 whitespace-no-wrap text-sm  leading-5 ">
                       Iteration III
