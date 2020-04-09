@@ -617,10 +617,10 @@ const OutputAccuracy = () => {
               </h3>
             </div>
             <div className="mt-4 text-base text-gray-900">
-              One of the most important aspects of <span className="font-louis">louis</span> is an accurate output of the braille dots. Without it, the main purpose of <span className="font-louis">louis</span> - teaching braille - could not be achieved. Many steps have been taken to ensure that this essential goal was accomplished:
+              One of the most important aspects of <span className="font-louis">louis</span> is an accurate braille output. Without it, the main purpose of <span className="font-louis">louis</span> - teaching braille - could not be achieved. Many steps have been taken to ensure that this essential goal was accomplished:
               <br /><br />
               <div className="pl-4 border-l-4 border-indigo-500">
-                Since we were all unfamiliar with the braille alphabet, we ensured that our braille resources were accurate. We discovered that there are many different flavours of braille, so we settled on the Unified English Braille Code. UEBC is an English language Braille code standard.
+                Since we were all unfamiliar with the braille alphabet, we first ensured that our braille resources were accurate. We discovered that there are many different flavours of braille, so we settled on the Unified English Braille Code. UEBC is an English language Braille code standard.
                 <br /><br />
                 The firmware must pass the motors the right rotation angles to arrive at the right braille output. We have assured the correctness of the firmware logic by adding assertions to the code. Both the small disk’s and big disk’s assertions have all returned true for random sequences of 26000 characters. We also automatically run unit tests, which have not failed either for the current software iteration.
                 <br /><br />
