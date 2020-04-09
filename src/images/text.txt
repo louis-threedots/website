@@ -1,0 +1,17 @@
+Iteration 1:
+
+- The two disks initially had whole sections raised. The pins laying on the raised parts were pushed up, forming the braille characters. During this iteration, the prototype LEGO hardware was built, capable of outputting a single braille character. With the help of a LEGO EV3 Large Servo Motor that was controlled by a LEGO EV3 brick, we managed to control the six pins configuration to display all letters of braille in the alphabet. The firmware for the LEGO prototype was developed, calibrating the motors, mapping braille characters to motor states, and carrying out low-level motor commands.
+
+Iteration 2:
+
+- In this second iteration of louis, we reduced the size of the disks by more than half of what it was before. The big disk has now double encoding, meaning that all combinations could now be achieved by rotating the disk by 180 degrees. Furthermore, the raised parts are not whole segments, but only a ring on the disk. The only changes made to the small disk however, was the reduced size. It was during this iteration that we succeeded in demonstrating modularity, created the first version of our tutor application to teach users braille and implemented voice integration.
+
+Iteration 3:
+
+- We performed User Research and received evaluation on our existing device. This feedback was the driving force behind the changes made during this iteration. In order to use jumbo braille as we were advised, we needed to reduce the size of the disks even further. This proved problematic when using pins, thus we redesigned the disks in three main ways:
+
+	- Replaced the pins with tactical bumps
+	- The small disk can fit inside the big disk
+	- The big disk has now triple encoding and the small disk double
+
+The new disks can be miniaturised further by simply reducing everything by the factor needed. This new design required us to switch to LEGO EV3 Large Servo Motor in order to make the size of the cells smaller and use gears to transform vertical to horizontal rotation. Finally, we developed several new applications for the platform, as well as making the voice integration as trivial and easy to use as possible.
