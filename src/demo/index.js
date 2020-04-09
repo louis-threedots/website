@@ -12,7 +12,7 @@ const Demo = () => (
       <div className="bg-blue-50 px-4 py-3 flex items-start lg:justify-center lg:px-8 lg:py-4">
         <div className="flex-shrink-0">
           <svg
-            class="h-6 w-6 text-blue-600"
+            className="h-6 w-6 text-blue-600"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
