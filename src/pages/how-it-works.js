@@ -208,13 +208,15 @@ const Firmware = () => {
 
   return (
     <div className="text-left">
-      <h3>Communications Protocol</h3>
+      <p className="text-base mt-10  text-left leading-6  text-indigo-600 font-semibold tracking-wide uppercase">
+        Communications Protocol
+      </p>
       <div>
         <Image
           fluid={data.command_bytes.childImageSharp.fluid}
           className="my-4"
         />
-        <p>
+        <p className="mt-4 text-md leading-7 text-gray-600 lg:mx-auto">
           The main controller and cells communicate using a four-byte command
           protocol. The first byte contains the destination of the command. This
           is required because the main controller and cells are chained
@@ -222,12 +224,12 @@ const Firmware = () => {
           connected cell would need to pass through all the connected cells in
           order to reach the last cell.
         </p>
-        <p>
+        <p className="mt-4 text-md leading-7 text-gray-600 lg:mx-auto">
           The second byte in the protocol identifies the specific command to be
           performed. This includes rotations of either the large or small disk,
           button presses, calibration, etc..
         </p>
-        <p>
+        <p className="mt-4 text-md leading-7 text-gray-600 lg:mx-auto">
           The third and fourth bytes in the command protocol hold the data that
           is required to process the specified command. This includes the angle
           for a rotation of the disks, the cell number when a button is pressed,
@@ -242,13 +244,13 @@ const Firmware = () => {
           fluid={data.firmware_state_machine.childImageSharp.fluid}
           className="my-4"
         />
-        <p>
+        <p className="mt-4 text-md leading-7 text-gray-600 lg:mx-auto">
           The firmware running on the microcontroller in each cell implements a
           Finite State Machine (FSM). The purpose of this FSM is to receive
           incoming commands, read the commands, then act on them accordingly.
           Each of the steps in the FSM is outlined below.
         </p>
-        <ol>
+        <div className="prose"><ol>
           <li>
             <b>Wait for command</b>: in the starting state, the firmware idles,
             continuously polling the serial ports until it receives a command.
@@ -269,8 +271,17 @@ const Firmware = () => {
             current cell, the firmware forwards the command in the direction
             that will lead to the current cell.
           </li>
-        </ol>
+        </ol></div>
       </div>
+      <p className="text-base mt-10  text-left leading-6  text-indigo-600 font-semibold tracking-wide uppercase">
+        Interactive Examples
+      </p>
+      <p className="mt-4 text-md leading-7 text-gray-600 lg:mx-auto">
+        The following three interactive widgets demonstrate three core features of the
+        firmware: sending output from the main controller to connected cells, sending
+        input from the connected cells to the main controller, and determining the number
+        of cells that are connected.
+      </p>
       <FirmwareSimulator
         title="Sending Output to Cells"
         steps={[
