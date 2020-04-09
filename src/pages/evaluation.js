@@ -779,6 +779,213 @@ const HarwareImprovements = () => {
   )
 }
 
+const SpeechRecognition = () => {
+  const sr_results = [
+    <p>Having tested various open source speech recognition APIs, we settled on Google Speech Recognition. We tweaked parameters like adjusting for background noise until we got the least errors.</p>,
+
+    <p>We quickly discovered that we should keep the voice commands as simple as possible. The user can control all aspects of the device with just one-word and two-word command, which makes the speech recognition a lot easier and more reliable.</p>,
+
+    <p>For a specific app, the Tutor app, we encountered a common problem: recognising spelled letters. The Tutor app tests the user’s knowledge on the individual braille alphabet characters. It is very challenging to discern ‘b’ from ‘bee’ for example, even as humans. We came up with a solution where the user can give their answers by using any word starting with the perceived braille character, e.g. ‘book’ for ‘b’, ‘cat’ for ‘c’.</p>,
+
+    <p>Another useful functionality we developed is the await_response function, which lets apps pass through a list of responses that they could expect to hear from the user. For example if the app expects a response to a simple question like “Do you want to do this?” the app can pass the potential responses of “yes” and “no”. Until the user gives one of the options, it will continue to listen for them.</p>,
+
+    <p>The user can ask for the possible responses by saying ‘options’. This means the user will not be constantly interrupted by ‘Invalid option’, even if the speech recogniser fails to parse the audio input correctly. The user can conveniently try again, and will receive feedback only when they appear to be stuck.</p>,
+
+    <p>When commands like ‘exit’ are given, which break up the app flow, the user is asked for confirmation of the action. In case the speech recogniser was mistaken, the user is conveniently returned to their current activity.</p>
+  ]
+
+  return (
+    <div className="mt-4 relative max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 lg:mt-5">
+      <div className="max-w-lg mx-auto lg:max-w-none">
+        <div className="rounded-lg bg-gray-100 px-6 py-8 sm:p-10 lg:flex lg:items-center">
+          <div className="flex-1">
+            <div>
+              <p className="text-base leading-6 text-indigo-600 font-semibold tracking-wide uppercase">
+                Software Evaluation
+              </p>
+              <h3 className="text-xl leading-8 font-extrabold text-gray-900 sm:text-2xl sm:leading-9">
+                Speech Recognition
+              </h3>
+            </div>
+            <div className="mt-4 text-base text-gray-900">
+              It is essential that speech recognition is both fast and accurate, since this is the main way of communicating with <span className="font-louis">louis</span>. State-of-the-art speech recognisers can sometimes still have a hard time discerning the intended phrases, so we spent a lot of effort towards optimizing this feature. During development, we noticed that the particular microphone used in testing has a big effect on the results. Unfortunately that is why we weren’t able to do final quantitative evaluation tests, because we no longer have access to the hardware due to the global pandemic. Of course we have tested the speech recognition extensively on our laptops, so we would like to present those findings here:
+              <ul className="mt-8 lg:grid lg:grid-cols-2 lg:col-gap-8 lg:row-gap-5">
+                {sr_results.map((point, i) => (
+                  <li
+                    className="mt-5 first:mt-0 lg:mt-0 flex items-start lg:col-span-1"
+                    key={'sr_' + i}
+                  >
+                    <div className="flex-shrink-0">
+                      <svg
+                        className="h-5 w-5 text-green-400"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                    </div>
+                    <div className="ml-3 text-sm leading-5 text-gray-700">
+                      {point}
+                    </div>
+                  </li>
+                ))}
+              </ul>
+              <br />
+              We are pleased with the overall performance. The interaction flow is pleasant, despite the occasional misinterpreted audio input. <span className="font-louis">louis</span> is able to recover from such errors without being a bother to the user. We cannot rule out some minor frustrations in dealing with the device, but are confident that it is fully operational and usable.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+const AudioOutput = () => {
+  return (
+    <div className="mt-4 relative max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 lg:mt-5">
+      <div className="max-w-lg mx-auto lg:max-w-none">
+        <div className="rounded-lg bg-indigo-50 px-6 py-8 sm:p-10 lg:flex lg:items-center">
+          <div className="flex-1">
+            <div>
+              <p className="text-base leading-6 text-indigo-600 font-semibold tracking-wide uppercase">
+                Software Evaluation
+              </p>
+              <h3 className="text-xl leading-8 font-extrabold text-gray-900 sm:text-2xl sm:leading-9">
+                Audio Output
+              </h3>
+            </div>
+            <div className="mt-4 text-base text-gray-900">
+              When evaluating the speech synthesis we were reasonably happy with the way it sounded. We discovered some solvable errors in the audio output, for example spelling the letter ‘a’ would not give the output ‘ay’ but ‘ah’. We implemented our own pronunciation library to cover such cases.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+const EducationalApps = () => {
+  return (
+    <div className="mt-4 relative max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 lg:mt-5">
+      <div className="max-w-lg mx-auto lg:max-w-none">
+        <div className="rounded-lg bg-gray-100 px-6 py-8 sm:p-10 lg:flex lg:items-center">
+          <div className="flex-1">
+            <div>
+              <p className="text-base leading-6 text-indigo-600 font-semibold tracking-wide uppercase">
+                Software Evaluation
+              </p>
+              <h3 className="text-xl leading-8 font-extrabold text-gray-900 sm:text-2xl sm:leading-9">
+                Educational Apps
+              </h3>
+            </div>
+            <div className="mt-4 text-base text-gray-900">
+              We extensively tested all our apps and made many improvements along the way. For our educational apps, we drew from established sources on how to teach braille.
+              <ul className="mt-8 lg:grid lg:grid-cols-2 lg:col-gap-8 lg:row-gap-5">
+                  <li
+                    className="mt-5 first:mt-0 lg:mt-0 flex items-start lg:col-span-1"
+                    key='app_learn'
+                  >
+                    <div className="flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                    </div>
+                    <div className="ml-3 text-sm leading-5 text-gray-700">
+                      <p>The Learn app is our basic teacher and has been successful in teaching members of our team the braille alphabet.</p>
+                    </div>
+                  </li>
+                  <li
+                    className="mt-5 first:mt-0 lg:mt-0 flex items-start lg:col-span-1"
+                    key='app_tutor'
+                  >
+                    <div className="flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8"><path d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path></svg>
+                    </div>
+                    <div className="ml-3 text-sm leading-5 text-gray-700">
+                      <p>The Tutor app evaluates the knowledge acquired from the Learn app and reinforces the learning of characters that the user gets wrong. We have noticed our own test results improving gradually.</p>
+                    </div>
+                  </li>
+                  <li
+                    className="mt-5 first:mt-0 lg:mt-0 flex items-start lg:col-span-1"
+                    key='app_riddles'
+                  >
+                    <div className="flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8"><path d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <div className="ml-3 text-sm leading-5 text-gray-700">
+                      <p>The Riddles App was developed to stimulate learning, by giving the user interesting and comical riddles with answers that they can only find out by reading braille. This motivational approach has been previously adopted by Royal Blind, Scotland’s largest vision impairment organisation.</p>
+                    </div>
+                  </li>
+                  <li
+                    className="mt-5 first:mt-0 lg:mt-0 flex items-start lg:col-span-1"
+                    key='app_learn'
+                  >
+                    <div className="flex-shrink-0">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8"><path d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    </div>
+                    <div className="ml-3 text-sm leading-5 text-gray-700">
+                      <p>The Memory App implements the traditional Memory card game, for one or two players, where the ‘cards’ are individual cells corresponding to a braille alphabet character. The team has had a lot of fun practising and improving our braille!</p>
+                    </div>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+const OpenSDK = () => {
+  return (
+    <div className="mt-4 relative max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 lg:mt-5">
+      <div className="max-w-lg mx-auto lg:max-w-none">
+        <div className="rounded-lg bg-indigo-50 px-6 py-8 sm:p-10 lg:flex lg:items-center">
+          <div className="flex-1">
+            <div>
+              <p className="text-base leading-6 text-indigo-600 font-semibold tracking-wide uppercase">
+                Software Evaluation
+              </p>
+              <h3 className="text-xl leading-8 font-extrabold text-gray-900 sm:text-2xl sm:leading-9">
+                Open SDK
+              </h3>
+            </div>
+            <div className="mt-4 text-base text-gray-900">
+              One of the applications we developed was the “Headlines” app, which displays BBC news headlines and an optional short summary. The main purpose of the development of this app is to evaluate if our SDK is user-friendly for 3rd-party developers with little knowledge of our hardware. It was decided that the developer of this app would pretend as though they were a developer from the BBC. This was a useful exercise as there were a few functions that we were able to pinpoint as necessary from the perspective of a 3rd-party developer. We believe this test has helped us make the open SDK developer experience as straightforward as possible, and also provides our users with a valuable application!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+const SoftwareImprovements = () => {
+  return (
+    <div className="mt-4 relative max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 lg:mt-5">
+      <div className="max-w-lg mx-auto lg:max-w-none">
+        <div className="rounded-lg bg-green-100 px-6 py-8 sm:p-10 lg:flex lg:items-center">
+          <div className="flex-1">
+            <div>
+              <p className="text-base leading-6 text-indigo-600 font-semibold tracking-wide uppercase">
+                Software Evaluation
+              </p>
+              <h3 className="text-xl leading-8 font-extrabold text-gray-900 sm:text-2xl sm:leading-9">
+                Main Areas of Improvement
+              </h3>
+            </div>
+            <div className="mt-4 text-base text-gray-900">
+              From our user research session, we received the feedback that for audio output a human voice would be preferred, as "synthetic voices can get tedious". We have recorded the user guide, but did not have time enough to record all the sentences <span className="font-louis">louis</span> says. Adding this will be easy to implement. The software already supports this feature, so developers adding apps to our open SDK can provide their own audio files if they wish to do so.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
 const Evaluation = () => {
   return (
     <>
@@ -799,6 +1006,11 @@ const Evaluation = () => {
           <Reliability />
           <UserExperience />
           <HarwareImprovements />
+          <SpeechRecognition />
+          <AudioOutput />
+          <EducationalApps />
+          <OpenSDK />
+          <SoftwareImprovements />
         </div>
       </div>
     </>
