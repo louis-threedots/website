@@ -1,7 +1,7 @@
 import React from "react"
 import SEO from "../components/seo"
 
-const Comments = () => {
+const Comments = () => (
   <>
     <SEO title="Comments" />
     <div class="bg-white">
@@ -15,6 +15,6 @@ const Comments = () => {
       </div>
     </div>
   </>
-}
+)
 
 export default Comments
