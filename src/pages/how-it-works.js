@@ -13,6 +13,9 @@ const LoadableDisksViewer = Loadable({
 const Software = () => {
   return (
     <div className="flex flex-col items-start text-left mt-24 ">
+      <h3 className="text-xl leading-12 font-extrabold text-gray-900 sm:text-2xl sm:leading-9">
+        Software
+      </h3>
       <p className="text-base leading-6 text-indigo-600 font-semibold tracking-wide uppercase">
         Audio Interface
       </p>
@@ -86,9 +89,9 @@ const Software = () => {
 const Hardware = () => {
   return (
     <div className="text-left">
-      <p className="text-base leading-6  text-indigo-600 font-semibold tracking-wide uppercase">
+      <h3 className="text-xl leading-8 font-extrabold text-gray-900 sm:text-2xl sm:leading-9">
         Hardware
-      </p>
+      </h3>
       <p className="mt-4 text-md leading-7 text-gray-600 lg:mx-auto">
         The hardware design was inspired by combination locks and Gray Code.
         Each cell uses a single motor, which rotates an axel holding two disks.
@@ -111,7 +114,6 @@ const Hardware = () => {
         triple and double encoding respectively, which enabled for smaller and
         faster transitions between the different combinations.
       </p>
-      <LoadableDisksViewer />
       <p className="mt-4 text-md leading-7 text-gray-600 lg:mx-auto">
         Our cell walls were made from lego bricks during the testing phase and
         were intended to be replaced by a combination of 3D printed and
@@ -221,11 +223,23 @@ const Firmware = () => {
           }
         }
       }
+      pcb_combined: file(
+        relativePath: { eq: "pcb_combined.png" }
+      ) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
 
   return (
     <div className="text-left">
+      <h3 className="text-xl leading-8 font-extrabold text-gray-900 sm:text-2xl sm:leading-9">
+        Firmware
+      </h3>
       <p className="text-base mt-10  text-left leading-6  text-indigo-600 font-semibold tracking-wide uppercase">
         Communications Protocol
       </p>
@@ -411,6 +425,21 @@ const Firmware = () => {
           },
         ]}
       />
+      <p className="text-base mt-10  text-left leading-6  text-indigo-600 font-semibold tracking-wide uppercase">
+        Custom Printed Circuit Board (PCB)
+      </p>
+      <Image
+        fluid={data.pcb_combined.childImageSharp.fluid}
+        className="my-4"
+      />
+      <p className="mt-4 text-md leading-7 text-gray-600 lg:mx-auto">
+        A major goal of louis is to keep the unit cost of individual cells to a
+        minimum. Although the firmward had been developed using the Arduino hardware
+        and software, it was decided that a custom PCB would allow for reduced costs
+        in the long run, particularly if produced at scale. This PCB was designed to
+        include only the absolute minimum number of components in order to reduce the
+        Bill of Materials.
+      </p>
     </div>
   )
 }
@@ -445,7 +474,7 @@ const HowItWorks = () => {
         </div>
       </div>
 
-      
+      <LoadableDisksViewer />
     </>
   )
 }
