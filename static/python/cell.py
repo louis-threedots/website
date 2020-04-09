@@ -1,5 +1,4 @@
 class Cell:
-
     def __init__(self, index):
         self.set_to_default()
         self.index = index

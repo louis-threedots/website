@@ -4,8 +4,10 @@ importScripts(`${BASE_URL}pyodide.js`)
 
 const files = {
   characters: "./python/characters.py",
-  demo: "./python/demo.py",
   cell: "./python/cell.py",
+  app: "./python/app.py",
+  main: "./python/main.py",
+  demo: "./python/demo.py",
 }
 
 const defaultData = {}
