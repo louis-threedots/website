@@ -13,6 +13,9 @@ const LoadableDisksViewer = Loadable({
 const Software = () => {
   return (
     <div className="flex flex-col items-start text-left mt-24 ">
+      <h3 className="text-xl leading-12 font-extrabold text-gray-900 sm:text-2xl sm:leading-9">
+        Software
+      </h3>
       <p className="text-base leading-6 text-indigo-600 font-semibold tracking-wide uppercase">
         Audio Interface
       </p>
@@ -86,9 +89,9 @@ const Software = () => {
 const Hardware = () => {
   return (
     <div className="text-left">
-      <p className="text-base leading-6  text-indigo-600 font-semibold tracking-wide uppercase">
+      <h3 className="text-xl leading-8 font-extrabold text-gray-900 sm:text-2xl sm:leading-9">
         Hardware
-      </p>
+      </h3>
       <p className="mt-4 text-md leading-7 text-gray-600 lg:mx-auto">
         The hardware design was inspired by combination locks and Gray Code.
         Each cell uses a single motor, which rotates an axel holding two disks.
@@ -234,6 +237,9 @@ const Firmware = () => {
 
   return (
     <div className="text-left">
+      <h3 className="text-xl leading-8 font-extrabold text-gray-900 sm:text-2xl sm:leading-9">
+        Firmware
+      </h3>
       <p className="text-base mt-10  text-left leading-6  text-indigo-600 font-semibold tracking-wide uppercase">
         Communications Protocol
       </p>
