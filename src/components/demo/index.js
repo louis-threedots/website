@@ -97,7 +97,7 @@ const Demo = () => {
                   </h3>
                 </div>
 
-                <div className="ml-4 mt-2 flex-shrink-0">
+                <div className="ml-4 mt-2 flex-shrink-0 hidden md:block">
                   <span className="inline-flex rounded-md shadow-sm">
                     <button
                       type="button"
