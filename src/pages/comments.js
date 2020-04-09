@@ -12,9 +12,9 @@ const Comments = () => {
             <br />
             <span class="text-indigo-600">Ask away.</span>
           </h2>
+          The official University of Edinburgh comment page can be found <a href="https://sdp2020.gitlab.io/posts/group10/" className="font-medium text-gray-500 underline">here</a>.
         </div>
       </div>
-      <a href="https://sdp2020.gitlab.io/posts/group10/">Comments</a>
     </>
   )
 }
