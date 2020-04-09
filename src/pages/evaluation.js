@@ -595,7 +595,7 @@ const OutputAccuracy = () => {
     </div>,
 
     <div>
-      Next rotations were sometimes set in motion before the motor was in the correct position. All cells are now pinged for their position and only when they have arrived at their destination is the next rotation started.
+      Next rotations were sometimes set in motion before the motor was in the correct position. All cells are now checked for their position and only when they have arrived at their destination is the next rotation started.
     </div>,
 
     <div>
@@ -622,7 +622,7 @@ const OutputAccuracy = () => {
               <div className="pl-4 border-l-4 border-indigo-500">
                 Since we were all unfamiliar with the braille alphabet, we ensured that our braille resources were accurate. We discovered that there are many different flavours of braille, so we settled on the Unified English Braille Code. UEBC is an English language Braille code standard.
                 <br /><br />
-                The firmware must pass the motors the right rotation angles to arrive at the right braille output. We have assured the correctness of the firmware logic by adding assertions to the code. Both the small disk’s and big disk’s assertions have all returned true for random sequences of 26000 characters. We also automatically run unit tests, which have not failed either.
+                The firmware must pass the motors the right rotation angles to arrive at the right braille output. We have assured the correctness of the firmware logic by adding assertions to the code. Both the small disk’s and big disk’s assertions have all returned true for random sequences of 26000 characters. We also automatically run unit tests, which have not failed either for the current software iteration.
                 <br /><br />
                 The motors must be calibrated carefully in order to give accurate output. We have established that once calibration is done precisely, the motors do not introduce any inaccuracies. In the rare event of a calibration error, the user can manually recalibrate using the Calibration app that comes with the device. Instructions on how to use the app are given in the <Link to="/documentation" className="font-medium text-gray-500 underline">User Guide</Link>.
                 <br /><br />
@@ -650,7 +650,7 @@ const OutputAccuracy = () => {
                 </ul>
               </div>
               <br />
-              All these countermeasures have helped us achieve perfect accuracy. We evaluated our hardware on random orders of the alphabet characters. The following table summarises the tests we’ve run:
+              All these measures have helped us achieve perfect accuracy. We evaluated our hardware on random orders of the alphabet characters. The following table summarises the tests we’ve run:
               <br /><br />
               <TableBrailleOutput />
               <br />
@@ -688,7 +688,7 @@ const RenderingSpeed = () => {
               <br />
               We concluded that 90° is indeed optimal. On further inspection we confirmed that there are cases where 120° or 180° result in smaller rotation angles for a character, but on average 90° comes out on top.
               <br /><br />
-              The average rotation angle per character is <strong>153°</strong>. The time it takes to calculate the optimal rotation angles and pass it on to the hardware is negligible (0.000020), so the render times will be determined by the motor. From Figure 4 you can see we have optimised the movement speed and acceleration and deceleration speed. Unfortunately because we can no longer access our device due to the current global pandemic, we did not have the opportunity to officially record character render times. We know, however, that our hardware supports the highest speed that the motor supports. On the <a href="https://education.lego.com/en-us/products/lego-mindstorms-education-ev3-medium-servo-motor/45503" className="font-medium text-gray-500 underline">official LEGO® site</a> it states that the motor is able to do 240-250 rotations per minute. This means 0.25 seconds per 360°. We estimate that the two acceleration periods and the two deceleration periods per character render add an additional 0.1 seconds each. The average <strong>153°</strong> is then translated into an average of 4 * 0.1s + 153°/ 360° * 0.25s = <strong>0.506 seconds per character render</strong>. This matches our unofficial observations when testing the hardware in general.
+              The average rotation angle per character is <strong>153°</strong>. The time it takes to calculate the optimal rotation angles and pass it on to the hardware is negligible (0.000020s), so the render times will be determined by the motor. From Figure 4 you can see we have optimised the movement speed and acceleration and deceleration speed. Unfortunately because we can no longer access our device due to the current global pandemic, we did not have the opportunity to officially record character render times. We know, however, that our hardware supports the highest speed that the motor supports. On the <a href="https://education.lego.com/en-us/products/lego-mindstorms-education-ev3-medium-servo-motor/45503" className="font-medium text-gray-500 underline">official LEGO® site</a> it states that the motor is able to do 240-250 rotations per minute. This means 0.25 seconds per 360°. We estimate that the two acceleration periods and the two deceleration periods per character render add an additional 0.1 seconds each. The average <strong>153°</strong> is then translated into an average of 4 * 0.1s + 153°/ 360° * 0.25s = <strong>0.506 seconds per character render</strong>. This matches our observations when testing the hardware in general.
             </div>
           </div>
         </div>
@@ -790,7 +790,7 @@ const Evaluation = () => {
               Evaluation of <span className="font-louis">louis</span>
             </h3>
             <p className="mt-4 max-w-2xl text-xl leading-7 text-gray-500 lg:mx-auto">
-              At ThreeDots we’re committed to delivering the best possible product to our customers. Beside the user experience research we have conducted, we have done extensive evaluation testing to ensure the reliability and optimality of the hardware. The next paragraphs summarize the research, the test results and the steps we’ve taken to achieve them.
+              At ThreeDots we’re committed to delivering the best possible product to our customers. Beside the user experience research we have conducted, we have done extensive evaluation testing to ensure the reliability and optimality of the hardware.
             </p>
           </div>
           <RNIB />
