@@ -62,6 +62,23 @@ const Software = () => {
         right after being read in order to allow users with small number of
         cells can benefit from this app.
       </p>
+
+      <p className="text-base leading-6 text-indigo-600 font-semibold tracking-wide uppercase">
+        Riddles App
+      </p>
+      <p className="mt-4 mb-8 text-md leading-7 text-gray-600 lg:mx-auto">
+        Stimulate learning, by solving interesting and comical riddles with answers that they can only find out by reading braille! This motivational approach has been previously adopted by Royal Blind, Scotland’s largest vision impairment organisation. Easily browse through the riddle library by using voice commands. Keeps track of which riddle has been viewed most recently, so you can conveniently pick up where you left off.
+      </p>
+
+      <p className="text-base leading-6 text-indigo-600 font-semibold tracking-wide uppercase">
+        Memory App
+      </p>
+      <p className="mt-4 mb-8 text-md leading-7 text-gray-600 lg:mx-auto">
+        Play the traditional Memory card game, for one or two players, where the cards are individual cells corresponding to a braille alphabet character. Developed to stimulate learning, by practising the memorisation of the braille alphabet characters in a recreational way.
+      </p>
+      <p className="mt-4 mb-8 text-md leading-7 text-gray-600 lg:mx-auto">
+        Players first determine if they are playing on their own or not. In solo mode, the number of turns is recorded, so that the player can attempt to find all pairs in as little turns as possible. When playing together, the app will keep track of the score. A player can ‘flip a card’ by pressing the button on a cell. That cell will go from a blank output to rendering the associated character. A second cell can be selected in the same way. The player gets time to inspect the characters, and can move on to the next turn by saying ‘next’. The output will then return to blank again if it was not a pair. If the two cells were showing corresponding characters, they will stay ‘facing upwards’. The character will be read out to reinforce learning and the player earns a point. In multiplayer mode, the same player gets another turn.
+      </p>
     </div>
   )
 }
