@@ -152,7 +152,7 @@ const Team = () => {
                     </div>
                     <div className="border-t border-b border-gray-100 p-6 text-center sm:border-0 sm:border-l sm:border-r">
                       <p className="text-5xl leading-none font-extrabold text-indigo-600">
-                        19.3K+
+                        19.6K+
                       </p>
                       <p className="mt-2 text-lg leading-6 font-medium text-gray-500">
                         Lines of Code
@@ -199,8 +199,8 @@ const Team = () => {
           <p className="mt-2 text-md  leading-7 text-gray-500 ">
             The rest of the team was divided into the functional units of
             hardware and software, and sub-units for system design, and
-            low-level/high-level for software. Communication between the
-            system design role of hardware and software was essential in order to
+            low-level/high-level for software. Communication between the system
+            design role of hardware and software was essential in order to
             ensure the interoperability of the systems developed independently
             by the team members.{" "}
           </p>
@@ -210,18 +210,19 @@ const Team = () => {
             of channels was reduced to a minimum. Fixed weekly meetings for the
             whole team were scheduled in advance to ensure the availability of
             all team members to discuss the progress of the project and
-            potentially plan adjustment measures. Additionally, team members were
-            committed to daily stand-ups on Slack with the aim of synchronizing
-            information among the team and identifying potential issues.{" "}
+            potentially plan adjustment measures. Additionally, team members
+            were committed to daily stand-ups on Slack with the aim of
+            synchronizing information among the team and identifying potential
+            issues.{" "}
           </p>
           <p className="mt-2  text-md  leading-7 text-gray-500 ">
             Code-sharing and version control were all handled using git and
             GitHub. In order to guarantee the cleanliness and functionality of
-            the code base, a contribution procedure was enforced by which commits
-            cannot be pushed directly to the master branch but must be submitted
-            using pull requests. The pull requests were then peer-reviewed by
-            other team members and automatically checked for compilation errors
-            in the continuous integration pipeline.
+            the code base, a contribution procedure was enforced by which
+            commits cannot be pushed directly to the master branch but must be
+            submitted using pull requests. The pull requests were then
+            peer-reviewed by other team members and automatically checked for
+            compilation errors in the continuous integration pipeline.
           </p>
         </div>
       </div>
