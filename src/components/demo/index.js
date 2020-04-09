@@ -21,7 +21,7 @@ const Demo = () => {
     },
   })
   const sendTextInput = () => {
-    if (textInput != "") {
+    if (textInput !== "") {
       addMessage({ content: textInput, from: "user" })
     }
     setTextInput("")
