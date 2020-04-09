@@ -62,7 +62,7 @@ const Team = () => {
           }
         }
       }
-      Andreas: file(relativePath: { eq: "Placeholder.png" }) {
+      Andreas: file(relativePath: { eq: "Andreas.png" }) {
         childImageSharp {
           fluid(maxWidth: 96) {
             ...GatsbyImageSharpFluid
