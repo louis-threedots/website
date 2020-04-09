@@ -1,5 +1,6 @@
 import React from "react"
 import SEO from "../components/seo"
+import { Link } from "gatsby"
 
 const TableBrailleOutput = () => {
   return (
@@ -623,7 +624,7 @@ const OutputAccuracy = () => {
                 <br /><br />
                 The firmware must pass the motors the right rotation angles to arrive at the right braille output. We have assured the correctness of the firmware logic by adding assertions to the code. Both the small disk’s and big disk’s assertions have all returned true for random sequences of 26000 characters. We also automatically run unit tests, which have not failed either.
                 <br /><br />
-                The motors must be calibrated carefully in order to give accurate output. We have established that once calibration is done precisely, the motors do not introduce any inaccuracies. In the rare event of a calibration error, the user can manually recalibrate using the Calibration app that comes with the device. Instructions on how to use the app are given in the User Guide [LINK TODO].
+                The motors must be calibrated carefully in order to give accurate output. We have established that once calibration is done precisely, the motors do not introduce any inaccuracies. In the rare event of a calibration error, the user can manually recalibrate using the Calibration app that comes with the device. Instructions on how to use the app are given in the <Link to="/documentation" className="font-medium text-gray-500 underline">User Guide</Link>.
                 <br /><br />
                 The motor’s rotations need to be accurate. Problems we ran into were the following:
                 <ul className="mt-8 lg:col-gap-8 lg:row-gap-5">
@@ -679,7 +680,7 @@ const RenderingSpeed = () => {
             <div className="mt-4 text-base text-gray-900">
               Another important aspect of <span className="font-louis">louis</span> is the character rendering speed. A feature that supports speedy render times is that cells can move in parallel, so all characters of a line can render at the same time. Thus the render time of a line of text is equal to the render time of a single character.
               <br /><br />
-              The tuning we applied to the motor control ensures that movement is done as efficiently as possible. The added friction helps enable fast rotation. As described on the “How does it work” [LINK TODO] page, the small disk has all 8 dot combinations twice and the big disk three times. This in turn allows us to have the two catches [LINK TODO] only 90° apart. Combined, this gives us the optimal rotation angles when printing characters, thus significantly increasing rendering speed.
+              The tuning we applied to the motor control ensures that movement is done as efficiently as possible. The added friction helps enable fast rotation. As described on the <Link to="/how-it-works" className="font-medium text-gray-500 underline">How it Works</Link> page, the small disk has all 8 dot combinations twice and the big disk three times. This in turn allows us to have the two catches only 90° apart. Combined, this gives us the optimal rotation angles when printing characters, thus significantly increasing rendering speed.
               <br /><br />
               Possibly a catch spacing of 120° or 180° could be more optimal, since it increases flexibility for the starting direction of rotations. We performed tests to compare the options. Every test evaluates 1000 random orders of the full alphabet, so a total of 26000 characters. It calculates the rotation angles for each character in each order, sums the angles per order, and returns the average of angles over all 1000 orders. The results are summarised in the following table:
               <br /><br />
@@ -687,7 +688,7 @@ const RenderingSpeed = () => {
               <br />
               We concluded that 90° is indeed optimal. On further inspection we confirmed that there are cases where 120° or 180° result in smaller rotation angles for a character, but on average 90° comes out on top.
               <br /><br />
-              The average rotation angle per character is <strong>153°</strong>. The time it takes to calculate the optimal rotation angles and pass it on to the hardware is negligible (0.000020), so the render times will be determined by the motor. From Figure 4 you can see we have optimised the movement speed and acceleration and deceleration speed. Unfortunately because we can no longer access our device due to the current global pandemic, we did not have the opportunity to officially record character render times. We know, however, that our hardware supports the highest speed that the motor supports. On the official LEGO® site [LINK TODO https://education.lego.com/en-us/products/lego-mindstorms-education-ev3-medium-servo-motor/45503 ) we know that the motor is able to do 240-250 rotations per minute. This means 0.25 seconds per 360°. We estimate that the two acceleration periods and the two deceleration periods per character render add an additional 0.1 seconds each. The average <strong>153°</strong> is then translated into an average of 4 * 0.1s + 153°/ 360° * 0.25s = <strong>0.506 seconds per character render</strong>. This matches our unofficial observations when testing the hardware in general.
+              The average rotation angle per character is <strong>153°</strong>. The time it takes to calculate the optimal rotation angles and pass it on to the hardware is negligible (0.000020), so the render times will be determined by the motor. From Figure 4 you can see we have optimised the movement speed and acceleration and deceleration speed. Unfortunately because we can no longer access our device due to the current global pandemic, we did not have the opportunity to officially record character render times. We know, however, that our hardware supports the highest speed that the motor supports. On the <a href="https://education.lego.com/en-us/products/lego-mindstorms-education-ev3-medium-servo-motor/45503" className="font-medium text-gray-500 underline">official LEGO® site</a> it states that the motor is able to do 240-250 rotations per minute. This means 0.25 seconds per 360°. We estimate that the two acceleration periods and the two deceleration periods per character render add an additional 0.1 seconds each. The average <strong>153°</strong> is then translated into an average of 4 * 0.1s + 153°/ 360° * 0.25s = <strong>0.506 seconds per character render</strong>. This matches our unofficial observations when testing the hardware in general.
             </div>
           </div>
         </div>
@@ -713,7 +714,7 @@ const Reliability = () => {
             <div className="mt-4 text-base text-gray-900">
               We have ensured general reliability of all hardware and firmware. The final design has eliminated fragile parts, printing the dots directly and securely onto the disks, unlike current braille devices which work with pins and break easily. Disks are fastened tightly to the axel and the whole structure is supported so that any wiggle is strictly limited.
               <br /><br />
-              It is straightforward to click cells together and attach them to the main controller. The cell discovery protocol [LINK TODO] has never failed and always returns the accurate number of cells. Button presses are reliably registered and passed to the main controller.
+              It is straightforward to click cells together and attach them to the main controller. The <Link to="/how-it-works" className="font-medium text-gray-500 underline">cell discovery protocol</Link> has never failed and always returns the accurate number of cells. Button presses are reliably registered and passed to the main controller.
             </div>
           </div>
         </div>
@@ -742,7 +743,7 @@ const UserExperience = () => {
               <div className="pl-4 border-l-4 border-indigo-500">
                 <i>"As part of an investigation aimed at reducing costs in user testing of people with disabilities, a user test was conducted to compare the differences between a group of 15 blind, and 15 blindfolded (sighted) subjects using a touchscreen public information kiosk that was intended for use by people who cannot see. The number and type of problems found by each group were compared, and it was found that the results between each group were mostly similar"</i>
                 <br /><br />
-                [Reference: Law, C. M. & Vanderheiden, G. C (2000). Reducing Sample Sizes When User Testing with People Who Have, and Who are Simulating Disabilities - Experiences with Blindness and Public Information Kiosks. Proceedings of the Human Factors and Ergonomics Society Annual Meeting, 44(26), 157–160. URL https://doi.org/10.1177/154193120004402607] TODO
+                [Reference: Law, C. M. & Vanderheiden, G. C (2000). Reducing Sample Sizes When User Testing with People Who Have, and Who are Simulating Disabilities - Experiences with Blindness and Public Information Kiosks. Proceedings of the Human Factors and Ergonomics Society Annual Meeting, 44(26), 157–160. URL <a href="https://doi.org/10.1177/154193120004402607" className="font-medium text-gray-500 underline">https://doi.org/10.1177/154193120004402607</a>]
               </div>
               <br />
               When performing our own user experience evaluation relating to the hardware, we were satisfied with the design choices we made. When we were informed in our interview session that the size of a regular 3x2 LEGO brick (24×16mm) is ideal for learning braille, we matched our braille output to these dimensions. The dots are easily distinguishable, have a comfortable feel and the small gap between the big and small disk is not tangible. The guide rail, which we also implemented in response to the research session, is a good aid to move on from one character to the next.

@@ -1,23 +1,28 @@
 import React from "react"
 import SEO from "../components/seo"
-import GallerySwiper from "react-native-gallery-swiper";
+import ImageGallery from 'react-image-gallery';
+// import "~react-image-gallery/styles/scss/image-gallery.scss";
+// import "~react-image-gallery/styles/css/image-gallery.css"
+ 
+const images = [
+  {
+    original: 'https://picsum.photos/id/1018/1000/600/',
+    thumbnail: 'https://picsum.photos/id/1018/250/150/',
+  },
+  {
+    original: 'https://picsum.photos/id/1015/1000/600/',
+    thumbnail: 'https://picsum.photos/id/1015/250/150/',
+  },
+  {
+    original: 'https://picsum.photos/id/1019/1000/600/',
+    thumbnail: 'https://picsum.photos/id/1019/250/150/',
+  },
+];
 
 const LabBook = () => (
   <>
     <SEO title="Lab Book" />
-    <GallerySwiper
-      images={[
-        { uri: "https://luehangs.site/pic-chat-app-images/beautiful-blond-blonde-hair-478544.jpg" },
-        { uri: "https://luehangs.site/pic-chat-app-images/animals-avian-beach-760984.jpg" },
-        { URI: "https://luehangs.site/pic-chat-app-images/beautiful-blond-fishnet-stockings-48134.jpg" },
-        { url: "https://luehangs.site/pic-chat-app-images/beautiful-beautiful-woman-beauty-9763.jpg" },
-        { URL: "https://luehangs.site/pic-chat-app-images/attractive-balance-beautiful-186263.jpg" },
-      ]}
-      // Version *1.15.0 update
-      // onEndReached={() => {
-      //     // add more images when scroll reaches end
-      // }}
-    />
+    <ImageGallery items={images} />
   </>
 )
 
