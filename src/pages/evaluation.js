@@ -1,6 +1,6 @@
+import { Link } from "gatsby"
 import React from "react"
 import SEO from "../components/seo"
-import { Link } from "gatsby"
 
 const TableBrailleOutput = () => {
   return (
@@ -96,13 +96,22 @@ const TableCatchSpacing = () => {
                 <th className="px-6 py-3 border-b border-gray-200 bg-gray-700 text-left text-xs leading-4 font-medium text-white uppercase tracking-wider w-1/7">
                   Catch Spacing
                 </th>
-                <th colSpan="2" className="lg:text-center px-6 py-3 border-b border-gray-200 bg-gray-700 text-left text-xs leading-4 font-medium text-white uppercase tracking-wider w-2/7">
+                <th
+                  colSpan="2"
+                  className="lg:text-center px-6 py-3 border-b border-gray-200 bg-gray-700 text-left text-xs leading-4 font-medium text-white uppercase tracking-wider w-2/7"
+                >
                   90°
                 </th>
-                <th colSpan="2" className="lg:text-center px-6 py-3 border-b border-gray-200 bg-gray-700 text-right text-xs leading-4 font-medium text-white uppercase tracking-wider w-2/7">
+                <th
+                  colSpan="2"
+                  className="lg:text-center px-6 py-3 border-b border-gray-200 bg-gray-700 text-right text-xs leading-4 font-medium text-white uppercase tracking-wider w-2/7"
+                >
                   120°
                 </th>
-                <th colSpan="2" className="lg:text-center px-6 py-3 border-b border-gray-200 bg-gray-700 text-right text-xs leading-4 font-medium text-white uppercase tracking-wider w-2/7">
+                <th
+                  colSpan="2"
+                  className="lg:text-center px-6 py-3 border-b border-gray-200 bg-gray-700 text-right text-xs leading-4 font-medium text-white uppercase tracking-wider w-2/7"
+                >
                   180°
                 </th>
               </tr>
@@ -130,7 +139,7 @@ const TableCatchSpacing = () => {
                 </th>
               </tr>
             </thead>
-            <tbody> 
+            <tbody>
               <tr className="bg-white even:bg-gray-50">
                 <td className="px-6 py-4 whitespace-no-wrap text-left text-sm leading-5 text-gray-900 numeric-tabular-nums">
                   1
@@ -417,15 +426,49 @@ const TableCatchSpacing = () => {
 
 const RNIB = () => {
   const user_research = [
-    <p>Existing refreshable braille devices are very expensive to purchase and thus not easily accessible. Furthermore, current devices can be easily damaged (e.g. when dropped or stood on) and although people could work around a broken cell, they eventually have to send them away to be repaired, which is annoying and very expensive. Our modular design gets rid of this problem. With <span className='font-louis'>louis</span> you have the ability to use as many cells needed and to remove and add them instantly. This limits repairs to modules instead of the whole device and  along with the low cost of the cells themselves, makes <span className='font-louis'>louis</span> very affordable.</p>,
+    <p>
+      Existing refreshable braille devices are very expensive to purchase and
+      thus not easily accessible. Furthermore, current devices can be easily
+      damaged (e.g. when dropped or stood on) and although people could work
+      around a broken cell, they eventually have to send them away to be
+      repaired, which is annoying and very expensive. Our modular design gets
+      rid of this problem. With <span className="font-louis">louis</span> you
+      have the ability to use as many cells needed and to remove and add them
+      instantly. This limits repairs to modules instead of the whole device and
+      along with the low cost of the cells themselves, makes{" "}
+      <span className="font-louis">louis</span> very affordable.
+    </p>,
 
-    <p>Voice integration can be very helpful, especially for tutoring apps. It should be as simple as possible and not frustrating to use. We added voice integration to our system and made it intuitive enough to use by anyone. Our voice commands are based on words that people would normally use to perform certain tasks, like: ‘open’ an app, ‘options’ to get a list of the possible voice commands, etc.</p>,
+    <p>
+      Voice integration can be very helpful, especially for tutoring apps. It
+      should be as simple as possible and not frustrating to use. We added voice
+      integration to our system and made it intuitive enough to use by anyone.
+      Our voice commands are based on words that people would normally use to
+      perform certain tasks, like: ‘open’ an app, ‘options’ to get a list of the
+      possible voice commands, etc.
+    </p>,
 
-    <p>Jumbo braille is ideal for learning. Smaller sizes are used once someone is a more advanced user of braille. This is due to the fact that people might not be sensitive enough to feel six or eight pins on just the tip of one finger. We have taken this into account when redesigning the disk and pin sizes.</p>,
+    <p>
+      Jumbo braille is ideal for learning. Smaller sizes are used once someone
+      is a more advanced user of braille. This is due to the fact that people
+      might not be sensitive enough to feel six or eight pins on just the tip of
+      one finger. We have taken this into account when redesigning the disk and
+      pin sizes.
+    </p>,
 
-    <p>There are not many technological tools available to help people learn braille. Braille is also not something one can attempt on their own without help. We designed our product to be especially accessible to beginners, both with regards to the size and the variety of simple applications that make learning braille easier than ever before.</p>,
+    <p>
+      There are not many technological tools available to help people learn
+      braille. Braille is also not something one can attempt on their own
+      without help. We designed our product to be especially accessible to
+      beginners, both with regards to the size and the variety of simple
+      applications that make learning braille easier than ever before.
+    </p>,
 
-    <p>Due to the size of the cells, it might be difficult to find exactly the position of the pins. Hence, we used a guiding rail which would lead the user’s finger onto the pins.</p>,
+    <p>
+      Due to the size of the cells, it might be difficult to find exactly the
+      position of the pins. Hence, we used a guiding rail which would lead the
+      user’s finger onto the pins.
+    </p>,
   ]
 
   const user_questions = [
@@ -449,12 +492,27 @@ const RNIB = () => {
               </h3>
             </div>
             <div className="mt-4 text-base text-gray-900">
-              In order to make the user experience as good as possible and meet customer expectations, we performed user research. After being granted ethical approval from the School of Informatics we arranged a group interview with six visually impaired people through the <strong>Royal National Institute of Blind People</strong> Lothian. The RNIB is a UK charity offering information, support and advice to almost two million people in the UK with sight loss. All of the participants agreed that knowing braille has been a huge help in their daily lives with one of them stating, "[I] use [braille] for everything; I couldn't do without my dots". Out of the six, only five could read braille. All five of them used the basic grade 1 braille daily for a variety of tasks: finding out the name of medicine they're about to take, labeling objects and clothes, or writing down phone numbers. From the User Research we incorporated the following five points in our design:
+              In order to make the user experience as good as possible and meet
+              customer expectations, we performed user research. After being
+              granted ethical approval from the School of Informatics we
+              arranged a group interview with six visually impaired people
+              through the{" "}
+              <strong>Royal National Institute of Blind People</strong> Lothian.
+              The RNIB is a UK charity offering information, support and advice
+              to almost two million people in the UK with sight loss. All of the
+              participants agreed that knowing braille has been a huge help in
+              their daily lives with one of them stating, "[I] use [braille] for
+              everything; I couldn't do without my dots". Out of the six, only
+              five could read braille. All five of them used the basic grade 1
+              braille daily for a variety of tasks: finding out the name of
+              medicine they're about to take, labeling objects and clothes, or
+              writing down phone numbers. From the User Research we incorporated
+              the following five points in our design:
               <ul className="mt-8 lg:grid lg:grid-cols-2 lg:col-gap-8 lg:row-gap-5">
                 {user_research.map((point, i) => (
                   <li
                     className="mt-5 first:mt-0 lg:mt-0 flex items-start lg:col-span-1"
-                    key={'ur_' + i}
+                    key={"ur_" + i}
                   >
                     <div className="flex-shrink-0">
                       <svg
@@ -475,8 +533,20 @@ const RNIB = () => {
                   </li>
                 ))}
               </ul>
+              <iframe
+                className="w-full h-192 mt-4"
+                src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQwvO1IFoC3cLGGmpUlsWHNrFdpJ2OGAmhsU-JqqnE0-OwL6PUMiiOlGObI2oIppU03iIjgjWxxV7o3/pubhtml?widget=true&amp;headers=false"
+              ></iframe>
               <br />
-              We had already arranged for a second meeting, in order to receive feedback on whether we had indeed incorporated all the requirements in our design, so that our device was easy to use and usable. The meeting was to take place before the start of the fourth and final iteration. This would have given us the opportunity to fix any mistakes in both the hardware and software design. The users were to run <span className="font-louis">louis</span> and report on the following:
+              We had already arranged for a second meeting, in order to receive
+              feedback on whether we had indeed incorporated all the
+              requirements in our design, so that our device was easy to use and
+              usable. The meeting was to take place before the start of the
+              fourth and final iteration. This would have given us the
+              opportunity to fix any mistakes in both the hardware and software
+              design. The users were to run{" "}
+              <span className="font-louis">louis</span> and report on the
+              following:
               <ul className="mt-8 lg:grid lg:grid-cols-2 lg:col-gap-8 lg:row-gap-5">
                 {user_questions.map(question => (
                   <li
@@ -491,7 +561,8 @@ const RNIB = () => {
                       >
                         <path
                           fillRule="evenodd"
-                          fill="#5850ec" d="M6.88,11.059 L6.88,13 L9.231,13 L9.231,11.059 Z M8,16 C3.582,16 0,12.418
+                          fill="#5850ec"
+                          d="M6.88,11.059 L6.88,13 L9.231,13 L9.231,11.059 Z M8,16 C3.582,16 0,12.418
                           0,8 C0,3.582 3.582,0 8,0 C12.418,0 16,3.582 16,8 C16,12.418 12.418,16 8,16
                           Z M5.57,3.51 C4.586,4.043 4.063,4.948 4,6.224 L6.28,6.224 C6.28,5.852
                           6.408,5.494 6.663,5.149 C6.918,4.804 7.35,4.632 7.961,4.632 C8.581,4.632
@@ -513,7 +584,9 @@ const RNIB = () => {
                 ))}
               </ul>
               <br />
-              Unfortunately this meeting  was not possible due to the current situation with COVID-19. Instead, each member of our team individually tested the software using our interactive demo.
+              Unfortunately this meeting was not possible due to the current
+              situation with COVID-19. Instead, each member of our team
+              individually tested the software using our interactive demo.
             </div>
           </div>
         </div>
@@ -558,10 +631,17 @@ const OutputAccuracy = () => {
     </div>,
 
     <div>
-      However, Figure 2 still exhibits long settling time, which, in turn, compromised the accuracy of the motor because the motor would get stuck trying to settle from a small displacement angle.
-      <br /><br />
-      The movement of the motor was tuned to optimality using a proportional-integral-derivative (PID) controller. The goal of tuning the PID control for the motors was to maximize accuracy while also maximizing the speed of the motor and achieving repeatability for other motors.
-      <br /><br />
+      However, Figure 2 still exhibits long settling time, which, in turn,
+      compromised the accuracy of the motor because the motor would get stuck
+      trying to settle from a small displacement angle.
+      <br />
+      <br />
+      The movement of the motor was tuned to optimality using a
+      proportional-integral-derivative (PID) controller. The goal of tuning the
+      PID control for the motors was to maximize accuracy while also maximizing
+      the speed of the motor and achieving repeatability for other motors.
+      <br />
+      <br />
       The final result is depicted in Figure 3:
       <div className="grid gap-4 my-4 grid-cols-1 md:grid-cols-2">
         <div className="bg-white overflow-hidden shadow rounded-lg flex flex-col">
@@ -577,7 +657,8 @@ const OutputAccuracy = () => {
           </div>
         </div>
       </div>
-      A diagram of all iterations together, to show our progress, can be found in Figure 4:
+      A diagram of all iterations together, to show our progress, can be found
+      in Figure 4:
       <div className="grid gap-4 my-4 grid-cols-1 md:grid-cols-2">
         <div className="bg-white overflow-hidden shadow rounded-lg flex flex-col">
           <div className="flex-1">
@@ -595,11 +676,20 @@ const OutputAccuracy = () => {
     </div>,
 
     <div>
-      Next rotations were sometimes set in motion before the motor was in the correct position. All cells are now checked for their position and only when they have arrived at their destination is the next rotation started.
+      Next rotations were sometimes set in motion before the motor was in the
+      correct position. All cells are now checked for their position and only
+      when they have arrived at their destination is the next rotation started.
     </div>,
 
     <div>
-      The motor rotates in one direction to set the big disk in the correct position, and then moves in the opposite direction to set the small disk. When setting the big disk, we noticed it would be slightly thrown forward when the rotation finished. We experimentally found the right amount of friction - enough to prevent the throwing, but avoiding the big disk from being moved by the small disk’s rotations. We perfected the solution by adding minute bumps to the big disk’s bottom at every 15° angle, which slotted into corresponding bumps on the resting surface.
+      The motor rotates in one direction to set the big disk in the correct
+      position, and then moves in the opposite direction to set the small disk.
+      When setting the big disk, we noticed it would be slightly thrown forward
+      when the rotation finished. We experimentally found the right amount of
+      friction - enough to prevent the throwing, but avoiding the big disk from
+      being moved by the small disk’s rotations. We perfected the solution by
+      adding minute bumps to the big disk’s bottom at every 15° angle, which
+      slotted into corresponding bumps on the resting surface.
     </div>,
   ]
 
@@ -617,30 +707,62 @@ const OutputAccuracy = () => {
               </h3>
             </div>
             <div className="mt-4 text-base text-gray-900">
-              One of the most important aspects of <span className="font-louis">louis</span> is an accurate braille output. Without it, the main purpose of <span className="font-louis">louis</span> - teaching braille - could not be achieved. Many steps have been taken to ensure that this essential goal was accomplished:
-              <br /><br />
+              One of the most important aspects of{" "}
+              <span className="font-louis">louis</span> is an accurate braille
+              output. Without it, the main purpose of{" "}
+              <span className="font-louis">louis</span> - teaching braille -
+              could not be achieved. Many steps have been taken to ensure that
+              this essential goal was accomplished:
+              <br />
+              <br />
               <div className="pl-4 border-l-4 border-indigo-500">
-                Since we were all unfamiliar with the braille alphabet, we first ensured that our braille resources were accurate. We discovered that there are many different flavours of braille, so we settled on the Unified English Braille Code. UEBC is an English language Braille code standard.
-                <br /><br />
-                The firmware must pass the motors the right rotation angles to arrive at the right braille output. We have assured the correctness of the firmware logic by adding assertions to the code. Both the small disk’s and big disk’s assertions have all returned true for random sequences of 26000 characters. We also automatically run unit tests, which have not failed either for the current software iteration.
-                <br /><br />
-                The motors must be calibrated carefully in order to give accurate output. We have established that once calibration is done precisely, the motors do not introduce any inaccuracies. In the rare event of a calibration error, the user can manually recalibrate using the Calibration app that comes with the device. Instructions on how to use the app are given in the <Link to="/documentation" className="font-medium text-gray-500 underline">User Guide</Link>.
-                <br /><br />
-                The motor’s rotations need to be accurate. Problems we ran into were the following:
+                Since we were all unfamiliar with the braille alphabet, we first
+                ensured that our braille resources were accurate. We discovered
+                that there are many different flavours of braille, so we settled
+                on the Unified English Braille Code. UEBC is an English language
+                Braille code standard.
+                <br />
+                <br />
+                The firmware must pass the motors the right rotation angles to
+                arrive at the right braille output. We have assured the
+                correctness of the firmware logic by adding assertions to the
+                code. Both the small disk’s and big disk’s assertions have all
+                returned true for random sequences of 26000 characters. We also
+                automatically run unit tests, which have not failed either for
+                the current software iteration.
+                <br />
+                <br />
+                The motors must be calibrated carefully in order to give
+                accurate output. We have established that once calibration is
+                done precisely, the motors do not introduce any inaccuracies. In
+                the rare event of a calibration error, the user can manually
+                recalibrate using the Calibration app that comes with the
+                device. Instructions on how to use the app are given in the{" "}
+                <Link
+                  to="/documentation"
+                  className="font-medium text-gray-500 underline"
+                >
+                  User Guide
+                </Link>
+                .
+                <br />
+                <br />
+                The motor’s rotations need to be accurate. Problems we ran into
+                were the following:
                 <ul className="mt-8 lg:col-gap-8 lg:row-gap-5">
                   {accuracy_problems.map((point, i) => (
                     <li
                       className="mt-5 first:mt-0 lg:mt-0 flex items-start lg:col-span-1"
-                      key={'ap_' + i}
+                      key={"ap_" + i}
                     >
                       <div className="flex-shrink-0">
-                      <svg
-                        className="h-5 w-5 text-indigo-400"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                      >
-                        <circle cx="10" cy="10" r="5"/>
-                      </svg>
+                        <svg
+                          className="h-5 w-5 text-indigo-400"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                        >
+                          <circle cx="10" cy="10" r="5" />
+                        </svg>
                       </div>
                       <div className="ml-3 text-sm leading-5 text-gray-700">
                         {point}
@@ -650,11 +772,17 @@ const OutputAccuracy = () => {
                 </ul>
               </div>
               <br />
-              All these measures have helped us achieve perfect accuracy. We evaluated our hardware on random orders of the alphabet characters. The following table summarises the tests we’ve run:
-              <br /><br />
+              All these measures have helped us achieve perfect accuracy. We
+              evaluated our hardware on random orders of the alphabet
+              characters. The following table summarises the tests we’ve run:
+              <br />
+              <br />
               <TableBrailleOutput />
               <br />
-              Output has been evaluated by looking at the dots and feeling the dots with the tip of the index finger. Members of our testing team have learned the braille alphabet and kept the UEBC chart at hand to double-check the displayed characters.
+              Output has been evaluated by looking at the dots and feeling the
+              dots with the tip of the index finger. Members of our testing team
+              have learned the braille alphabet and kept the UEBC chart at hand
+              to double-check the displayed characters.
             </div>
           </div>
         </div>
@@ -678,17 +806,72 @@ const RenderingSpeed = () => {
               </h3>
             </div>
             <div className="mt-4 text-base text-gray-900">
-              Another important aspect of <span className="font-louis">louis</span> is the character rendering speed. A feature that supports speedy render times is that cells can move in parallel, so all characters of a line can render at the same time. Thus the render time of a line of text is equal to the render time of a single character.
-              <br /><br />
-              The tuning we applied to the motor control ensures that movement is done as efficiently as possible. The added friction helps enable fast rotation. As described on the <Link to="/how-it-works" className="font-medium text-gray-500 underline">How it Works</Link> page, the small disk has all 8 dot combinations twice and the big disk three times. This in turn allows us to have the two catches only 90° apart. Combined, this gives us the optimal rotation angles when printing characters, thus significantly increasing rendering speed.
-              <br /><br />
-              Possibly a catch spacing of 120° or 180° could be more optimal, since it increases flexibility for the starting direction of rotations. We performed tests to compare the options. Every test evaluates 1000 random orders of the full alphabet, so a total of 26000 characters. It calculates the rotation angles for each character in each order, sums the angles per order, and returns the average of angles over all 1000 orders. The results are summarised in the following table:
-              <br /><br />
+              Another important aspect of{" "}
+              <span className="font-louis">louis</span> is the character
+              rendering speed. A feature that supports speedy render times is
+              that cells can move in parallel, so all characters of a line can
+              render at the same time. Thus the render time of a line of text is
+              equal to the render time of a single character.
+              <br />
+              <br />
+              The tuning we applied to the motor control ensures that movement
+              is done as efficiently as possible. The added friction helps
+              enable fast rotation. As described on the{" "}
+              <Link
+                to="/how-it-works"
+                className="font-medium text-gray-500 underline"
+              >
+                How it Works
+              </Link>{" "}
+              page, the small disk has all 8 dot combinations twice and the big
+              disk three times. This in turn allows us to have the two catches
+              only 90° apart. Combined, this gives us the optimal rotation
+              angles when printing characters, thus significantly increasing
+              rendering speed.
+              <br />
+              <br />
+              Possibly a catch spacing of 120° or 180° could be more optimal,
+              since it increases flexibility for the starting direction of
+              rotations. We performed tests to compare the options. Every test
+              evaluates 1000 random orders of the full alphabet, so a total of
+              26000 characters. It calculates the rotation angles for each
+              character in each order, sums the angles per order, and returns
+              the average of angles over all 1000 orders. The results are
+              summarised in the following table:
+              <br />
+              <br />
               <TableCatchSpacing />
               <br />
-              We concluded that 90° is indeed optimal. On further inspection we confirmed that there are cases where 120° or 180° result in smaller rotation angles for a character, but on average 90° comes out on top.
-              <br /><br />
-              The average rotation angle per character is <strong>153°</strong>. The time it takes to calculate the optimal rotation angles and pass it on to the hardware is negligible (0.000020s), so the render times will be determined by the motor. From Figure 4 you can see we have optimised the movement speed and acceleration and deceleration speed. Unfortunately because we can no longer access our device due to the current global pandemic, we did not have the opportunity to officially record character render times. We know, however, that our hardware supports the highest speed that the motor supports. On the <a href="https://education.lego.com/en-us/products/lego-mindstorms-education-ev3-medium-servo-motor/45503" className="font-medium text-gray-500 underline">official LEGO® site</a> it states that the motor is able to do 240-250 rotations per minute. This means 0.25 seconds per 360°. We estimate that the two acceleration periods and the two deceleration periods per character render add an additional 0.1 seconds each. The average <strong>153°</strong> is then translated into an average of 4 * 0.1s + 153°/ 360° * 0.25s = <strong>0.506 seconds per character render</strong>. This matches our observations when testing the hardware in general.
+              We concluded that 90° is indeed optimal. On further inspection we
+              confirmed that there are cases where 120° or 180° result in
+              smaller rotation angles for a character, but on average 90° comes
+              out on top.
+              <br />
+              <br />
+              The average rotation angle per character is <strong>153°</strong>.
+              The time it takes to calculate the optimal rotation angles and
+              pass it on to the hardware is negligible (0.000020s), so the
+              render times will be determined by the motor. From Figure 4 you
+              can see we have optimised the movement speed and acceleration and
+              deceleration speed. Unfortunately because we can no longer access
+              our device due to the current global pandemic, we did not have the
+              opportunity to officially record character render times. We know,
+              however, that our hardware supports the highest speed that the
+              motor supports. On the{" "}
+              <a
+                href="https://education.lego.com/en-us/products/lego-mindstorms-education-ev3-medium-servo-motor/45503"
+                className="font-medium text-gray-500 underline"
+              >
+                official LEGO® site
+              </a>{" "}
+              it states that the motor is able to do 240-250 rotations per
+              minute. This means 0.25 seconds per 360°. We estimate that the two
+              acceleration periods and the two deceleration periods per
+              character render add an additional 0.1 seconds each. The average{" "}
+              <strong>153°</strong> is then translated into an average of 4 *
+              0.1s + 153°/ 360° * 0.25s ={" "}
+              <strong>0.506 seconds per character render</strong>. This matches
+              our observations when testing the hardware in general.
             </div>
           </div>
         </div>
@@ -712,9 +895,25 @@ const Reliability = () => {
               </h3>
             </div>
             <div className="mt-4 text-base text-gray-900">
-              We have ensured general reliability of all hardware and firmware. The final design has eliminated fragile parts, printing the dots directly and securely onto the disks, unlike current braille devices which work with pins and break easily. Disks are fastened tightly to the axel and the whole structure is supported so that any wiggle is strictly limited.
-              <br /><br />
-              It is straightforward to click cells together and attach them to the main controller. The <Link to="/how-it-works" className="font-medium text-gray-500 underline">cell discovery protocol</Link> has never failed and always returns the accurate number of cells. Button presses are reliably registered and passed to the main controller.
+              We have ensured general reliability of all hardware and firmware.
+              The final design has eliminated fragile parts, printing the dots
+              directly and securely onto the disks, unlike current braille
+              devices which work with pins and break easily. Disks are fastened
+              tightly to the axel and the whole structure is supported so that
+              any wiggle is strictly limited.
+              <br />
+              <br />
+              It is straightforward to click cells together and attach them to
+              the main controller. The{" "}
+              <Link
+                to="/how-it-works"
+                className="font-medium text-gray-500 underline"
+              >
+                cell discovery protocol
+              </Link>{" "}
+              has never failed and always returns the accurate number of cells.
+              Button presses are reliably registered and passed to the main
+              controller.
             </div>
           </div>
         </div>
@@ -738,15 +937,51 @@ const UserExperience = () => {
               </h3>
             </div>
             <div className="mt-4 text-base text-gray-900">
-              Since our target users are the visually-impaired, we were posed an interesting challenge for carrying out the UX tests after our RNIB research session. To alleviate these problems, we followed the methodology found in a study (Law and Vanderheiden, 2000) which assumes that testing UX on blindfolded (sighted) subjects is a good way to gain useful insights into possible UX problems without compromising extrapolability to the visually impaired audience:
-              <br /><br />
+              Since our target users are the visually-impaired, we were posed an
+              interesting challenge for carrying out the UX tests after our RNIB
+              research session. To alleviate these problems, we followed the
+              methodology found in a study (Law and Vanderheiden, 2000) which
+              assumes that testing UX on blindfolded (sighted) subjects is a
+              good way to gain useful insights into possible UX problems without
+              compromising extrapolability to the visually impaired audience:
+              <br />
+              <br />
               <div className="pl-4 border-l-4 border-indigo-500">
-                <i>"As part of an investigation aimed at reducing costs in user testing of people with disabilities, a user test was conducted to compare the differences between a group of 15 blind, and 15 blindfolded (sighted) subjects using a touchscreen public information kiosk that was intended for use by people who cannot see. The number and type of problems found by each group were compared, and it was found that the results between each group were mostly similar"</i>
-                <br /><br />
-                [Reference: Law, C. M. & Vanderheiden, G. C (2000). Reducing Sample Sizes When User Testing with People Who Have, and Who are Simulating Disabilities - Experiences with Blindness and Public Information Kiosks. Proceedings of the Human Factors and Ergonomics Society Annual Meeting, 44(26), 157–160. URL <a href="https://doi.org/10.1177/154193120004402607" className="font-medium text-gray-500 underline">https://doi.org/10.1177/154193120004402607</a>]
+                <i>
+                  "As part of an investigation aimed at reducing costs in user
+                  testing of people with disabilities, a user test was conducted
+                  to compare the differences between a group of 15 blind, and 15
+                  blindfolded (sighted) subjects using a touchscreen public
+                  information kiosk that was intended for use by people who
+                  cannot see. The number and type of problems found by each
+                  group were compared, and it was found that the results between
+                  each group were mostly similar"
+                </i>
+                <br />
+                <br />
+                [Reference: Law, C. M. & Vanderheiden, G. C (2000). Reducing
+                Sample Sizes When User Testing with People Who Have, and Who are
+                Simulating Disabilities - Experiences with Blindness and Public
+                Information Kiosks. Proceedings of the Human Factors and
+                Ergonomics Society Annual Meeting, 44(26), 157–160. URL{" "}
+                <a
+                  href="https://doi.org/10.1177/154193120004402607"
+                  className="font-medium text-gray-500 underline"
+                >
+                  https://doi.org/10.1177/154193120004402607
+                </a>
+                ]
               </div>
               <br />
-              When performing our own user experience evaluation relating to the hardware, we were satisfied with the design choices we made. When we were informed in our interview session that the size of a regular 3x2 LEGO brick (24×16mm) is ideal for learning braille, we matched our braille output to these dimensions. The dots are easily distinguishable, have a comfortable feel and the small gap between the big and small disk is not tangible. The guide rail, which we also implemented in response to the research session, is a good aid to move on from one character to the next.
+              When performing our own user experience evaluation relating to the
+              hardware, we were satisfied with the design choices we made. When
+              we were informed in our interview session that the size of a
+              regular 3x2 LEGO brick (24×16mm) is ideal for learning braille, we
+              matched our braille output to these dimensions. The dots are
+              easily distinguishable, have a comfortable feel and the small gap
+              between the big and small disk is not tangible. The guide rail,
+              which we also implemented in response to the research session, is
+              a good aid to move on from one character to the next.
             </div>
           </div>
         </div>
@@ -770,7 +1005,13 @@ const HarwareImprovements = () => {
               </h3>
             </div>
             <div className="mt-4 text-base text-gray-900">
-              We are very satisfied with our hardware design and have optimised in all main areas. A possible expansion is to also provide regular sized braille cells. This is to aid the more advanced users, since those can also enjoy all the non-educational apps that our open SDK supports. A smaller cell can easily be supported since the connector mechanism will be the same and miniaturization of the other parts is trivial.
+              We are very satisfied with our hardware design and have optimised
+              in all main areas. A possible expansion is to also provide regular
+              sized braille cells. This is to aid the more advanced users, since
+              those can also enjoy all the non-educational apps that our open
+              SDK supports. A smaller cell can easily be supported since the
+              connector mechanism will be the same and miniaturization of the
+              other parts is trivial.
             </div>
           </div>
         </div>
@@ -781,17 +1022,50 @@ const HarwareImprovements = () => {
 
 const SpeechRecognition = () => {
   const sr_results = [
-    <p>Having tested various open source speech recognition APIs, we settled on Google Speech Recognition. We tweaked parameters like adjusting for background noise until we got the least errors.</p>,
+    <p>
+      Having tested various open source speech recognition APIs, we settled on
+      Google Speech Recognition. We tweaked parameters like adjusting for
+      background noise until we got the least errors.
+    </p>,
 
-    <p>We quickly discovered that we should keep the voice commands as simple as possible. The user can control all aspects of the device with just one-word and two-word command, which makes the speech recognition a lot easier and more reliable.</p>,
+    <p>
+      We quickly discovered that we should keep the voice commands as simple as
+      possible. The user can control all aspects of the device with just
+      one-word and two-word command, which makes the speech recognition a lot
+      easier and more reliable.
+    </p>,
 
-    <p>For a specific app, the Tutor app, we encountered a common problem: recognising spelled letters. The Tutor app tests the user’s knowledge on the individual braille alphabet characters. It is very challenging to discern ‘b’ from ‘bee’ for example, even as humans. We came up with a solution where the user can give their answers by using any word starting with the perceived braille character, e.g. ‘book’ for ‘b’, ‘cat’ for ‘c’.</p>,
+    <p>
+      For a specific app, the Tutor app, we encountered a common problem:
+      recognising spelled letters. The Tutor app tests the user’s knowledge on
+      the individual braille alphabet characters. It is very challenging to
+      discern ‘b’ from ‘bee’ for example, even as humans. We came up with a
+      solution where the user can give their answers by using any word starting
+      with the perceived braille character, e.g. ‘book’ for ‘b’, ‘cat’ for ‘c’.
+    </p>,
 
-    <p>Another useful functionality we developed is the await_response function, which lets apps pass through a list of responses that they could expect to hear from the user. For example if the app expects a response to a simple question like “Do you want to do this?” the app can pass the potential responses of “yes” and “no”. Until the user gives one of the options, it will continue to listen for them.</p>,
+    <p>
+      Another useful functionality we developed is the await_response function,
+      which lets apps pass through a list of responses that they could expect to
+      hear from the user. For example if the app expects a response to a simple
+      question like “Do you want to do this?” the app can pass the potential
+      responses of “yes” and “no”. Until the user gives one of the options, it
+      will continue to listen for them.
+    </p>,
 
-    <p>The user can ask for the possible responses by saying ‘options’. This means the user will not be constantly interrupted by ‘Invalid option’, even if the speech recogniser fails to parse the audio input correctly. The user can conveniently try again, and will receive feedback only when they appear to be stuck.</p>,
+    <p>
+      The user can ask for the possible responses by saying ‘options’. This
+      means the user will not be constantly interrupted by ‘Invalid option’,
+      even if the speech recogniser fails to parse the audio input correctly.
+      The user can conveniently try again, and will receive feedback only when
+      they appear to be stuck.
+    </p>,
 
-    <p>When commands like ‘exit’ are given, which break up the app flow, the user is asked for confirmation of the action. In case the speech recogniser was mistaken, the user is conveniently returned to their current activity.</p>
+    <p>
+      When commands like ‘exit’ are given, which break up the app flow, the user
+      is asked for confirmation of the action. In case the speech recogniser was
+      mistaken, the user is conveniently returned to their current activity.
+    </p>,
   ]
 
   return (
@@ -808,12 +1082,23 @@ const SpeechRecognition = () => {
               </h3>
             </div>
             <div className="mt-4 text-base text-gray-900">
-              It is essential that speech recognition is both fast and accurate, since this is the main way of communicating with <span className="font-louis">louis</span>. State-of-the-art speech recognisers can sometimes still have a hard time discerning the intended phrases, so we spent a lot of effort towards optimizing this feature. During development, we noticed that the particular microphone used in testing has a big effect on the results. Unfortunately that is why we weren’t able to do final quantitative evaluation tests, because we no longer have access to the hardware due to the global pandemic. Of course we have tested the speech recognition extensively on our laptops, so we would like to present those findings here:
+              It is essential that speech recognition is both fast and accurate,
+              since this is the main way of communicating with{" "}
+              <span className="font-louis">louis</span>. State-of-the-art speech
+              recognisers can sometimes still have a hard time discerning the
+              intended phrases, so we spent a lot of effort towards optimizing
+              this feature. During development, we noticed that the particular
+              microphone used in testing has a big effect on the results.
+              Unfortunately that is why we weren’t able to do final quantitative
+              evaluation tests, because we no longer have access to the hardware
+              due to the global pandemic. Of course we have tested the speech
+              recognition extensively on our laptops, so we would like to
+              present those findings here:
               <ul className="mt-8 lg:grid lg:grid-cols-2 lg:col-gap-8 lg:row-gap-5">
                 {sr_results.map((point, i) => (
                   <li
                     className="mt-5 first:mt-0 lg:mt-0 flex items-start lg:col-span-1"
-                    key={'sr_' + i}
+                    key={"sr_" + i}
                   >
                     <div className="flex-shrink-0">
                       <svg
@@ -835,7 +1120,12 @@ const SpeechRecognition = () => {
                 ))}
               </ul>
               <br />
-              We are pleased with the overall performance. The interaction flow is pleasant, despite the occasional misinterpreted audio input. <span className="font-louis">louis</span> is able to recover from such errors without being a bother to the user. We cannot rule out some minor frustrations in dealing with the device, but are confident that it is fully operational and usable.
+              We are pleased with the overall performance. The interaction flow
+              is pleasant, despite the occasional misinterpreted audio input.{" "}
+              <span className="font-louis">louis</span> is able to recover from
+              such errors without being a bother to the user. We cannot rule out
+              some minor frustrations in dealing with the device, but are
+              confident that it is fully operational and usable.
             </div>
           </div>
         </div>
@@ -859,7 +1149,11 @@ const AudioOutput = () => {
               </h3>
             </div>
             <div className="mt-4 text-base text-gray-900">
-              When evaluating the speech synthesis we were reasonably happy with the way it sounded. We discovered some solvable errors in the audio output, for example spelling the letter ‘a’ would not give the output ‘ay’ but ‘ah’. We implemented our own pronunciation library to cover such cases.
+              When evaluating the speech synthesis we were reasonably happy with
+              the way it sounded. We discovered some solvable errors in the
+              audio output, for example spelling the letter ‘a’ would not give
+              the output ‘ay’ but ‘ah’. We implemented our own pronunciation
+              library to cover such cases.
             </div>
           </div>
         </div>
@@ -883,52 +1177,115 @@ const EducationalApps = () => {
               </h3>
             </div>
             <div className="mt-4 text-base text-gray-900">
-              We extensively tested all our apps and made many improvements along the way. For our educational apps, we drew from established sources on how to teach braille.
+              We extensively tested all our apps and made many improvements
+              along the way. For our educational apps, we drew from established
+              sources on how to teach braille.
               <ul className="mt-8 lg:grid lg:grid-cols-2 lg:col-gap-8 lg:row-gap-5">
-                  <li
-                    className="mt-5 first:mt-0 lg:mt-0 flex items-start lg:col-span-1"
-                    key='app_learn'
-                  >
-                    <div className="flex-shrink-0">
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
-                    </div>
-                    <div className="ml-3 text-sm leading-5 text-gray-700">
-                      <p>The Learn app is our basic teacher and has been successful in teaching members of our team the braille alphabet.</p>
-                    </div>
-                  </li>
-                  <li
-                    className="mt-5 first:mt-0 lg:mt-0 flex items-start lg:col-span-1"
-                    key='app_tutor'
-                  >
-                    <div className="flex-shrink-0">
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8"><path d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path></svg>
-                    </div>
-                    <div className="ml-3 text-sm leading-5 text-gray-700">
-                      <p>The Tutor app evaluates the knowledge acquired from the Learn app and reinforces the learning of characters that the user gets wrong. We have noticed our own test results improving gradually.</p>
-                    </div>
-                  </li>
-                  <li
-                    className="mt-5 first:mt-0 lg:mt-0 flex items-start lg:col-span-1"
-                    key='app_riddles'
-                  >
-                    <div className="flex-shrink-0">
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8"><path d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                    </div>
-                    <div className="ml-3 text-sm leading-5 text-gray-700">
-                      <p>The Riddles App was developed to stimulate learning, by giving the user interesting and comical riddles with answers that they can only find out by reading braille. This motivational approach has been previously adopted by Royal Blind, Scotland’s largest vision impairment organisation.</p>
-                    </div>
-                  </li>
-                  <li
-                    className="mt-5 first:mt-0 lg:mt-0 flex items-start lg:col-span-1"
-                    key='app_learn'
-                  >
-                    <div className="flex-shrink-0">
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8"><path d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
-                    </div>
-                    <div className="ml-3 text-sm leading-5 text-gray-700">
-                      <p>The Memory App implements the traditional Memory card game, for one or two players, where the ‘cards’ are individual cells corresponding to a braille alphabet character. The team has had a lot of fun practising and improving our braille!</p>
-                    </div>
-                  </li>
+                <li
+                  className="mt-5 first:mt-0 lg:mt-0 flex items-start lg:col-span-1"
+                  key="app_learn"
+                >
+                  <div className="flex-shrink-0">
+                    <svg
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      class="w-8 h-8"
+                    >
+                      <path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                    </svg>
+                  </div>
+                  <div className="ml-3 text-sm leading-5 text-gray-700">
+                    <p>
+                      The Learn app is our basic teacher and has been successful
+                      in teaching members of our team the braille alphabet.
+                    </p>
+                  </div>
+                </li>
+                <li
+                  className="mt-5 first:mt-0 lg:mt-0 flex items-start lg:col-span-1"
+                  key="app_tutor"
+                >
+                  <div className="flex-shrink-0">
+                    <svg
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      class="w-8 h-8"
+                    >
+                      <path d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path>
+                    </svg>
+                  </div>
+                  <div className="ml-3 text-sm leading-5 text-gray-700">
+                    <p>
+                      The Tutor app evaluates the knowledge acquired from the
+                      Learn app and reinforces the learning of characters that
+                      the user gets wrong. We have noticed our own test results
+                      improving gradually.
+                    </p>
+                  </div>
+                </li>
+                <li
+                  className="mt-5 first:mt-0 lg:mt-0 flex items-start lg:col-span-1"
+                  key="app_riddles"
+                >
+                  <div className="flex-shrink-0">
+                    <svg
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      class="w-8 h-8"
+                    >
+                      <path d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                  </div>
+                  <div className="ml-3 text-sm leading-5 text-gray-700">
+                    <p>
+                      The Riddles App was developed to stimulate learning, by
+                      giving the user interesting and comical riddles with
+                      answers that they can only find out by reading braille.
+                      This motivational approach has been previously adopted by
+                      Royal Blind, Scotland’s largest vision impairment
+                      organisation.
+                    </p>
+                  </div>
+                </li>
+                <li
+                  className="mt-5 first:mt-0 lg:mt-0 flex items-start lg:col-span-1"
+                  key="app_learn"
+                >
+                  <div className="flex-shrink-0">
+                    <svg
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      class="w-8 h-8"
+                    >
+                      <path d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                    </svg>
+                  </div>
+                  <div className="ml-3 text-sm leading-5 text-gray-700">
+                    <p>
+                      The Memory App implements the traditional Memory card
+                      game, for one or two players, where the ‘cards’ are
+                      individual cells corresponding to a braille alphabet
+                      character. The team has had a lot of fun practising and
+                      improving our braille!
+                    </p>
+                  </div>
+                </li>
               </ul>
             </div>
           </div>
@@ -953,7 +1310,17 @@ const OpenSDK = () => {
               </h3>
             </div>
             <div className="mt-4 text-base text-gray-900">
-              One of the applications we developed was the “Headlines” app, which displays BBC news headlines and an optional short summary. The main purpose of the development of this app is to evaluate if our SDK is user-friendly for 3rd-party developers with little knowledge of our hardware. It was decided that the developer of this app would pretend as though they were a developer from the BBC. This was a useful exercise as there were a few functions that we were able to pinpoint as necessary from the perspective of a 3rd-party developer. We believe this test has helped us make the open SDK developer experience as straightforward as possible, and also provides our users with a valuable application!
+              One of the applications we developed was the “Headlines” app,
+              which displays BBC news headlines and an optional short summary.
+              The main purpose of the development of this app is to evaluate if
+              our SDK is user-friendly for 3rd-party developers with little
+              knowledge of our hardware. It was decided that the developer of
+              this app would pretend as though they were a developer from the
+              BBC. This was a useful exercise as there were a few functions that
+              we were able to pinpoint as necessary from the perspective of a
+              3rd-party developer. We believe this test has helped us make the
+              open SDK developer experience as straightforward as possible, and
+              also provides our users with a valuable application!
             </div>
           </div>
         </div>
@@ -977,7 +1344,14 @@ const SoftwareImprovements = () => {
               </h3>
             </div>
             <div className="mt-4 text-base text-gray-900">
-              From our user research session, we received the feedback that for audio output a human voice would be preferred, as "synthetic voices can get tedious". We have recorded the user guide, but did not have time enough to record all the sentences <span className="font-louis">louis</span> says. Adding this will be easy to implement. The software already supports this feature, so developers adding apps to our open SDK can provide their own audio files if they wish to do so.
+              From our user research session, we received the feedback that for
+              audio output a human voice would be preferred, as "synthetic
+              voices can get tedious". We have recorded the user guide, but did
+              not have time enough to record all the sentences{" "}
+              <span className="font-louis">louis</span> says. Adding this will
+              be easy to implement. The software already supports this feature,
+              so developers adding apps to our open SDK can provide their own
+              audio files if they wish to do so.
             </div>
           </div>
         </div>
@@ -997,7 +1371,10 @@ const Evaluation = () => {
               Evaluation of <span className="font-louis">louis</span>
             </h3>
             <p className="mt-4 max-w-2xl text-xl leading-7 text-gray-500 lg:mx-auto">
-              At ThreeDots we’re committed to delivering the best possible product to our customers. Beside the user experience research we have conducted, we have done extensive evaluation testing to ensure the reliability and optimality of the hardware.
+              At ThreeDots we’re committed to delivering the best possible
+              product to our customers. Beside the user experience research we
+              have conducted, we have done extensive evaluation testing to
+              ensure the reliability and optimality of the hardware.
             </p>
           </div>
           <RNIB />

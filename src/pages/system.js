@@ -67,9 +67,10 @@ const System = () => (
             </h4>
             <p className="mt-3 text-lg leading-7 text-gray-500">
               In the UK <b>only 4%</b> of visually impaired people are literate
-              in braille and only 1% are regular users. Research has shown that the ability to understand braille
-              has <b>increased opportunities</b> in{" "}
-              <b>education and employment</b> for visually impaired people.
+              in braille and only 1% are regular users. Research has shown that
+              the ability to understand braille has{" "}
+              <b>increased opportunities</b> in <b>education and employment</b>{" "}
+              for visually impaired people.
             </p>
 
             <h4 className="text-2xl leading-8 font-extrabold text-gray-900 tracking-tight sm:text-3xl sm:leading-9 mt-16">
@@ -97,7 +98,8 @@ const System = () => (
                   </div>
                   <div className="ml-4 mt-3">
                     <h5 className="text-lg leading-6 font-medium text-gray-900">
-                    Modularity reduces cost by allowing for “pay-as-you-learn” pricing
+                      Modularity reduces cost by allowing for “pay-as-you-learn”
+                      pricing
                     </h5>
                   </div>
                 </div>
@@ -123,7 +125,7 @@ const System = () => (
                   </div>
                   <div className="ml-4 mt-3">
                     <h5 className="text-lg leading-6 font-medium text-gray-900">
-                    Cheaper than the alternative and cheaper to repair
+                      Cheaper than the alternative and cheaper to repair
                     </h5>
                   </div>
                 </div>
@@ -149,7 +151,8 @@ const System = () => (
                   </div>
                   <div className="ml-4 mt-3">
                     <h5 className="text-lg leading-6 font-medium text-gray-900">
-                    Easy development for 3rd party developers through open API.
+                      Easy development for 3rd party developers through open
+                      API.
                     </h5>
                   </div>
                 </div>
@@ -175,7 +178,8 @@ const System = () => (
                   </div>
                   <div className="ml-4">
                     <h5 className="text-lg leading-6 font-medium text-gray-900">
-                    Intuitive voice-controller user interface replaces pushbutton-driven navigation
+                      Intuitive voice-controller user interface replaces
+                      pushbutton-driven navigation
                     </h5>
                   </div>
                 </div>
@@ -265,29 +269,28 @@ const System = () => (
                 Built for the Future.
               </h4>
               <p className="mt-3 text-lg leading-7 text-gray-500">
-
-              When creating <span className="font-louis">louis</span>, we wanted to make something that was bigger
-              than our team. Something which through 3rd party developers could
-              be expanded and used in ways which we could not even imagine.
-
-              Our open API means that developers without an understanding of the
-              low-level workings of the system - or even without a <span className="font-louis">louis</span> system
-              themselves - can develop apps that are as deep and complex as they
-              like.
-
-              Our vision was always to make a device that could be used
-              throughout a user’s braille literacy journey, starting with
-              learning, and ending as a braille display for future use. After
-              many iterations, we changed our design so that in the future, with
-              more precise machinery and production techniques, our product
-              could be minituarised further. This would open up the possibility
-              of a more practical refreshable display for advanced users.
-              Furthermore, given the modularity of <span className="font-louis">louis</span>, there is every
-              possibility that if multiple sizes of braille were available,
-              users could replace these and decrease or increase the size of
-              their braille as they like. We want <span className="font-louis">louis</span> to be more than just a
-              learning device.
-
+                When creating <span className="font-louis">louis</span>, we
+                wanted to make something that was bigger than our team.
+                Something which through 3rd party developers could be expanded
+                and used in ways which we could not even imagine. Our open API
+                means that developers without an understanding of the low-level
+                workings of the system - or even without a{" "}
+                <span className="font-louis">louis</span> system themselves -
+                can develop apps that are as deep and complex as they like. Our
+                vision was always to make a device that could be used throughout
+                a user’s braille literacy journey, starting with learning, and
+                ending as a braille display for future use. After many
+                iterations, we changed our design so that in the future, with
+                more precise machinery and production techniques, our product
+                could be minituarised further. This would open up the
+                possibility of a more practical refreshable display for advanced
+                users. Furthermore, given the modularity of{" "}
+                <span className="font-louis">louis</span>, there is every
+                possibility that if multiple sizes of braille were available,
+                users could replace these and decrease or increase the size of
+                their braille as they like. We want{" "}
+                <span className="font-louis">louis</span> to be more than just a
+                learning device.
               </p>
             </div>
 
@@ -340,21 +343,122 @@ const System = () => (
               Market Research
             </h4>
             <p className="mt-3 text-lg leading-7 text-gray-500">
-            Fewer than 1% of the two million visually impaired (not necessarily completely blind) people in the UK are regular users of Braille. This includes both the braille newbies (who might only know uncontracted braille), and also the very experienced users (who might learn from Braille music and play to professional level).
-
-This means 99% of the visually impaired don't know Braille at all. They are not able to read even the most simple but crucial information such as button numbers in lifts or drug labels.
-
-So, roughly, there's a potentially 10x to 100x larger market for teaching new braille users than there is for serving only the existing ones. We believe that some organizations have been focusing too much on creating Braille content but not enough on making sure people can read it! Teaching visually-impaired people even the basics of Braille would already be a step in the right direction.
-
-Problems in Braille Education and How We're Solving Them:
-Expensive teaching materials: we solve it by having the teaching materials on one relatively cheap device.
-Shortage of special educators: we help the special educators leverage their expertise by creating scalable learning experiences (for example, interactive voice guided courses).
-
-There currently are no competitors taking this exact approach.
-
-We also conducted user-testing and user-interviews at the Royal National Institute of Blind People. The information gathered there was extremely valuable and corroborated our initial hypotheses about the market. The visually-impared participants said that learning braille was a tough task for them when they were young. They also mentioned that now that they know braille, the price of braille books and e-readers is a big obstacle. All of the participants who had learned braille, said it was a crucial part of their daily lives: finding medicine, discerning objects by the braille tags on them or reading books.
-
+              Fewer than 1% of the two million visually impaired (not
+              necessarily completely blind) people in the UK are regular users
+              of Braille. This includes both the braille newbies (who might only
+              know uncontracted braille), and also the very experienced users
+              (who might learn from Braille music and play to professional
+              level). This means 99% of the visually impaired don't know Braille
+              at all. They are not able to read even the most simple but crucial
+              information such as button numbers in lifts or drug labels. So,
+              roughly, there's a potentially 10x to 100x larger market for
+              teaching new braille users than there is for serving only the
+              existing ones. We believe that some organizations have been
+              focusing too much on creating Braille content but not enough on
+              making sure people can read it! Teaching visually-impaired people
+              even the basics of Braille would already be a step in the right
+              direction. Problems in Braille Education and How We're Solving
+              Them: Expensive teaching materials: we solve it by having the
+              teaching materials on one relatively cheap device. Shortage of
+              special educators: we help the special educators leverage their
+              expertise by creating scalable learning experiences (for example,
+              interactive voice guided courses). There currently are no
+              competitors taking this exact approach. We also conducted
+              user-testing and user-interviews at the Royal National Institute
+              of Blind People. The information gathered there was extremely
+              valuable and corroborated our initial hypotheses about the market.
+              The visually-impared participants said that learning braille was a
+              tough task for them when they were young. They also mentioned that
+              now that they know braille, the price of braille books and
+              e-readers is a big obstacle. All of the participants who had
+              learned braille, said it was a crucial part of their daily lives:
+              finding medicine, discerning objects by the braille tags on them
+              or reading books.
             </p>
+            <h5 className="text-lg leading-8 font-bold text-gray-900 tracking-tight sm:text-xl sm:leading-9 mt-4">
+              Competitor Research
+            </h5>
+            <div className="prose">
+              <ul>
+                <li className="list-none mt-4">
+                  <span class="text-base font-semibold">
+                    HumanWareBrailliant BI 40
+                  </span>
+                  <ul>
+                    <li>Connects to computer, tablet and smartphone</li>
+                    <li>Easy to use</li>
+                    <li>
+                      Allows to operate computer from device (navigate internet,
+                      read and write)
+                    </li>
+                    <li>$2,995</li>
+                    <li>Other ones: BI 14: $995, BI 80: $7,985</li>
+                  </ul>
+                </li>
+                <li className="list-none mt-4">
+                  <span class="text-base font-semibold">
+                    BrailleSense Polaris
+                  </span>
+                  <ul>
+                    <li>
+                      Runs on Android OS 5.1.1 (Lollypop), download compatible
+                      applications
+                    </li>
+                    <li>32 cells</li>
+                    <li>
+                      Special touch enabled function keys for quickly performing
+                      common operations, like copying and pasting in the word
+                      processor, or switching tracks in the Media Player.
+                    </li>
+                    <li>$5,795</li>
+                  </ul>
+                </li>
+                <li className="list-none mt-4">
+                  <span class="text-base font-semibold">Braille EDGE 40</span>
+                  <ul>
+                    <li>40 cells</li>
+                    <li>Bluetooth connectivity like the other two</li>
+                    <li>Offers wide range of languages</li>
+                    <li>Built in calculator, stopwatch and countdown timer.</li>
+                    <li>$2,995</li>
+                  </ul>
+                </li>
+                <li className="list-none mt-4">
+                  <span class="text-base font-semibold">Braille EDGE 40</span>
+                  <ul>
+                    <li>40 cells</li>
+                    <li>Bluetooth connectivity like the other two</li>
+                    <li>Offers wide range of languages</li>
+                    <li>Built in calculator, stopwatch and countdown timer.</li>
+                    <li>$2,995</li>
+                  </ul>
+                </li>
+                <li className="list-none mt-4">
+                  <span class="text-base font-semibold">
+                    Focus Blue Family (Series of models)
+                  </span>
+                  <ul>
+                    <li>Variable braille firmness</li>
+                    <li>USB and Bluetooth</li>
+                    <li>Compatible with iOS, Android</li>
+                    <li>
+                      Use with JAWS for Braille Study Mode to learn and teach
+                      Braille
+                    </li>
+                    <li>$1,295(14 pins) – 2,995(40) – 7,995(80)</li>
+                  </ul>
+                </li>
+                <li className="list-none mt-4">
+                  <span class="text-base font-semibold">Orbit Reader 20</span>
+                  <ul>
+                    <li>Created by RNIB</li>
+                    <li>SD card, preinstalled with books</li>
+                    <li>USB, Bluetooth</li>
+                    <li>$475</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

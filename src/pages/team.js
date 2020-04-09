@@ -152,7 +152,7 @@ const Team = () => {
                     </div>
                     <div className="border-t border-b border-gray-100 p-6 text-center sm:border-0 sm:border-l sm:border-r">
                       <p className="text-5xl leading-none font-extrabold text-indigo-600">
-                        20K+
+                        26K+
                       </p>
                       <p className="mt-2 text-lg leading-6 font-medium text-gray-500">
                         Lines of Code

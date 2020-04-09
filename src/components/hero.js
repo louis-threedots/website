@@ -33,35 +33,69 @@ const Hero = () => (
         </div>
       </div>
 
-      <iframe
-        className="mx-auto my-5 hidden lg:block"
-        width="800"
-        height="450"
-        src="https://www.youtube.com/embed/3sLDozc8URs?controls=0"
-        frameBorder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-      ></iframe>
+      <div>
+        <iframe
+          className="mx-auto my-5 hidden lg:block"
+          width="800"
+          height="450"
+          src="https://www.youtube.com/embed/3sLDozc8URs?controls=0"
+          frameBorder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
 
-      <iframe
-        className="mx-auto my-5 hidden md:block lg:hidden"
-        width="600"
-        height="337.5"
-        src="https://www.youtube.com/embed/3sLDozc8URs?controls=0"
-        frameBorder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-      ></iframe>
+        <iframe
+          className="mx-auto my-5 hidden md:block lg:hidden"
+          width="600"
+          height="337.5"
+          src="https://www.youtube.com/embed/3sLDozc8URs?controls=0"
+          frameBorder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
 
-      <iframe
-        className="mx-auto my-5 md:hidden"
-        width="400"
-        height="225"
-        src="https://www.youtube.com/embed/3sLDozc8URs?controls=0"
-        frameBorder="0"
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-      ></iframe>
+        <iframe
+          className="mx-auto my-5 md:hidden"
+          width="400"
+          height="225"
+          src="https://www.youtube.com/embed/3sLDozc8URs?controls=0"
+          frameBorder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      </div>
+
+      <div>
+        <iframe
+          className="mx-auto my-5 hidden lg:block"
+          width="800"
+          height="450"
+          src="https://www.youtube.com/embed/IqDidtL1Ak4?controls=0"
+          frameBorder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+
+        <iframe
+          className="mx-auto my-5 hidden md:block lg:hidden"
+          width="600"
+          height="337.5"
+          src="https://www.youtube.com/embed/IqDidtL1Ak4?controls=0"
+          frameBorder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+
+        <iframe
+          className="mx-auto my-5 md:hidden"
+          width="400"
+          height="225"
+          src="https://www.youtube.com/embed/IqDidtL1Ak4?controls=0"
+          frameBorder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      </div>
     </div>
   </div>
 )

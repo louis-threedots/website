@@ -170,7 +170,10 @@ const Overview = () => {
         </div>
       </div>
       <h3 id="the-main-controller">The Main Controller</h3>
-      <img src={data.mainControllerDiagram.publicURL} />
+      <img
+        src={data.mainControllerDiagram.publicURL}
+        alt="Diagram of Main Controller"
+      />
       <p>
         The controller is the brains of{" "}
         <span className="font-louis">louis</span>: all the other parts connect
@@ -187,7 +190,7 @@ const Overview = () => {
         which refreshable cells can be attached.
       </p>
       <h3 id="refreshable-cells">Refreshable Cells</h3>
-      <img src={data.cellDiagram.publicURL} />
+      <img src={data.cellDiagram.publicURL} alt="Diagram of Refreshable Cell" />
       <p>
         Cells are the way that you learn braille with{" "}
         <span className="font-louis">louis</span>. Each cell contains a
