@@ -7,6 +7,7 @@ import React, {
 } from "react"
 import LoadingModal from "../loadingModal"
 import ChatBox from "./chatBox"
+import "./index.css"
 import TTS from "./tts"
 import usePyodide from "./usePyodide"
 
@@ -27,9 +28,9 @@ const Demo = () => {
   const ttsRef = useRef()
 
   const { loading, attachGlobal, runPython } = usePyodide(callback)
-  const [braille, setBraille] = useState("Loading...")
+  const [braille, setBraille] = useState("")
 
-  const [numCells, setNumCells] = useState(3)
+  const [numCells, setNumCells] = useState(5)
 
   const [messages, addMessage] = useReducer((state, message) => {
     if (message && state && !state.includes(message)) {
@@ -57,6 +58,14 @@ const Demo = () => {
       runPython(`exec(demo)`)
     }
   }, [loading])
+
+  const cells = []
+
+  for (let i = 0; i < numCells; i++) {
+    cells.push(<div className="braille-cell">{braille.charAt(i)}</div>)
+  }
+
+  console.log(cells)
 
   return (
     <>
@@ -129,7 +138,9 @@ const Demo = () => {
             </div>
 
             <div className="flex flex-col md:flex-row h-96 md:h-192 bg-gray-200 pb-6 md:pb-16">
-              <div className="flex-1">{braille}</div>
+              <div className="flex-1 flex justify-center -mt-56 pb-32 md:mt-0 md:pb-0">
+                {cells}
+              </div>
               <ChatBox messages={messages} send={newUserMessage} />
             </div>
 
