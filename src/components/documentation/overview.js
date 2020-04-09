@@ -82,6 +82,7 @@ const Overview = () => {
             <img
               src={data.mainController.publicURL}
               className="object-scale-down object-center w-full h-full"
+              alt="Main Controller unit"
             />
           </div>
           <div className="border-t border-gray-200 px-4 py-4 sm:px-6 flex-shrink bg-white">
@@ -93,6 +94,7 @@ const Overview = () => {
             <img
               src={data.cell.publicURL}
               className="object-scale-down object-center w-full h-full"
+              alt="Refreshable Cell unit"
             />
           </div>
           <div className="border-t border-gray-200 px-4 py-4 sm:px-6 flex-shrink bg-white">
@@ -111,6 +113,7 @@ const Overview = () => {
                 marginTop: 0,
                 marginBottom: 0,
               }}
+              alt="Paper user guide booklet"
             />
           </div>
           <div className="border-t border-gray-200 px-4 py-4 sm:px-6 flex-shrink bg-white">
@@ -126,6 +129,7 @@ const Overview = () => {
                 marginTop: 0,
                 marginBottom: 0,
               }}
+              alt="UK Mains charging adaptor connected to a micro USB cable"
             />
           </div>
           <div className="border-t border-gray-200 px-4 py-4 sm:px-6 flex-shrink bg-white">
@@ -141,6 +145,7 @@ const Overview = () => {
                 marginTop: 0,
                 marginBottom: 0,
               }}
+              alt="Software licenses booklet"
             />
           </div>
           <div className="border-t border-gray-200 px-4 py-4 sm:px-6 flex-shrink bg-white">
@@ -156,10 +161,11 @@ const Overview = () => {
                 marginTop: 0,
                 marginBottom: 0,
               }}
+              alt="Warranty and disposal information leaflets"
             />
           </div>
           <div className="border-t border-gray-200 px-4 py-4 sm:px-6 flex-shrink bg-white">
-            Warrenty and disposal information
+            Warranty and disposal information
           </div>
         </div>
       </div>
