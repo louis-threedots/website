@@ -51,14 +51,18 @@ const Demo = () => {
     forceUpdate()
   }
 
+  const reloadGlobals = () => {
+    attachGlobal({})
+    runPython(`from js import characters, cell, app, main, demo`)
+    runPython(`exec(characters)`)
+    runPython(`exec(cell)`)
+    runPython(`exec(app)`)
+    runPython(`exec(main)`)
+    runPython(`exec(demo)`)
+  }
+
   useEffect(() => {
-    if (!loading) {
-      attachGlobal({})
-      runPython(`from js import characters, cell, demo`)
-      runPython(`exec(characters)`)
-      runPython(`exec(cell)`)
-      runPython(`exec(demo)`)
-    }
+    if (!loading) reloadGlobals()
   }, [loading])
 
   const cells = []
@@ -110,7 +114,8 @@ const Demo = () => {
                   <span className="ml-4 inline-flex rounded-md shadow-sm">
                     <button
                       type="button"
-                      className="relative inline-flex items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:shadow-outline-indigo focus:border-indigo-700 active:bg-indigo-700"
+                      disabled={numCells >= 10}
+                      className="relative inline-flex items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:shadow-outline-indigo focus:border-indigo-700 active:bg-indigo-700 disabled:opacity-50 disabled:cursor-not-allowed hover:disabled:bg-indigo-600"
                       onClick={() => {
                         runPython(`num_cells = ${numCells + 1}`)
                         setNumCells(numCells + 1)
@@ -125,10 +130,7 @@ const Demo = () => {
                       className="relative inline-flex items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:shadow-outline-indigo focus:border-indigo-700 active:bg-indigo-700"
                       onClick={() => {
                         reload()
-                        runPython(`from js import characters, cell, demo`)
-                        runPython(`exec(characters)`)
-                        runPython(`exec(cell)`)
-                        runPython(`exec(demo)`)
+                        reloadGlobals()
                       }}
                     >
                       Refresh
@@ -162,7 +164,7 @@ const Demo = () => {
               </div>
             </div>
 
-            <div className="flex flex-col md:flex-row h-96 md:h-192 bg-gray-200 pb-6 md:pb-16">
+            <div className="flex flex-col md:flex-row h-96 md:h-192 bg-gray-900 pb-6 md:pb-16">
               <div className="flex-1 flex justify-center -mt-56 pb-32 md:mt-0 md:pb-0">
                 {cells}
               </div>
