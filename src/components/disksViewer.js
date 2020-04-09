@@ -5,7 +5,7 @@ const DisksViewer = () => (
   <STLViewer
     width={400}
     height={400}
-    modelColor="#ebebeb"
+    modelColor="#f0f0f0"
     backgroundColor="#ffffff"
     rotate={true}
     orbitControls={true}
