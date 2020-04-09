@@ -1,11 +1,7 @@
-import React, { useRef, useState } from "react"
-import ReactUtterances from "react-utterances"
+import React from "react"
 import SEO from "../components/seo"
-import IframeResizer from 'iframe-resizer-react'
 
-const REPO = "louis-threedots/website"
-
-const Comments = () => { 
+const Comments = () => {
   return (
     <>
       <SEO title="Comments" />
@@ -18,12 +14,7 @@ const Comments = () => {
           </h2>
         </div>
       </div>
-      <IframeResizer
-        heightCalculationMethod="lowestElement"
-        log
-        src="https://sdp2020.gitlab.io/posts/group10/"
-        style={{ width: '1px', minWidth: '100%'}}
-      />
+      <a href="https://sdp2020.gitlab.io/posts/group10/">Comments</a>
     </>
   )
 }
