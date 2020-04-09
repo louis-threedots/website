@@ -13,10 +13,12 @@ const LoadableDisksViewer = Loadable({
 const Software = () => {
   return (
     <div>
-      <h3>Software</h3>
+      <h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
+            Software
+      </h3>
       <div>
-        <p>Audio Interface</p>
-        <p>
+        <p className="mt-4 max-w-2xl text-2xl leading-7 text-gray-700 lg:mx-auto">Audio Interface</p>
+        <p className="mt-4 max-w-2xl text-xl leading-7 text-gray-500 lg:mx-auto">
           The audio interface implemented in Louis allows users to communicate 
           with applications using voice commands. It converts voice input to text 
           using Google’s speech recognition API to listen to what users have 
@@ -26,8 +28,8 @@ const Software = () => {
         </p>
       </div>
       <div>
-        <p>Learn App</p>
-        <p>
+        <p className="mt-4 max-w-2xl text-2xl leading-7 text-gray-700 lg:mx-auto">Learn App</p>
+        <p className="mt-4 max-w-2xl text-xl leading-7 text-gray-500 lg:mx-auto">
           Learn basic braille alphabets on the Learn app. When you tell Louis
           which category of braille characters (choose one from letter, number,
           indicator and punctuation), your learning step begins. Louis prints
@@ -37,8 +39,8 @@ const Software = () => {
         </p>
       </div>
       <div>
-        <p>Tutor App</p>
-        <p>
+        <p className="mt-4 max-w-2xl text-2xl leading-7 text-gray-700 lg:mx-auto">Tutor App</p>
+        <p className="mt-4 max-w-2xl text-xl leading-7 text-gray-500 lg:mx-auto">
           Test your braille knowledge on the Tutor app. After telling Louis how
           long do you want your test to be(choose one from short, medium and full).
           It shows you a number of randomly selected braille characters (they 
@@ -49,8 +51,8 @@ const Software = () => {
         </p>
       </div>
       <div>
-        <p>Headlines App</p>
-        <p>
+        <p className="mt-4 max-w-2xl text-2xl leading-7 text-gray-700 lg:mx-auto">Headlines App</p>
+        <p className="mt-4 max-w-2xl text-xl leading-7 text-gray-500 lg:mx-auto">
           Test your braille reading skills if you believe you have learned enough
           to read news articles. You can read through BBC news articles from 
           different categories of your choice. It retrieves a number of today's 
