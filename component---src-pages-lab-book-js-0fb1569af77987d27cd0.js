@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[11],{xu6Q:function(e,a,n){"use strict";n.r(a);var t=n("q1tI"),r=n.n(t),o=n("vrFN");a.default=function(){return r.a.createElement(r.a.Fragment,null,r.a.createElement(o.a,{title:"Lab Book"}),"TODO: An archive/gallery/history/diary/lab-book thing")}}}]);
-//# sourceMappingURL=component---src-pages-lab-book-js-0fb1569af77987d27cd0.js.map
