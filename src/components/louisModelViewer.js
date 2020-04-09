@@ -9,7 +9,7 @@ const LouisModelViewer = () => (
     backgroundColor="#EAEAEA"
     rotate={true}
     orbitControls={true}
-    url={"/louis.stl"}
+    url={"/website/louis.stl"}
   />
 )
 

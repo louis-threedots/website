@@ -9,7 +9,7 @@ const DisksViewer = () => (
     backgroundColor="#EAEAEA"
     rotate={true}
     orbitControls={true}
-    url={"/disks_with_catch.stl"}
+    url={"/website/disks_with_catch.stl"}
   />
 )
 
