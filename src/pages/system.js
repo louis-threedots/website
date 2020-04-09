@@ -1,5 +1,7 @@
 import React from "react"
 import SEO from "../components/seo"
+import in_cell from "../images/in_cell.gif"
+import just_disks_all from "../images/just_disks_all.gif"
 
 const System = () => (
   <>
@@ -218,8 +220,8 @@ const System = () => (
             <img
               className="relative mx-auto"
               width="490"
-              src="/img/features/feature-example-1.png"
-              alt=""
+              src={just_disks_all}
+              alt="Moving louis disks"
             />
           </div>
         </div>
@@ -318,8 +320,8 @@ const System = () => (
               <img
                 className="relative mx-auto"
                 width="490"
-                src="/img/features/feature-example-2.png"
-                alt=""
+                src={in_cell}
+                alt="Moving louis cell"
               />
             </div>
           </div>
