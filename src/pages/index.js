@@ -116,7 +116,6 @@ const IndexPage = () => (
       </div>
     </div>
 
-    <LoadableLouisModelViewer />
   </>
 )
 
