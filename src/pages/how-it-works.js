@@ -1,9 +1,14 @@
 import { graphql, Link, useStaticQuery } from "gatsby"
 import Image from "gatsby-image"
 import React from "react"
-import { STLViewer } from "react-stl-obj-viewer"
+import Loadable from "react-loadable"
 import FirmwareSimulator from "../components/firmwareSimulator"
 import SEO from "../components/seo"
+
+const LoadableDisksViewer = Loadable({
+  loader: () => import("../components/disksViewer"),
+  loading: () => <span>Loading...</span>,
+})
 
 const HowItWorks = () => {
   const data = useStaticQuery(graphql`
@@ -254,15 +259,7 @@ const HowItWorks = () => {
         </div>
       </div>
 
-      <STLViewer
-        width={400}
-        height={400}
-        modelColor="#4c51bf"
-        backgroundColor="#EAEAEA"
-        rotate={true}
-        orbitControls={true}
-        url={"/disks_with_catch.stl"}
-      />
+      <LoadableDisksViewer />
     </>
   )
 }
