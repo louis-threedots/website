@@ -61,6 +61,14 @@ const usePyodide = callback => {
       })
   }
 
+  const reload = data => {
+    if (pyodide)
+      pyodide.postMessage({
+        method: "reload",
+        data,
+      })
+  }
+
   return {
     loading,
     pyodide,
@@ -68,6 +76,7 @@ const usePyodide = callback => {
     loadPackages,
     getPythonGlobal,
     attachGlobal,
+    reload,
   }
 }
 

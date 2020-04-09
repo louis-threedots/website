@@ -27,7 +27,7 @@ const Demo = () => {
 
   const ttsRef = useRef()
 
-  const { loading, attachGlobal, runPython } = usePyodide(callback)
+  const { loading, attachGlobal, runPython, reload } = usePyodide(callback)
   const [braille, setBraille] = useState("")
 
   const [numCells, setNumCells] = useState(5)
@@ -54,7 +54,9 @@ const Demo = () => {
   useEffect(() => {
     if (!loading) {
       attachGlobal({})
-      runPython(`from js import demo`)
+      runPython(`from js import characters, cell, demo`)
+      runPython(`exec(characters)`)
+      runPython(`exec(cell)`)
       runPython(`exec(demo)`)
     }
   }, [loading])
@@ -62,10 +64,12 @@ const Demo = () => {
   const cells = []
 
   for (let i = 0; i < numCells; i++) {
-    cells.push(<div className="braille-cell">{braille.charAt(i)}</div>)
+    cells.push(
+      <div className="braille-cell" key={i}>
+        {braille.charAt(i)}
+      </div>
+    )
   }
-
-  console.log(cells)
 
   return (
     <>
@@ -95,7 +99,10 @@ const Demo = () => {
                       type="button"
                       disabled={numCells < 2}
                       className="relative inline-flex items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:shadow-outline-indigo focus:border-indigo-700 active:bg-indigo-700 disabled:opacity-50 disabled:cursor-not-allowed hover:disabled:bg-indigo-600"
-                      onClick={() => setNumCells(numCells - 1)}
+                      onClick={() => {
+                        runPython(`num_cells = ${numCells - 1}`)
+                        setNumCells(numCells - 1)
+                      }}
                     >
                       Remove cell
                     </button>
@@ -104,9 +111,27 @@ const Demo = () => {
                     <button
                       type="button"
                       className="relative inline-flex items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:shadow-outline-indigo focus:border-indigo-700 active:bg-indigo-700"
-                      onClick={() => setNumCells(numCells + 1)}
+                      onClick={() => {
+                        runPython(`num_cells = ${numCells + 1}`)
+                        setNumCells(numCells + 1)
+                      }}
                     >
                       Add cell
+                    </button>
+                  </span>
+                  <span className="ml-4 inline-flex rounded-md shadow-sm">
+                    <button
+                      type="button"
+                      className="relative inline-flex items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:shadow-outline-indigo focus:border-indigo-700 active:bg-indigo-700"
+                      onClick={() => {
+                        reload()
+                        runPython(`from js import characters, cell, demo`)
+                        runPython(`exec(characters)`)
+                        runPython(`exec(cell)`)
+                        runPython(`exec(demo)`)
+                      }}
+                    >
+                      Refresh
                     </button>
                   </span>
                 </div>
