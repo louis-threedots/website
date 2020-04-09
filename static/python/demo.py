@@ -6,4 +6,4 @@ def sendMessage(text=None, braille=None):
 def newMessage(message):
   print(message)
   global num_cells
-  return sendMessage(text="Hello, bac!k!", braille="⠇⠳⠊⠎")
+  return sendMessage(text="Hello, back!", braille="⠇⠳⠊⠎")
