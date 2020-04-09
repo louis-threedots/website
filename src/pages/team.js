@@ -80,7 +80,7 @@ const Team = () => {
     },
     {
       name: "Nina Becx",
-      description: "Software Engineer",
+      description: "Firmware Engineer and Software Engineer",
       image: data.Nina.childImageSharp,
     },
     {

@@ -1,8 +1,5 @@
 import React from "react"
-import ReactUtterances from "react-utterances"
 import SEO from "../components/seo"
-
-const REPO = "louis-threedots/website"
 
 const Comments = () => (
   <>
@@ -16,10 +13,9 @@ const Comments = () => (
           <span className="text-indigo-600">Ask away.</span>
         </h2>
       </div>
-    </div>
-
-    <ReactUtterances repo={REPO} type={"issue-number"} issueNumber={1} />
-  </>
-)
+      <a href="https://sdp2020.gitlab.io/posts/group10/">Comments</a>
+    </>
+  )
+}
 
 export default Comments
