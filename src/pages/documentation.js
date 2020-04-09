@@ -1,17 +1,37 @@
 import React, { useState } from "react"
 import Loadable from "react-loadable"
 import ContactSupport from "../components/documentation/contactSupport"
-import DeveloperDocumentation from "../components/documentation/developerDocumentation"
-import Installation from "../components/documentation/installation"
-import Maintenance from "../components/documentation/maintenance"
-import Operation from "../components/documentation/operation"
-import TroubleshootingGuide from "../components/documentation/troubleshootingGuide"
 import SEO from "../components/seo"
 import classNames from "../utils/classNames"
 import "./documentation.css"
 
 const LoadableOverview = Loadable({
   loader: () => import("../components/documentation/overview"),
+  loading: () => <span>Loading...</span>,
+})
+
+const LoadableInstallation = Loadable({
+  loader: () => import("../components/documentation/installation"),
+  loading: () => <span>Loading...</span>,
+})
+
+const LoadableOperation = Loadable({
+  loader: () => import("../components/documentation/operation"),
+  loading: () => <span>Loading...</span>,
+})
+
+const LoadableTroubleshootingGuide = Loadable({
+  loader: () => import("../components/documentation/troubleshootingGuide"),
+  loading: () => <span>Loading...</span>,
+})
+
+const LoadableMaintenance = Loadable({
+  loader: () => import("../components/documentation/maintenance"),
+  loading: () => <span>Loading...</span>,
+})
+
+const LoadableDeveloperDocumentation = Loadable({
+  loader: () => import("../components/documentation/developerDocumentation"),
   loading: () => <span>Loading...</span>,
 })
 
@@ -330,15 +350,15 @@ const Documentation = () => {
             <div className="prose my-4">
               <LoadableOverview />
               <hr />
-              <Installation />
+              <LoadableInstallation />
               <hr />
-              <Operation />
+              <LoadableOperation />
               <hr />
-              <TroubleshootingGuide />
+              <LoadableTroubleshootingGuide />
               <hr />
-              <Maintenance />
+              <LoadableMaintenance />
               <hr />
-              <DeveloperDocumentation />
+              <LoadableDeveloperDocumentation />
             </div>
             <ContactSupport />
           </div>
