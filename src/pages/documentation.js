@@ -1,14 +1,39 @@
 import React, { useState } from "react"
+import Loadable from "react-loadable"
 import ContactSupport from "../components/documentation/contactSupport"
-import DeveloperDocumentation from "../components/documentation/developerDocumentation"
-import Installation from "../components/documentation/installation"
-import Maintenance from "../components/documentation/maintenance"
-import Operation from "../components/documentation/operation"
-import Overview from "../components/documentation/overview"
-import TroubleshootingGuide from "../components/documentation/troubleshootingGuide"
 import SEO from "../components/seo"
 import classNames from "../utils/classNames"
 import "./documentation.css"
+
+const LoadableOverview = Loadable({
+  loader: () => import("../components/documentation/overview"),
+  loading: () => <span>Loading...</span>,
+})
+
+const LoadableInstallation = Loadable({
+  loader: () => import("../components/documentation/installation"),
+  loading: () => <span>Loading...</span>,
+})
+
+const LoadableOperation = Loadable({
+  loader: () => import("../components/documentation/operation"),
+  loading: () => <span>Loading...</span>,
+})
+
+const LoadableTroubleshootingGuide = Loadable({
+  loader: () => import("../components/documentation/troubleshootingGuide"),
+  loading: () => <span>Loading...</span>,
+})
+
+const LoadableMaintenance = Loadable({
+  loader: () => import("../components/documentation/maintenance"),
+  loading: () => <span>Loading...</span>,
+})
+
+const LoadableDeveloperDocumentation = Loadable({
+  loader: () => import("../components/documentation/developerDocumentation"),
+  loading: () => <span>Loading...</span>,
+})
 
 const Documentation = () => {
   const [bannerShown, setBannerShown] = useState(true)
@@ -17,7 +42,7 @@ const Documentation = () => {
     <>
       <SEO title="Documentation" />
 
-      <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <h1 className="text-2xl leading-8 font-semibold font-display text-gray-900 sm:text-3xl sm:leading-9">
           User Guide
         </h1>
@@ -323,17 +348,17 @@ const Documentation = () => {
           <div className="lg:col-span-8">
             <ContactSupport />
             <div className="prose my-4">
-              <Overview />
+              <LoadableOverview />
               <hr />
-              <Installation />
+              <LoadableInstallation />
               <hr />
-              <Operation />
+              <LoadableOperation />
               <hr />
-              <TroubleshootingGuide />
+              <LoadableTroubleshootingGuide />
               <hr />
-              <Maintenance />
+              <LoadableMaintenance />
               <hr />
-              <DeveloperDocumentation />
+              <LoadableDeveloperDocumentation />
             </div>
             <ContactSupport />
           </div>

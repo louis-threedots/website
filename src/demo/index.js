@@ -12,7 +12,7 @@ const Demo = () => (
       <div className="bg-blue-50 px-4 py-3 flex items-start lg:justify-center lg:px-8 lg:py-4">
         <div className="flex-shrink-0">
           <svg
-            class="h-6 w-6 text-blue-600"
+            className="h-6 w-6 text-blue-600"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -27,7 +27,8 @@ const Demo = () => (
         </div>
         <div className="ml-3 flex-1 lg:flex lg:justify-between">
           <p className="text-sm leading-6 font-medium text-blue-700">
-            This interactive demo requires a modern browser.
+            This interactive demo requires a modern browser (speech recognition
+            works only in Google Chrome).
           </p>
           <p className="mt-2 text-sm leading-6 lg:mt-0 lg:ml-4">
             <a

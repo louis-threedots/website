@@ -54,7 +54,7 @@ Logo.propTypes = {
 }
 
 Logo.defaultProps = {
-  format: "icon",
+  format: "full",
   white: false,
   className: "",
 }

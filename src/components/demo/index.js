@@ -1,41 +1,60 @@
-import React, { useEffect, useState } from "react"
-import { useSpeechRecognition, useSpeechSynthesis } from "react-speech-kit"
+import React, {
+  useCallback,
+  useEffect,
+  useReducer,
+  useRef,
+  useState,
+} from "react"
 import LoadingModal from "../loadingModal"
+import ChatBox from "./chatBox"
+import TTS from "./tts"
 import usePyodide from "./usePyodide"
 
 const Demo = () => {
-  const callback = results => {
-    setContent(results)
+  const [, updateState] = useState()
+  const forceUpdate = useCallback(() => updateState({}), [])
+
+  const callback = message => {
+    if (message?.braille !== undefined) {
+      setBraille(message.braille)
+    }
+
+    if (message?.text !== undefined) {
+      newLouisMessage(message.text)
+    }
   }
 
+  const ttsRef = useRef()
+
   const { loading, attachGlobal, runPython } = usePyodide(callback)
-  const { speak, voices } = useSpeechSynthesis()
-  const [voice, setVoice] = useState()
-  const { listen, listening, stop } = useSpeechRecognition({
-    onResult: result => console.log(result),
-  })
-  const [content, setContent] = useState("Loading...")
+  const [braille, setBraille] = useState("Loading...")
 
-  useEffect(() => {
-    if (voices.length > 0) {
-      const defaultVoice = voices.find(voice => voice.default) || voices[0]
-      setVoice(defaultVoice)
+  const [numCells, setNumCells] = useState(3)
+
+  const [messages, addMessage] = useReducer((state, message) => {
+    if (message && state && !state.includes(message)) {
+      state.push(message)
+      return state
     }
-  }, [voices])
+    return state
+  }, [])
 
-  useEffect(() => {
-    speak({
-      text: `Hi there! I'm louis, the brailliant assistant! Pleased to meet you.`,
-      voice,
-    })
-  }, [voice])
+  const newUserMessage = content => {
+    addMessage({ content, from: "user" })
+    runPython(`newMessage("${content}")`)
+  }
+
+  const newLouisMessage = content => {
+    addMessage({ content, from: "louis" })
+    ttsRef.current.speak(content)
+    forceUpdate()
+  }
 
   useEffect(() => {
     if (!loading) {
       attachGlobal({})
       runPython(`from js import demo`)
       runPython(`exec(demo)`)
-      runPython('"Hello, world!"')
     }
   }, [loading])
 
@@ -57,7 +76,7 @@ const Demo = () => {
               <div className="-ml-4 -mt-2 flex items-center justify-between flex-wrap sm:flex-no-wrap">
                 <div className="ml-4 mt-2">
                   <h3 className="text-lg leading-6 font-medium text-gray-900">
-                    Cells (3)
+                    Cells ({numCells})
                   </h3>
                 </div>
 
@@ -65,7 +84,18 @@ const Demo = () => {
                   <span className="inline-flex rounded-md shadow-sm">
                     <button
                       type="button"
+                      disabled={numCells < 2}
+                      className="relative inline-flex items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:shadow-outline-indigo focus:border-indigo-700 active:bg-indigo-700 disabled:opacity-50 disabled:cursor-not-allowed hover:disabled:bg-indigo-600"
+                      onClick={() => setNumCells(numCells - 1)}
+                    >
+                      Remove cell
+                    </button>
+                  </span>
+                  <span className="ml-4 inline-flex rounded-md shadow-sm">
+                    <button
+                      type="button"
                       className="relative inline-flex items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:shadow-outline-indigo focus:border-indigo-700 active:bg-indigo-700"
+                      onClick={() => setNumCells(numCells + 1)}
                     >
                       Add cell
                     </button>
@@ -73,45 +103,46 @@ const Demo = () => {
                 </div>
               </div>
             </div>
-            <div>
-              Content from Python: <br />
-              {content}
+
+            <div className="bg-blue-50 px-4 py-3 flex items-start lg:justify-center lg:px-8 lg:py-4">
+              <div className="flex-shrink-0">
+                <svg
+                  className="h-6 w-6 text-blue-600"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  ></path>
+                </svg>
+              </div>
+              <div className="ml-3 flex-1 lg:flex lg:justify-between">
+                <p className="text-sm leading-6 font-medium text-blue-700">
+                  Please note, this interactive demonstration implements only a
+                  subset of the features of the physical device.
+                </p>
+              </div>
             </div>
 
-            <div className="px-4 py-3 bg-gray-50 text-right sm:px-6 flex flex-row-reverse">
-              <div className="text-left">
-                <label
-                  for="voice"
-                  className="block text-sm font-medium leading-5 text-gray-700"
-                >
-                  Voice
-                </label>
-                <select
-                  id="voice"
-                  className="mt-1 block form-select w-full py-2 px-3 py-0 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5"
-                  onChange={event =>
-                    setVoice(
-                      voices.find(
-                        voice => voice.voiceURI === event.target.value
-                      )
-                    )
-                  }
-                >
-                  {Array.isArray(voices) &&
-                    voices
-                      .filter(voice => voice.lang.startsWith("en-"))
-                      .map(voice => (
-                        <option key={voice.voiceURI} value={voice.voiceURI}>
-                          {voice.name} ({voice.lang})
-                        </option>
-                      ))}
-                </select>
-              </div>
+            <div className="flex flex-col md:flex-row h-96 md:h-192 bg-gray-200 pb-6 md:pb-16">
+              <div className="flex-1">{braille}</div>
+              <ChatBox messages={messages} send={newUserMessage} />
+            </div>
+
+            <div className="px-4 py-3 bg-gray-50 sm:px-6 flex flex-row-reverse">
+              <TTS ref={ttsRef} />
             </div>
           </div>
         </div>
       </div>
-      <LoadingModal loading={loading} />
+      <LoadingModal
+        loading={loading}
+        message={"This interactive demo requires a modern browser."}
+      />
     </>
   )
 }

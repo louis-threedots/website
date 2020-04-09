@@ -14,6 +14,7 @@ const Header = () => {
     { label: "Team", href: "/team" },
     { label: "Comments", href: "/comments" },
     { label: "User Guide", href: "/documentation" },
+
     { label: "Interactive Demo", href: "/demo", isPrimary: true },
   ]
 
@@ -106,7 +107,7 @@ const Header = () => {
               <div className="flex items-center flex-1 xl:absolute xl:inset-y-0 xl:left-0">
                 <div className="flex items-center justify-between w-full xl:w-auto">
                   <Link to="/" className="text-black h-8 w-auto sm:h-10">
-                    <Logo className="h-8 w-auto sm:h-10" format="svg" />
+                    <Logo className="h-8 w-auto sm:h-10" />
                   </Link>
                   <div className="-mr-2 flex items-center xl:hidden">
                     <button
@@ -187,7 +188,7 @@ const Header = () => {
               <div className="px-5 pt-4 flex items-center justify-between">
                 <div>
                   <Link to="/">
-                    <Logo className="h-8 w-auto" format="svg" />
+                    <Logo className="h-8 w-auto" />
                   </Link>
                 </div>
                 <div className="-mr-2">

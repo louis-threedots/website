@@ -27,21 +27,21 @@ const Team = () => {
           }
         }
       }
-      Billy: file(relativePath: { eq: "Placeholder.png" }) {
+      Billy: file(relativePath: { eq: "Billy.png" }) {
         childImageSharp {
           fluid(maxWidth: 96) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      Chanwoo: file(relativePath: { eq: "Placeholder.png" }) {
+      Chanwoo: file(relativePath: { eq: "Chanwoo.png" }) {
         childImageSharp {
           fluid(maxWidth: 96) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      Ragnor: file(relativePath: { eq: "Placeholder.png" }) {
+      Ragnor: file(relativePath: { eq: "ragnor.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 96) {
             ...GatsbyImageSharpFluid
@@ -62,7 +62,7 @@ const Team = () => {
           }
         }
       }
-      Andreas: file(relativePath: { eq: "Placeholder.png" }) {
+      Andreas: file(relativePath: { eq: "Andreas.png" }) {
         childImageSharp {
           fluid(maxWidth: 96) {
             ...GatsbyImageSharpFluid
@@ -80,7 +80,7 @@ const Team = () => {
     },
     {
       name: "Nina Becx",
-      description: "Software Engineer",
+      description: "Firmware Engineer and Software Engineer",
       image: data.Nina.childImageSharp,
     },
     {
@@ -95,12 +95,12 @@ const Team = () => {
     },
     {
       name: "Chanwoo Choi",
-      description: "Marketing & Design and Firmware Engineer",
+      description: "Marketing & Design and Software Engineer",
       image: data.Chanwoo.childImageSharp,
     },
     {
       name: "Ragnor Comerford",
-      description: "Marketing & Design and Software System Design Lead",
+      description: "Software System Design Lead",
       image: data.Ragnor.childImageSharp,
     },
     {
@@ -133,8 +133,8 @@ const Team = () => {
               The people behind <span className="font-louis">louis</span>
             </h3>
             <p className="mt-4 max-w-2xl text-xl leading-7 text-gray-500 lg:mx-auto">
-              Lorem ipsum dolor sit amet consect adipisicing elit. Possimus
-              magnam voluptatum cupiditate veritatis in accusamus quisquam.
+              9 skilled engineers with the mission to improve the quality of
+              life for people with visual impairment.
             </p>
           </div>
           <div className="mt-10 pb-12 bg-white sm:pb-16">
@@ -152,7 +152,7 @@ const Team = () => {
                     </div>
                     <div className="border-t border-b border-gray-100 p-6 text-center sm:border-0 sm:border-l sm:border-r">
                       <p className="text-5xl leading-none font-extrabold text-indigo-600">
-                        TODO
+                        19.3K+
                       </p>
                       <p className="mt-2 text-lg leading-6 font-medium text-gray-500">
                         Lines of Code
@@ -171,7 +171,6 @@ const Team = () => {
               </div>
             </div>
           </div>
-
           <div className="mt-10">
             <div className="lg:grid lg:grid-cols-3 lg:gap-8">
               {team.map(({ name, description, image }) => (
@@ -189,10 +188,45 @@ const Team = () => {
               ))}
             </div>
           </div>
+          <p className="mt-20 text-md  leading-7 text-gray-500 ">
+            Our organisational structure is based on the distribution of
+            pre-existing skills as to increase the probability of on-time
+            delivery of the project while still accommodating individual team
+            members’ desire to learn new skills in areas they lack expertise.
+            The project manager is responsible for activity and resource
+            allocation, as well as risk analysis and contingency planning,
+            whereas the secretary is concerned with the management of deadlines
+            and meeting planning.
+          </p>
+          <p className="mt-2 text-md  leading-7 text-gray-500 ">
+            The rest of the team is divided into the functional units of
+            hardware and software, and sub-units for system design, and
+            low-level/high-level for software. Communication be- tween the
+            system design role of hardware and software is essential in order to
+            ensure the interoperability of the systems developed independently
+            by the team members.{" "}
+          </p>
+          <p className="mt-2 text-md leading-7 text-gray-500 ">
+            All communication is handled on Slack to avoid scattering of
+            information and to ensure consistency and transparency. The number
+            of channels is reduced to a minimum. Fixed weekly meetings for the
+            whole team are scheduled in advance to ensure the availability of
+            all team members to discuss the current progress of the project and
+            potentially plan adjustment measures. Additionally, team members are
+            committed to daily stand-ups on Slack with the aim of synchronizing
+            information among the team and identifying potential issues.{" "}
+          </p>
+          <p className="mt-2  text-md  leading-7 text-gray-500 ">
+            Code-sharing and version control are all handled using git and
+            GitHub. In order to guarantee the cleanliness and functionality of
+            the code base, a contribution procedure is enforced by which commits
+            cannot be pushed directly to the master branch but must be submitted
+            using pull requests. The pull requests are then peer-reviewed by
+            other team members and automatically checked for compilation errors
+            in the continuous integration pipeline.
+          </p>
         </div>
       </div>
-
-      <div>TODO: Organization info</div>
     </>
   )
 }

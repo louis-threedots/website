@@ -9,11 +9,20 @@ module.exports = {
         serif: ["Lora", ...defaultTheme.fontFamily.serif],
         louis: ["Comfortaa", "cursive"],
       },
+      screens: {
+        xxl: "1536px",
+      },
+      spacing: {
+        "192": "48rem",
+      },
     },
   },
   variants: {
     margin: ["responsive", "first"],
-    backgroundColor: ["responsive", "hover", "focus", "even"],
+    backgroundColor: ["responsive", "hover", "focus", "even", "disabled"],
+    opacity: ["responsive", "hover", "focus", "disabled"],
+    cursor: ["responsive", "disabled"],
+    width: ["responsive"],
   },
   plugins: [
     require("@tailwindcss/ui"),
