@@ -220,6 +220,15 @@ const Firmware = () => {
           }
         }
       }
+      pcb_combined: file(
+        relativePath: { eq: "pcb_combined.png" }
+      ) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
 
@@ -410,6 +419,21 @@ const Firmware = () => {
           },
         ]}
       />
+      <p className="text-base mt-10  text-left leading-6  text-indigo-600 font-semibold tracking-wide uppercase">
+        Interactive Examples
+      </p>
+      <Image
+        fluid={data.pcb_combined.childImageSharp.fluid}
+        className="my-4"
+      />
+      <p className="mt-4 text-md leading-7 text-gray-600 lg:mx-auto">
+        A major goal of louis is to keep the unit cost of individual cells to a
+        minimum. Although the firmward had been developed using the Arduino hardware
+        and software, it was decided that a custom PCB would allow for reduced costs
+        in the long run, particularly if produced at scale. This PCB was designed to
+        include only the absolute minimum number of components in order to reduce the
+        Bill of Materials.
+      </p>
     </div>
   )
 }
