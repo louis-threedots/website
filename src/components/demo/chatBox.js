@@ -64,7 +64,8 @@ const ChatBox = ({ messages, send }) => {
         <div className="mb-6">
           {messages.length === 0 ? (
             <div className="text-gray-500 text-center text-sm">
-              Don't be shy! Say 'help' to get started ↓
+              Don't be shy! Say <span className="italic underline">help</span>{" "}
+              to get started ↓
             </div>
           ) : (
             messages.map((message, i) => (
