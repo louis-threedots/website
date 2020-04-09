@@ -15,13 +15,14 @@ const Software = () => {
     <div>
       <h3>Software</h3>
       <div>
-        <p>Audio App</p>
+        <p>Audio Interface</p>
         <p>
-          The Audio app allows users to communicate with applications using
-          voice commands. It converts voice input to text using Google’s speech
-          recognition API to listen to what users have to say. It also generates
-          speech from text based on Google’s Text-to-speech API (gTTS) so that
-          users can hear instructions and replies from Louis.
+          The audio interface implemented in Louis allows users to communicate 
+          with applications using voice commands. It converts voice input to text 
+          using Google’s speech recognition API to listen to what users have 
+          to say. It also generates speech from text based on Google’s Text-
+          to-speech API (gTTS) so that visually impaired users can listen to
+          audio instructions from Louis.
         </p>
       </div>
       <div>
@@ -32,25 +33,31 @@ const Software = () => {
           indicator and punctuation), your learning step begins. Louis prints
           out each character with an audio instruction such as "This is letter
           a.", allowing you to read it with your finger while listening to what
-          Louis says.
+          Louis says.   
         </p>
       </div>
       <div>
         <p>Tutor App</p>
         <p>
-          Test your braille knowledge on the Tutor app. It shows you a number of
-          randomly selected braille characters (they could be any of the
-          following: letter, number, indicator or punctuation), and you are
-          given three chances to suggest your guess of what each character would
-          be. The characters that you answered wrong will be remembered so that
+          Test your braille knowledge on the Tutor app. After telling Louis how
+          long do you want your test to be(choose one from short, medium and full).
+          It shows you a number of randomly selected braille characters (they 
+          could be any of the following: letter, number, indicator or punctuation),
+          and you are given three chances to suggest your guess of what each character 
+          would be. The characters that you answered wrong will be remembered so that
           you could re-learn them after the test.
         </p>
       </div>
       <div>
         <p>Headlines App</p>
         <p>
-          TODO: For advanced users, test your ability to read braille on
-          Headlines app.
+          Test your braille reading skills if you believe you have learned enough
+          to read news articles. You can read through BBC news articles from 
+          different categories of your choice. It retrieves a number of today's 
+          articles of the chosen category from BBC website and let you read them 
+          by printing characters on the cell(s) you have. Each cell recalibrates 
+          right after being read in order to allow users with small number of cells
+          can benefit from this app.
         </p>
       </div>
     </div>
